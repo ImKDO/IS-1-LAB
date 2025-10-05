@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">City Management System</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/special-operations">Special Operations</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2>Cities</h2>
+                    <a href="/city/new" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add New City
+                    </a>
+                </div>
+
+                <!-- Filter Form -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form method="get" class="row g-3">
+                            <div class="col-md-4">
+                                <label for="name" class="form-label">Filter by Name</label>
+                                <input type="text" class="form-control" id="name" name="name" 
+                                       th:value="${name}" placeholder="Enter city name">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="sortBy" class="form-label">Sort By</label>
+                                <select class="form-select" id="sortBy" name="sortBy">
+                                    <option value="id" th:selected="${sortBy == 'id'}">ID</option>
+                                    <option value="name" th:selected="${sortBy == 'name'}">Name</option>
+                                    <option value="population" th:selected="${sortBy == 'population'}">Population</option>
+                                    <option value="area" th:selected="${sortBy == 'area'}">Area</option>
+                                    <option value="creationDate" th:selected="${sortBy == 'creationDate'}">Creation Date</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="sortDir" class="form-label">Direction</label>
+                                <select class="form-select" id="sortDir" name="sortDir">
+                                    <option value="asc" th:selected="${sortDir == 'asc'}">Ascending</option>
+                                    <option value="desc" th:selected="${sortDir == 'desc'}">Descending</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="size" class="form-label">Page Size</label>
+                                <select class="form-select" id="size" name="size">
+                                    <option value="5" th:selected="${size == 5}">5</option>
+                                    <option value="10" th:selected="${size == 10}">10</option>
+                                    <option value="20" th:selected="${size == 20}">20</option>
+                                    <option value="50" th:selected="${size == 50}">50</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1">
+                                <label class="form-label">&nbsp;</label>
+                                <button type="submit" class="btn btn-outline-primary d-block">Filter</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Cities Table -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Coordinates</th>
+                                        <th>Area</th>
+                                        <th>Population</th>
+                                        <th>Climate</th>
+                                        <th>Capital</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="city : ${cities.content}">
+                                        <td th:text="${city.id}"></td>
+                                        <td th:text="${city.name}"></td>
+                                        <td th:text="'(' + ${city.coordinates.x} + ', ' + ${city.coordinates.y} + ')'"></td>
+                                        <td th:text="${city.area}"></td>
+                                        <td th:text="${city.population}"></td>
+                                        <td th:text="${city.climate}"></td>
+                                        <td>
+                                            <span th:if="${city.capital}" class="badge bg-success">Yes</span>
+                                            <span th:unless="${city.capital}" class="badge bg-secondary">No</span>
+                                        </td>
+                                        <td>
+                                            <a th:href="@{/city/{id}(id=${city.id})}" class="btn btn-sm btn-outline-info">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                            <a th:href="@{/city/edit/{id}(id=${city.id})}" class="btn btn-sm btn-outline-warning">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <button class="btn btn-sm btn-outline-danger" 
+                                                    th:onclick="'deleteCity(' + ${city.id} + ')'">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav th:if="${totalPages > 1}">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item" th:classappend="${currentPage == 0} ? 'disabled'">
+                                    <a class="page-link" th:href="@{/(page=${currentPage - 1}, size=${size}, sortBy=${sortBy}, sortDir=${sortDir}, name=${name})}">Previous</a>
+                                </li>
+                                <li class="page-item" th:each="i : ${#numbers.sequence(0, totalPages - 1)}" 
+                                    th:classappend="${i == currentPage} ? 'active'">
+                                    <a class="page-link" th:href="@{/(page=${i}, size=${size}, sortBy=${sortBy}, sortDir=${sortDir}, name=${name})}" 
+                                       th:text="${i + 1}"></a>
+                                </li>
+                                <li class="page-item" th:classappend="${currentPage == totalPages - 1} ? 'disabled'">
+                                    <a class="page-link" th:href="@{/(page=${currentPage + 1}, size=${size}, sortBy=${sortBy}, sortDir=${sortDir}, name=${name})}">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function deleteCity(id) {
+            if (confirm('Are you sure you want to delete this city?')) {
+                fetch('/api/cities/' + id, {
+                    method: 'DELETE'
+                })
+                .then(response => {
+                    if (response.ok) {
+                        location.reload();
+                    } else {
+                        alert('Error deleting city');
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
