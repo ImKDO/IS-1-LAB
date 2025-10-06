@@ -66,7 +66,7 @@ public class CityService {
     }
     
     public List<City> findCitiesByNameContaining(String substring) {
-        return cityRepository.findByNameLikeFn(substring);
+        return cityRepository.findByNameLikeFn("%" + substring + "%");
     }
     
     public List<City> findCitiesByClimate(Climate climate) {
@@ -92,6 +92,7 @@ public class CityService {
     @Transactional
     public void relocatePopulationToMinPopulationCity(Integer fromCityId) {
         cityRepository.relocateToMinFn(fromCityId);
+        cityRepository.clearPopulation(fromCityId);
     }
 
     @Transactional
@@ -100,5 +101,6 @@ public class CityService {
             throw new BadRequestException("Source and target city must be different");
         }
         cityRepository.relocateFn(fromCityId, toCityId);
+        cityRepository.clearPopulation(fromCityId);
     }
 }

@@ -10,7 +10,8 @@ class Lab1ApplicationTests {
 
 
     @Test
-    void contextLoads() { // Test in Spring boot
+    void contextLoads() {
+
     }
 
 }
