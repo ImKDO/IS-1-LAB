@@ -29,39 +29,6 @@
 - **Real-time**: WebSocket (STOMP)
 - **Build Tool**: Gradle
 
-## Структура проекта
-
-```
-src/main/java/is/lab1/
-├── config/                 # Конфигурация приложения
-│   ├── DatabaseConfig.java
-│   └── WebSocketConfig.java
-├── controller/             # Контроллеры
-│   ├── CityController.java
-│   ├── WebController.java
-│   ├── WebSocketController.java
-│   └── GlobalExceptionHandler.java
-├── dto/                   # Data Transfer Objects
-│   ├── CityDTO.java
-│   ├── CoordinatesDTO.java
-│   └── HumanDTO.java
-├── mapper/                # Мапперы Entity <-> DTO
-│   └── CityMapper.java
-├── model/                 # Модели данных
-│   ├── City.java
-│   ├── Coordinates.java
-│   ├── Human.java
-│   ├── Climate.java
-│   ├── Government.java
-│   └── StandardOfLiving.java
-├── repository/            # Репозитории
-│   ├── CityRepository.java
-│   ├── CoordinatesRepository.java
-│   └── HumanRepository.java
-└── service/              # Сервисы
-    └── CityService.java
-```
-
 ## Запуск приложения
 
 ### 1. Запуск PostgreSQL
@@ -168,3 +135,4 @@ export DB_PASSWORD=postgres
 ## Лицензия
 
 Этот проект создан в учебных целях.
+
