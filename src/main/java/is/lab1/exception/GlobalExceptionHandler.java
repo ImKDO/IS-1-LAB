@@ -18,9 +18,6 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-// Explicit imports to satisfy some IDE linters
-import is.lab1.exception.BadRequestException;
-import is.lab1.exception.ResourceNotFoundException;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {

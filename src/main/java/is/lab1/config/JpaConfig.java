@@ -1,7 +1,6 @@
 package is.lab1.config;
 
 import org.eclipse.persistence.config.PersistenceUnitProperties;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
