@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CORS Test</title>
+  </head>
+  <body>
+    <h1>CORS Test</h1>
+    <button onclick="test('/api/cities')">GET Cities</button>
+    <button onclick="test('/api/cities/1')">GET City 1</button>
+    <pre id="result"></pre>
+
+    <script>
+      async function test(path) {
+        const r = document.getElementById("result");
+        try {
+          const res = await fetch("http://localhost:8080" + path);
+          r.textContent = `GET ${path}\n${res.status}\n${JSON.stringify(
+            await res.json(),
+            null,
+            2
+          )}`;
+        } catch (e) {
+          r.textContent = `GET ${path}\n${e.message}`;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,4 +1,3 @@
--- Create functions required by the spec
 
 -- Delete one city by climate (any one)
 CREATE OR REPLACE FUNCTION fn_delete_by_climate(p_climate TEXT)
@@ -24,7 +23,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- Find cities by name containing substring (case sensitive per spec exact substring)
+-- Find cities by name containing substring
 CREATE OR REPLACE FUNCTION fn_find_by_name_like(p_substr TEXT)
 RETURNS SETOF cities AS $$
 BEGIN

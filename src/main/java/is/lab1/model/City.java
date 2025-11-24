@@ -11,7 +11,8 @@ import java.util.Date;
 public class City {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cities_id_seq")
+    @SequenceGenerator(name = "cities_id_seq", sequenceName = "cities_id_seq", allocationSize = 1)
     @Column(name = "id")
     private Integer id;
     
@@ -62,9 +63,8 @@ public class City {
     @Column(name = "standard_of_living", nullable = false)
     private StandardOfLiving standardOfLiving;
     
-    @NotNull(message = "Governor cannot be null")
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "governor_id", nullable = false)
+    @JoinColumn(name = "governor_id", nullable = true)
     private Human governor;
     
     // Constructors

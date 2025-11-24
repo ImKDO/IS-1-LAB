@@ -1,14 +1,12 @@
 services:
-  postgres:
-    image: 'postgres:15'
-    environment:
-      - POSTGRES_DB=studs
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+  app:
+    build: .
+    restart: on-failure
     ports:
-      - '5432:5432'
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}

@@ -33,8 +33,11 @@ public class JpaConfig {
 
         Properties jpaProps = new Properties();
         jpaProps.put(PersistenceUnitProperties.WEAVING, "false");
-        jpaProps.put(PersistenceUnitProperties.DDL_GENERATION, PersistenceUnitProperties.CREATE_OR_EXTEND);
         jpaProps.put(PersistenceUnitProperties.LOGGING_LEVEL, "INFO");
+        
+        jpaProps.put("eclipselink.jdbc.native-sql", "true");
+        jpaProps.put("eclipselink.jdbc.batch-writing", "JDBC");
+        
         em.setJpaProperties(jpaProps);
 
         return em;
