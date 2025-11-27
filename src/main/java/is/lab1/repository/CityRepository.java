@@ -57,4 +57,10 @@ public interface CityRepository extends JpaRepository<City, Integer> {
     Page<City> findByNameContainingIgnoreCase(String name, Pageable pageable);
     
     Page<City> findAll(Pageable pageable);
+    
+    @Query("SELECT c FROM City c WHERE c.coordinates.x = :x AND c.coordinates.y = :y")
+    List<City> findByCoordinates(@Param("x") Double x, @Param("y") Float y);
+    
+    @Query("SELECT c FROM City c WHERE c.coordinates.x = :x AND c.coordinates.y = :y AND c.id != :cityId")
+    List<City> findByCoordinatesExcludingCity(@Param("x") Double x, @Param("y") Float y, @Param("cityId") Integer cityId);
 }

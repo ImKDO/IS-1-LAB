@@ -1,0 +1,52 @@
+[
+  {
+    "name": "New York",
+    "coordinates": {
+      "x": -9.2345,
+      "y": -74.006
+    },
+    "area": 783.8,
+    "population": 8336817,
+    "capital": false,
+    "climate": "OCEANIC",
+    "government": "MERITOCRACY",
+    "standardOfLiving": "VERY_LOW",
+    "governor": {
+      "height": 180
+    }
+  },
+  {
+    "name": "Tokyo",
+    "coordinates": {
+      "x": 35.6762,
+      "y": 139.6503
+    },
+    "area": 2194,
+    "population": 13960000,
+    "capital": true,
+    "metersAboveSeaLevel": 40,
+    "climate": "TROPICAL_SAVANNA",
+    "government": "CORPORATOCRACY",
+    "standardOfLiving": "ULTRA_LOW",
+    "governor": {
+      "height": 175
+    }
+  },
+  {
+    "name": "London",
+    "coordinates": {
+      "x": 51.5074,
+      "y": -0.1278
+    },
+    "area": 1572,
+    "population": 8982000,
+    "capital": true,
+    "metersAboveSeaLevel": 11,
+    "climate": "OCEANIC",
+    "government": "PUPPET_STATE",
+    "standardOfLiving": "NIGHTMARE",
+    "governor": {
+      "height": 185
+    }
+  }
+]

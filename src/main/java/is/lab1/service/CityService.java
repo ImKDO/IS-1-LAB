@@ -48,6 +48,36 @@ public class CityService {
     }
     
     public City saveCity(City city) {
+        // Validate coordinates uniqueness
+        if (city.getCoordinates() != null) {
+            List<City> existingCities;
+            if (city.getId() == null) {
+                // Creating new city - check if any city has these coordinates
+                existingCities = cityRepository.findByCoordinates(
+                    city.getCoordinates().getX(), 
+                    city.getCoordinates().getY()
+                );
+            } else {
+                // Updating existing city - check if any other city has these coordinates
+                existingCities = cityRepository.findByCoordinatesExcludingCity(
+                    city.getCoordinates().getX(), 
+                    city.getCoordinates().getY(),
+                    city.getId()
+                );
+            }
+            
+            if (!existingCities.isEmpty()) {
+                City existing = existingCities.get(0);
+                throw new BadRequestException(
+                    String.format("Coordinates (%.2f, %.2f) are already occupied by city '%s' (ID: %d)",
+                        city.getCoordinates().getX(),
+                        city.getCoordinates().getY(),
+                        existing.getName(),
+                        existing.getId())
+                );
+            }
+        }
+        
         City savedCity = cityRepository.save(city);
         if (city.getId() == null) {
             webSocketController.notifyCityCreated(savedCity);
