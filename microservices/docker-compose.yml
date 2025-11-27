@@ -1,0 +1,69 @@
+services:
+  # Database
+  postgres:
+    image: postgres:15
+    container_name: city-postgres
+    environment:
+      POSTGRES_DB: citydb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Main City Service
+  city-service:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: city-service
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/citydb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Transform Service (Microservice 1)
+  transform-service:
+    build: ./transform-service
+    container_name: transform-service
+    ports:
+      - "8081:8081"
+    environment:
+      SERVER_PORT: 8081
+
+  # Queue Service (Microservice 2)
+  queue-service:
+    build: ./queue-service
+    container_name: queue-service
+    ports:
+      - "8082:8082"
+    environment:
+      SERVER_PORT: 8082
+
+  # Import Service (Microservice 3)
+  import-service:
+    build: ./import-service
+    container_name: import-service
+    ports:
+      - "8083:8083"
+    environment:
+      SERVER_PORT: 8083
+      CITY_SERVICE_URL: http://city-service:8080
+      QUEUE_SERVICE_URL: http://queue-service:8082
+    depends_on:
+      - city-service
+      - queue-service
+
+volumes:
+  postgres-data:
