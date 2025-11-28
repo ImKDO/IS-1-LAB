@@ -9,10 +9,8 @@ public class SpaConfig implements WebMvcConfigurer {
     
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        // Forward all non-API routes to index.html for React Router
-        registry.addViewController("/{spring:^(?!api|ws).*$}")
-                .setViewName("forward:/index.html");
-        registry.addViewController("/**/{spring:^(?!api|ws).*$}")
+        // Forward root to index.html for React Router
+        registry.addViewController("/")
                 .setViewName("forward:/index.html");
     }
 }

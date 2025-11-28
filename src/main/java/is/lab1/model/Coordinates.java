@@ -13,19 +13,19 @@ public class Coordinates {
     private Long id;
     
     @NotNull(message = "X coordinate cannot be null")
-    @DecimalMin(value = "-687", inclusive = false, message = "X coordinate must be greater than -687")
+    @DecimalMin(value = "-920", inclusive = false, message = "X coordinate must be greater than -920")
     @Column(name = "x_coordinate", nullable = false)
-    private Double x;
+    private Integer x;
     
     @NotNull(message = "Y coordinate cannot be null")
-    @DecimalMin(value = "-449", inclusive = false, message = "Y coordinate must be greater than -449")
+    @DecimalMin(value = "-142", inclusive = false, message = "Y coordinate must be greater than -142")
     @Column(name = "y_coordinate", nullable = false)
-    private Float y;
+    private Integer y;
     
     // Constructors
     public Coordinates() {}
     
-    public Coordinates(Double x, Float y) {
+    public Coordinates(Integer x, Integer y) {
         this.x = x;
         this.y = y;
     }
@@ -39,19 +39,19 @@ public class Coordinates {
         this.id = id;
     }
     
-    public Double getX() {
+    public Integer getX() {
         return x;
     }
     
-    public void setX(Double x) {
+    public void setX(Integer x) {
         this.x = x;
     }
     
-    public Float getY() {
+    public Integer getY() {
         return y;
     }
     
-    public void setY(Float y) {
+    public void setY(Integer y) {
         this.y = y;
     }
     

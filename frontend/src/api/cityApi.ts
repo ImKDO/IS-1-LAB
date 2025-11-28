@@ -8,12 +8,29 @@ const api = axios.create({
   },
 });
 
+const transformApiClient = axios.create({
+  baseURL: "http://localhost:8081/api",
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
 api.interceptors.response.use(
   (response) => response,
   (error) => {
     console.error("API Error:", error);
     console.error("API Error Response:", error.response);
     console.error("API Error Data:", error.response?.data);
+    return Promise.reject(error);
+  }
+);
+
+transformApiClient.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    console.error("Transform API Error:", error);
+    console.error("Transform API Error Response:", error.response);
+    console.error("Transform API Error Data:", error.response?.data);
     return Promise.reject(error);
   }
 );
@@ -55,4 +72,9 @@ export const cityApi = {
     api.post("/cities/relocate-population-to-min", null, {
       params: { fromCityId },
     }),
+};
+
+export const transformApi = {
+  validateAndTransform: (cities: any[]) =>
+    transformApiClient.post("/transform/validate", { cities }),
 };

@@ -1,24 +1,31 @@
 package is.lab1.transform.service;
 
+import is.lab1.transform.client.CityServiceClient;
 import is.lab1.transform.dto.*;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
+@RequiredArgsConstructor
+@Slf4j
 public class TransformService {
 
+    private final CityServiceClient cityServiceClient;
+
     private static final Set<String> VALID_CLIMATES = Set.of(
-        "RAIN_FOREST", "TROPICAL_SAVANNA", "OCEANIC", "POLAR_ICECAP"
+        "RAIN_FOREST", "MONSOON", "TUNDRA", "DESERT"
     );
     
     private static final Set<String> VALID_GOVERNMENTS = Set.of(
-        "CORPORATOCRACY", "PUPPET_STATE", "MERITOCRACY"
+        "ARISTOCRACY", "GERONTOCRACY", "DICTATORSHIP", "KLEPTOCRACY", "PUPPET_STATE"
     );
     
     private static final Set<String> VALID_STANDARDS = Set.of(
-        "VERY_LOW", "ULTRA_LOW", "NIGHTMARE"
+        "HIGH", "MEDIUM", "ULTRA_LOW", "NIGHTMARE"
     );
 
     public TransformResponse transformCities(List<RawCity> rawCities) {
@@ -26,6 +33,12 @@ public class TransformService {
         List<ValidationError> errors = new ArrayList<>();
         Map<String, Integer> coordinatesMap = new HashMap<>();
         int duplicatesInFile = 0;
+        int duplicatesInDatabase = 0;
+
+        // Get existing coordinates from database
+        log.info("Fetching existing coordinates from database...");
+        Set<String> existingCoordinates = cityServiceClient.getExistingCoordinates();
+        log.info("Found {} existing coordinates in database", existingCoordinates.size());
 
         for (int i = 0; i < rawCities.size(); i++) {
             RawCity raw = rawCities.get(i);
@@ -38,21 +51,33 @@ public class TransformService {
                 continue;
             }
 
-            // NORMALIZATION
             ValidatedCity validated = normalizeCity(raw);
 
             // CLEANING - check duplicates
-            String coordKey = String.format("%.3f,%.3f", 
+            String coordKey = String.format("%d,%d", 
                 validated.getCoordinates().getX(), 
                 validated.getCoordinates().getY());
             
+            // Check if coordinates exist in current file
             if (coordinatesMap.containsKey(coordKey)) {
                 duplicatesInFile++;
                 errors.add(new ValidationError(
                     i, 
                     "coordinates", 
-                    "Duplicate coordinates with row " + coordinatesMap.get(coordKey),
-                    "WARNING"
+                    "Duplicate coordinates with row " + coordinatesMap.get(coordKey) + " in this file",
+                    "ERROR"
+                ));
+                continue;
+            }
+
+            // Check if coordinates exist in database
+            if (existingCoordinates.contains(coordKey)) {
+                duplicatesInDatabase++;
+                errors.add(new ValidationError(
+                    i, 
+                    "coordinates", 
+                    "Coordinates already exist in database",
+                    "ERROR"
                 ));
                 continue;
             }
@@ -65,8 +90,12 @@ public class TransformService {
             rawCities.size(),
             validCities.size(),
             rawCities.size() - validCities.size(),
-            duplicatesInFile
+            duplicatesInFile + duplicatesInDatabase
         );
+
+        log.info("Transform complete: total={}, valid={}, invalid={}, duplicatesInFile={}, duplicatesInDB={}", 
+            stats.getTotalRecords(), stats.getValidRecords(), stats.getInvalidRecords(), 
+            duplicatesInFile, duplicatesInDatabase);
 
         return new TransformResponse(validCities, errors, stats);
     }
@@ -87,9 +116,9 @@ public class TransformService {
                 errors.add(new ValidationError(index, "coordinates.x", "X coordinate is required", "ERROR"));
             } else {
                 try {
-                    double x = parseDouble(city.getCoordinates().getX());
-                    if (x <= -687) {
-                        errors.add(new ValidationError(index, "coordinates.x", "X must be > -687", "ERROR"));
+                    int x = parseInt(city.getCoordinates().getX());
+                    if (x <= -920) {
+                        errors.add(new ValidationError(index, "coordinates.x", "X must be > -920", "ERROR"));
                     }
                 } catch (Exception e) {
                     errors.add(new ValidationError(index, "coordinates.x", "Invalid number format", "ERROR"));
@@ -100,9 +129,9 @@ public class TransformService {
                 errors.add(new ValidationError(index, "coordinates.y", "Y coordinate is required", "ERROR"));
             } else {
                 try {
-                    float y = parseFloat(city.getCoordinates().getY());
-                    if (y <= -449) {
-                        errors.add(new ValidationError(index, "coordinates.y", "Y must be > -449", "ERROR"));
+                    int y = parseInt(city.getCoordinates().getY());
+                    if (y <= -142) {
+                        errors.add(new ValidationError(index, "coordinates.y", "Y must be > -142", "ERROR"));
                     }
                 } catch (Exception e) {
                     errors.add(new ValidationError(index, "coordinates.y", "Invalid number format", "ERROR"));
@@ -162,16 +191,16 @@ public class TransformService {
         }
 
         // Governor validation
-        if (city.getGovernor() == null || city.getGovernor().getHeight() == null) {
-            errors.add(new ValidationError(index, "governor.height", "Governor height is required", "ERROR"));
-        } else {
-            try {
-                double height = parseDouble(city.getGovernor().getHeight());
-                if (height <= 0) {
-                    errors.add(new ValidationError(index, "governor.height", "Height must be > 0", "ERROR"));
+        if (city.getGovernor() != null) {
+            if (city.getGovernor().getAge() != null) {
+                try {
+                    long age = parseLong(city.getGovernor().getAge());
+                    if (age <= 0) {
+                        errors.add(new ValidationError(index, "governor.age", "Age must be > 0", "ERROR"));
+                    }
+                } catch (Exception e) {
+                    errors.add(new ValidationError(index, "governor.age", "Invalid number format", "ERROR"));
                 }
-            } catch (Exception e) {
-                errors.add(new ValidationError(index, "governor.height", "Invalid number format", "ERROR"));
             }
         }
 
@@ -186,17 +215,17 @@ public class TransformService {
         
         // Normalize coordinates
         ValidatedCity.Coordinates coords = new ValidatedCity.Coordinates();
-        coords.setX(parseDouble(raw.getCoordinates().getX()));
-        coords.setY(parseFloat(raw.getCoordinates().getY()));
+        coords.setX(parseInt(raw.getCoordinates().getX()));
+        coords.setY(parseInt(raw.getCoordinates().getY()));
         city.setCoordinates(coords);
         
         // Normalize numbers
         city.setArea(parseFloat(raw.getArea()));
-        city.setPopulation(parseInt(raw.getPopulation()));
+        city.setPopulation(parseLong(raw.getPopulation()));
         city.setCapital(raw.getCapital() != null ? raw.getCapital() : false);
         
         if (raw.getMetersAboveSeaLevel() != null) {
-            city.setMetersAboveSeaLevel(parseFloat(raw.getMetersAboveSeaLevel()));
+            city.setMetersAboveSeaLevel(parseLong(raw.getMetersAboveSeaLevel()));
         }
         
         // Normalize enums
@@ -208,9 +237,13 @@ public class TransformService {
         }
         
         // Normalize governor
-        ValidatedCity.Governor governor = new ValidatedCity.Governor();
-        governor.setHeight(parseDouble(raw.getGovernor().getHeight()));
-        city.setGovernor(governor);
+        if (raw.getGovernor() != null) {
+            ValidatedCity.Governor governor = new ValidatedCity.Governor();
+            if (raw.getGovernor().getAge() != null) {
+                governor.setAge(parseLong(raw.getGovernor().getAge()));
+            }
+            city.setGovernor(governor);
+        }
         
         // Establishment date
         city.setEstablishmentDate(raw.getEstablishmentDate());
@@ -241,5 +274,12 @@ public class TransformService {
             return ((Number) value).intValue();
         }
         return Integer.parseInt(value.toString());
+    }
+
+    private long parseLong(Object value) {
+        if (value instanceof Number) {
+            return ((Number) value).longValue();
+        }
+        return Long.parseLong(value.toString());
     }
 }

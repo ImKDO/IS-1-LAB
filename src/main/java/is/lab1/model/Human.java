@@ -14,6 +14,10 @@ public class Human {
     @Column(name = "name")
     private String name;
     
+    @DecimalMin(value = "0", inclusive = false, message = "Age must be greater than 0")
+    @Column(name = "age")
+    private Long age;
+    
     @DecimalMin(value = "0", inclusive = false, message = "Height must be greater than 0")
     @Column(name = "height")
     private Double height;
@@ -21,13 +25,14 @@ public class Human {
     // Constructors
     public Human() {}
     
-    public Human(String name, Double height) {
+    public Human(String name, Long age, Double height) {
         this.name = name;
+        this.age = age;
         this.height = height;
     }
     
-    public Human(Double height) {
-        this.height = height;
+    public Human(Long age) {
+        this.age = age;
     }
     
     // Getters and Setters
@@ -47,6 +52,14 @@ public class Human {
         this.name = name;
     }
     
+    public Long getAge() {
+        return age;
+    }
+    
+    public void setAge(Long age) {
+        this.age = age;
+    }
+    
     public Double getHeight() {
         return height;
     }
@@ -60,6 +73,7 @@ public class Human {
         return "Human{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", age=" + age +
                 ", height=" + height +
                 '}';
     }

@@ -7,9 +7,9 @@ public class ValidatedCity {
     private String name;
     private Coordinates coordinates;
     private Float area;
-    private Integer population;
+    private Long population;
     private Boolean capital;
-    private Float metersAboveSeaLevel;
+    private Long metersAboveSeaLevel;
     private String climate;
     private String government;
     private String standardOfLiving;
@@ -18,12 +18,12 @@ public class ValidatedCity {
 
     @Data
     public static class Coordinates {
-        private Double x;
-        private Float y;
+        private Integer x;
+        private Integer y;
     }
 
     @Data
     public static class Governor {
-        private Double height;
+        private Long age;
     }
 }

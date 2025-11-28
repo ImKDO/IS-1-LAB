@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { cityApi } from "../api/cityApi";
+import { cityApi, transformApi } from "../api/cityApi";
 import { City, Page } from "../types";
 
 export default function CityList() {
@@ -90,81 +90,54 @@ export default function CityList() {
         return;
       }
 
-      console.log(`Importing ${citiesToImport.length} cities...`);
+      console.log(`Sending ${citiesToImport.length} cities to Transform Service...`);
       
-      // Get all existing cities to check for coordinate conflicts
-      const existingResponse = await cityApi.getAll({ size: 10000 });
-      const existingCities = existingResponse.data.content;
-      
-      let successCount = 0;
-      let errorCount = 0;
-      let skippedCount = 0;
-      const errors: string[] = [];
+      // Send to Transform Service for validation and processing
+      showNotification(
+        `Processing ${citiesToImport.length} cities through Transform Service...`,
+        "success"
+      );
 
-      for (const city of citiesToImport) {
-        try {
-          // Check if coordinates already exist
-          const conflictingCity = existingCities.find((existing) => {
-            return (
-              Math.abs(existing.coordinates.x - city.coordinates.x) < 0.001 &&
-              Math.abs(existing.coordinates.y - city.coordinates.y) < 0.001
-            );
-          });
+      const response = await transformApi.validateAndTransform(citiesToImport);
+      const result = response.data;
 
-          if (conflictingCity) {
-            skippedCount++;
-            errors.push(
-              `Skipped "${city.name}": coordinates (${city.coordinates.x}, ${city.coordinates.y}) already occupied by "${conflictingCity.name}"`
-            );
-            console.warn(
-              `Skipping city "${city.name}" - coordinates occupied by "${conflictingCity.name}"`
-            );
-            continue;
-          }
+      console.log("Transform result:", result);
 
-          // Create city
-          const response = await cityApi.create(city);
-          successCount++;
-          
-          // Add to existing cities list to check against remaining imports
-          existingCities.push(response.data);
-        } catch (error: any) {
-          console.error("Error importing city:", city, error);
-          errorCount++;
-          const errorMsg = error.response?.data?.message || error.message || "Unknown error";
-          errors.push(`Failed "${city.name}": ${errorMsg}`);
+      let message = `Import complete!`;
+      if (result.stats) {
+        message = `Import complete! Total: ${result.stats.totalRecords}, Valid: ${result.stats.validRecords}`;
+        if (result.stats.invalidRecords > 0) {
+          message += `, Invalid: ${result.stats.invalidRecords}`;
+        }
+        if (result.stats.duplicatesInFile > 0) {
+          message += `, Duplicates: ${result.stats.duplicatesInFile}`;
         }
       }
 
-      // Show detailed results
-      let message = `Import complete! Success: ${successCount}`;
-      if (skippedCount > 0) {
-        message += `, Skipped (duplicate coordinates): ${skippedCount}`;
-      }
-      if (errorCount > 0) {
-        message += `, Failed: ${errorCount}`;
-      }
-
-      if (errors.length > 0 && errors.length <= 5) {
-        // Show first few errors in notification
-        message += `\n${errors.slice(0, 3).join("\n")}`;
+      if (result.errors && result.errors.length > 0) {
+        const errorSummary = result.errors.slice(0, 3).map((err: any) => 
+          `Row ${err.rowIndex}: ${err.message}`
+        ).join("\n");
+        message += `\n\nErrors:\n${errorSummary}`;
+        if (result.errors.length > 3) {
+          message += `\n...and ${result.errors.length - 3} more errors`;
+        }
       }
 
       showNotification(
         message,
-        errorCount === 0 && skippedCount < citiesToImport.length ? "success" : "error"
+        result.stats?.invalidRecords === 0 ? "success" : "error"
       );
-      
-      // Log all errors to console for debugging
-      if (errors.length > 0) {
-        console.log("Import errors/warnings:", errors);
-      }
-      
-      loadCities();
-    } catch (error) {
-      console.error("Error reading file:", error);
+
+      setTimeout(() => {
+        loadCities();
+      }, 2000);
+
+    } catch (error: any) {
+      console.error("Error importing file:", error);
+      const errorMsg = error.response?.data?.message || error.message || "Unknown error";
       showNotification(
-        "Failed to read file. Please check the format.",
+        `Failed to import file: ${errorMsg}`,
         "error"
       );
     }

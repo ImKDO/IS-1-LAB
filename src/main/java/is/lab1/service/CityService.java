@@ -69,7 +69,7 @@ public class CityService {
             if (!existingCities.isEmpty()) {
                 City existing = existingCities.get(0);
                 throw new BadRequestException(
-                    String.format("Coordinates (%.2f, %.2f) are already occupied by city '%s' (ID: %d)",
+                    String.format("Coordinates (%d, %d) are already occupied by city '%s' (ID: %d)",
                         city.getCoordinates().getX(),
                         city.getCoordinates().getY(),
                         existing.getName(),

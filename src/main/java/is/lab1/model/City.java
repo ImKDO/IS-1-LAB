@@ -2,12 +2,15 @@ package is.lab1.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+import org.eclipse.persistence.annotations.Converter;
 import org.springframework.format.annotation.DateTimeFormat;
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
-import java.util.Date;
 
 @Entity
 @Table(name = "cities")
+@Converter(name = "zonedDateTimeConverter", converterClass = is.lab1.config.ZonedDateTimeConverter.class)
+@Converter(name = "localDateConverter", converterClass = is.lab1.config.LocalDateConverter.class)
 public class City {
     
     @Id
@@ -27,7 +30,8 @@ public class City {
     
     @NotNull(message = "Creation date cannot be null")
     @Column(name = "creation_date", nullable = false)
-    private ZonedDateTime creationDate;
+    @org.eclipse.persistence.annotations.Convert("localDateConverter")
+    private LocalDate creationDate;
     
     @NotNull(message = "Area cannot be null")
     @DecimalMin(value = "0", inclusive = false, message = "Area must be greater than 0")
@@ -36,18 +40,17 @@ public class City {
     
     @Min(value = 1, message = "Population must be greater than 0")
     @Column(name = "population", nullable = false)
-    private int population;
+    private long population;
     
     @Column(name = "establishment_date")
-    @Temporal(TemporalType.DATE)
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date establishmentDate;
+    @org.eclipse.persistence.annotations.Convert("zonedDateTimeConverter")
+    private ZonedDateTime establishmentDate;
     
     @Column(name = "capital", nullable = false)
     private boolean capital = false;
     
     @Column(name = "meters_above_sea_level")
-    private Float metersAboveSeaLevel;
+    private Long metersAboveSeaLevel;
     
     @NotNull(message = "Climate cannot be null")
     @Enumerated(EnumType.STRING)
@@ -69,10 +72,10 @@ public class City {
     
     // Constructors
     public City() {
-        this.creationDate = ZonedDateTime.now();
+        this.creationDate = LocalDate.now();
     }
     
-    public City(String name, Coordinates coordinates, Float area, int population, 
+    public City(String name, Coordinates coordinates, Float area, long population, 
                 Climate climate, StandardOfLiving standardOfLiving, Human governor) {
         this();
         this.name = name;
@@ -109,11 +112,11 @@ public class City {
         this.coordinates = coordinates;
     }
     
-    public ZonedDateTime getCreationDate() {
+    public LocalDate getCreationDate() {
         return creationDate;
     }
     
-    public void setCreationDate(ZonedDateTime creationDate) {
+    public void setCreationDate(LocalDate creationDate) {
         this.creationDate = creationDate;
     }
     
@@ -125,19 +128,19 @@ public class City {
         this.area = area;
     }
     
-    public int getPopulation() {
+    public long getPopulation() {
         return population;
     }
     
-    public void setPopulation(int population) {
+    public void setPopulation(long population) {
         this.population = population;
     }
     
-    public Date getEstablishmentDate() {
+    public ZonedDateTime getEstablishmentDate() {
         return establishmentDate;
     }
     
-    public void setEstablishmentDate(Date establishmentDate) {
+    public void setEstablishmentDate(ZonedDateTime establishmentDate) {
         this.establishmentDate = establishmentDate;
     }
     
@@ -149,11 +152,11 @@ public class City {
         this.capital = capital;
     }
     
-    public Float getMetersAboveSeaLevel() {
+    public Long getMetersAboveSeaLevel() {
         return metersAboveSeaLevel;
     }
     
-    public void setMetersAboveSeaLevel(Float metersAboveSeaLevel) {
+    public void setMetersAboveSeaLevel(Long metersAboveSeaLevel) {
         this.metersAboveSeaLevel = metersAboveSeaLevel;
     }
     

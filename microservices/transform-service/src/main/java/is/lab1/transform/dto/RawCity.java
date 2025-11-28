@@ -25,6 +25,6 @@ public class RawCity {
 
     @Data
     public static class Governor {
-        private Object height;
+        private Object age;
     }
 }
