@@ -5,6 +5,7 @@ import org.eclipse.persistence.mappings.converters.Converter;
 import org.eclipse.persistence.sessions.Session;
 import java.sql.Date;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class LocalDateConverter implements Converter {
 
@@ -14,7 +15,7 @@ public class LocalDateConverter implements Converter {
             return null;
         }
         LocalDate localDate = (LocalDate) objectValue;
-        return Date.valueOf(localDate);
+        return localDate.toString();
     }
 
     @Override
@@ -22,8 +23,21 @@ public class LocalDateConverter implements Converter {
         if (dataValue == null) {
             return null;
         }
-        Date sqlDate = (Date) dataValue;
-        return sqlDate.toLocalDate();
+        
+        // Handle both String and java.sql.Date from database
+        if (dataValue instanceof String) {
+            String dateString = (String) dataValue;
+            // Handle format like "2025-11-28 +00" - extract just the date part
+            if (dateString.contains(" ")) {
+                dateString = dateString.split(" ")[0];
+            }
+            return LocalDate.parse(dateString);
+        } else if (dataValue instanceof Date) {
+            Date sqlDate = (Date) dataValue;
+            return sqlDate.toLocalDate();
+        }
+        
+        throw new IllegalArgumentException("Unsupported data type for LocalDate: " + dataValue.getClass());
     }
 
     @Override

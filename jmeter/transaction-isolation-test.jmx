@@ -47,7 +47,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Setup: Create City for Update Test">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Setup: Create City for Update Test" enabled="true">
           <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
@@ -203,7 +203,7 @@
           <stringProp name="ConstantTimer.delay">1000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete City (Concurrent)">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete City (Concurrent)" enabled="true">
           <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
@@ -226,6 +226,68 @@
             <intProp name="Assertion.test_type">1</intProp>
             <stringProp name="Assertion.custom_message"></stringProp>
           </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="Setup for Test 3" enabled="true">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">0</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create City for Delete Test" enabled="true">
+          <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/cities</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;name&quot;: &quot;CityForDeleteTest&quot;,&#xd;
+  &quot;coordinates&quot;: {&#xd;
+    &quot;x&quot;: ${__Random(-1000,5000)},&#xd;
+    &quot;y&quot;: ${__Random(-100,5000)}&#xd;
+  },&#xd;
+  &quot;area&quot;: 300.0,&#xd;
+  &quot;population&quot;: 5000,&#xd;
+  &quot;capital&quot;: false,&#xd;
+  &quot;climate&quot;: &quot;DESERT&quot;,&#xd;
+  &quot;standardOfLiving&quot;: &quot;NIGHTMARE&quot;,&#xd;
+  &quot;governor&quot;: {&#xd;
+    &quot;height&quot;: 165&#xd;
+  }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract City ID" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">SHARED_DELETE_CITY_ID</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.id</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">0</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Save to Props" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">props.put(&quot;SHARED_DELETE_CITY_ID&quot;, vars.get(&quot;SHARED_DELETE_CITY_ID&quot;))</stringProp>
+          </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>
@@ -258,8 +320,8 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;name&quot;: &quot;MixedTest_${__threadNum}_${__time(,)}&quot;,&#xd;
   &quot;coordinates&quot;: {&#xd;
-    &quot;x&quot;: ${__Random(-900,5000)},&#xd;
-    &quot;y&quot;: ${__Random(-140,5000)}&#xd;
+    &quot;x&quot;: ${__Random(-1000,5000)},&#xd;
+    &quot;y&quot;: ${__Random(-100,5000)}&#xd;
   },&#xd;
   &quot;area&quot;: ${__Random(10,5000)}.5,&#xd;
   &quot;population&quot;: ${__Random(1000,1000000)},&#xd;
@@ -384,7 +446,7 @@
         <stringProp name="filename">jmeter-results.xml</stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>

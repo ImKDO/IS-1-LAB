@@ -65,7 +65,21 @@ services:
       - "8081:8081"
     environment:
       SERVER_PORT: 8081
+      CITY_SERVICE_URL: http://city-service:8080
+      QUEUE_SERVICE_URL: http://queue-service:8082
+    depends_on:
+      - queue-service
+
+  # Queue Service (Microservice 2)
+  queue-service:
+    build: ./queue-service
+    container_name: queue-service
+    ports:
+      - "8082:8082"
+    environment:
+      SERVER_PORT: 8082
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      QUEUE_KAFKA_TOPIC: city.queue.ready
     depends_on:
       - kafka
 
@@ -81,6 +95,7 @@ services:
       SPRING_DATASOURCE_USERNAME: cityuser
       SPRING_DATASOURCE_PASSWORD: citypass
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      IMPORT_KAFKA_TOPIC: city.queue.ready
     depends_on:
       - kafka
       - postgres

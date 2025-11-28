@@ -1,9 +1,9 @@
 package is.lab1.transform.controller;
 
+import is.lab1.transform.client.QueueServiceClient;
 import is.lab1.transform.dto.CityValidationRequest;
 import is.lab1.transform.dto.TransformResponse;
 import is.lab1.transform.event.TransformResultMessage;
-import is.lab1.transform.service.KafkaProducerService;
 import is.lab1.transform.service.TransformService;
 import lombok.extern.slf4j.Slf4j;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +21,7 @@ import java.util.UUID;
 public class TransformController {
 
     private final TransformService transformService;
-    private final KafkaProducerService kafkaProducerService;
+    private final QueueServiceClient queueServiceClient;
 
     @PostMapping("/validate")
     public ResponseEntity<TransformResponse> transformCities(
@@ -40,7 +40,7 @@ public class TransformController {
                 Instant.now()
             );
 
-            kafkaProducerService.publishTransformResult(message);
+            queueServiceClient.enqueue(message);
 
             log.info("Transform request processed and published: correlationId={}, records={}, valid={}",
                 correlationId,

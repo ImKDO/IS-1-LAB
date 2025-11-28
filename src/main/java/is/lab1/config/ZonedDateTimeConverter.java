@@ -6,6 +6,7 @@ import org.eclipse.persistence.sessions.Session;
 import java.sql.Timestamp;
 import java.time.ZonedDateTime;
 import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 
 public class ZonedDateTimeConverter implements Converter {
 
@@ -15,7 +16,7 @@ public class ZonedDateTimeConverter implements Converter {
             return null;
         }
         ZonedDateTime zonedDateTime = (ZonedDateTime) objectValue;
-        return Timestamp.from(zonedDateTime.toInstant());
+        return zonedDateTime.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
     }
 
     @Override
@@ -23,8 +24,17 @@ public class ZonedDateTimeConverter implements Converter {
         if (dataValue == null) {
             return null;
         }
-        Timestamp timestamp = (Timestamp) dataValue;
-        return ZonedDateTime.ofInstant(timestamp.toInstant(), ZoneOffset.UTC);
+        
+        // Handle both String and Timestamp from database
+        if (dataValue instanceof String) {
+            String dateString = (String) dataValue;
+            return ZonedDateTime.parse(dateString, DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+        } else if (dataValue instanceof Timestamp) {
+            Timestamp timestamp = (Timestamp) dataValue;
+            return ZonedDateTime.ofInstant(timestamp.toInstant(), ZoneOffset.UTC);
+        }
+        
+        throw new IllegalArgumentException("Unsupported data type for ZonedDateTime: " + dataValue.getClass());
     }
 
     @Override

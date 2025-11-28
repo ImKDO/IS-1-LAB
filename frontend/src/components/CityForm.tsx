@@ -14,8 +14,8 @@ export default function CityForm() {
     area: 0,
     population: 0,
     capital: false,
-    climate: Climate.TROPICAL_SAVANNA,
-    standardOfLiving: StandardOfLiving.VERY_LOW,
+    climate: Climate.RAIN_FOREST,
+    standardOfLiving: StandardOfLiving.HIGH,
     governor: { height: 0 },
   });
 

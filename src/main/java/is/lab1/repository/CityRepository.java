@@ -58,6 +58,8 @@ public interface CityRepository extends JpaRepository<City, Integer> {
     
     Page<City> findAll(Pageable pageable);
     
+    // Simple queries without pessimistic locking
+    // DB UNIQUE constraint on coordinates ensures uniqueness
     @Query("SELECT c FROM City c WHERE c.coordinates.x = :x AND c.coordinates.y = :y")
     List<City> findByCoordinates(@Param("x") Integer x, @Param("y") Integer y);
     

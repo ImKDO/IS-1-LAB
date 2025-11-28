@@ -1,0 +1,411 @@
+2025-11-28 20:12:57,761 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-11-28 20:12:57,790 INFO o.a.j.JMeter: Loading user properties from: C:\Users\KDO\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\user.properties
+2025-11-28 20:12:57,790 INFO o.a.j.JMeter: Loading system properties from: C:\Users\KDO\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\system.properties
+2025-11-28 20:12:57,799 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-11-28 20:12:57,799 INFO o.a.j.JMeter: Version 5.6.3
+2025-11-28 20:12:57,799 INFO o.a.j.JMeter: java.version=21.0.5
+2025-11-28 20:12:57,799 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-11-28 20:12:57,800 INFO o.a.j.JMeter: os.name=Windows 11
+2025-11-28 20:12:57,800 INFO o.a.j.JMeter: os.arch=amd64
+2025-11-28 20:12:57,800 INFO o.a.j.JMeter: os.version=10.0
+2025-11-28 20:12:57,800 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-11-28 20:12:57,800 INFO o.a.j.JMeter: java.awt.headless=null
+2025-11-28 20:12:57,800 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-11-28 20:12:57,800 INFO o.a.j.JMeter: Available Processors =16
+2025-11-28 20:12:57,811 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-11-28 20:12:57,811 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-11-28 20:12:57,811 INFO o.a.j.JMeter: JMeterHome=C:\Users\KDO\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3
+2025-11-28 20:12:57,811 INFO o.a.j.JMeter: user.dir  =C:\Users\KDO\IS-1-LAB
+2025-11-28 20:12:57,811 INFO o.a.j.JMeter: PWD       =C:\Users\KDO\IS-1-LAB
+2025-11-28 20:12:57,813 INFO o.a.j.JMeter: IP: 172.28.29.26 Name: DESKTOP-MKUCJSB FullName: DESKTOP-MKUCJSB
+2025-11-28 20:12:57,828 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2025-11-28 20:12:58,031 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2025-11-28 20:13:10,611 INFO o.a.j.s.FileServer: Default base='C:\Users\KDO\IS-1-LAB'
+2025-11-28 20:13:10,615 INFO o.a.j.g.a.Load: Loading file: C:\Users\KDO\IS-1-LAB\jmeter\ConcurrencyTest_Fixed.jmx
+2025-11-28 20:13:10,615 INFO o.a.j.s.FileServer: Set new base='C:\Users\KDO\IS-1-LAB\jmeter'
+2025-11-28 20:13:10,801 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-11-28 20:13:10,830 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-11-28 20:13:10,832 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-11-28 20:13:10,834 INFO o.a.j.s.SaveService: Loading file: C:\Users\KDO\IS-1-LAB\jmeter\ConcurrencyTest_Fixed.jmx
+2025-11-28 20:13:10,863 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-28 20:13:10,863 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-28 20:13:10,863 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-28 20:13:10,863 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-28 20:13:10,863 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-11-28 20:13:10,863 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-11-28 20:13:11,118 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-11-28 20:13:11,118 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-11-28 20:13:11,118 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-11-28 20:13:11,118 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-11-28 20:13:11,386 INFO o.a.j.s.FileServer: Set new base='C:\Users\KDO\IS-1-LAB\jmeter'
+2025-11-28 20:13:12,343 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-28 20:13:12,344 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 20:13:12,344 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 20:13:12,345 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-11-28 20:13:12,345 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-11-28 20:13:12,395 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-28 20:13:12,397 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2025-11-28 20:13:12,397 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : Setup - Create Test Cities 
+2025-11-28 20:13:12,397 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Setup - Create Test Cities.
+2025-11-28 20:13:12,397 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:12,397 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-11-28 20:13:12,400 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 20:13:12,400 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2025-11-28 20:13:12,401 INFO o.a.j.t.JMeterThread: Thread started: Setup - Create Test Cities 1-1
+2025-11-28 20:13:12,417 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-MKUCJSB
+2025-11-28 20:13:12,427 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-11-28 20:13:12,577 INFO o.a.j.t.JMeterThread: Thread is done: Setup - Create Test Cities 1-1
+2025-11-28 20:13:12,578 INFO o.a.j.t.JMeterThread: Thread finished: Setup - Create Test Cities 1-1
+2025-11-28 20:13:12,578 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2025-11-28 20:13:12,607 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Test 1: Duplicate Coordinates
+2025-11-28 20:13:12,607 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Test 1: Duplicate Coordinates.
+2025-11-28 20:13:12,607 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:12,608 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=0 delayedStart=false
+2025-11-28 20:13:12,608 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-1
+2025-11-28 20:13:12,609 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-3
+2025-11-28 20:13:12,609 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-4
+2025-11-28 20:13:12,608 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-2
+2025-11-28 20:13:12,609 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-5
+2025-11-28 20:13:12,609 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-6
+2025-11-28 20:13:12,609 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-7
+2025-11-28 20:13:12,609 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-8
+2025-11-28 20:13:12,611 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 20:13:12,611 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Test 2: Concurrent Updates
+2025-11-28 20:13:12,611 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Test 2: Concurrent Updates.
+2025-11-28 20:13:12,611 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:12,611 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=10 ramp-up=0 delayedStart=false
+2025-11-28 20:13:12,611 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-9
+2025-11-28 20:13:12,611 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-10
+2025-11-28 20:13:12,612 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-1
+2025-11-28 20:13:12,612 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-2
+2025-11-28 20:13:12,613 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-4
+2025-11-28 20:13:12,613 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-5
+2025-11-28 20:13:12,615 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-3
+2025-11-28 20:13:12,615 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-6
+2025-11-28 20:13:12,616 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2025-11-28 20:13:12,616 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : Test 3: Concurrent Deletes
+2025-11-28 20:13:12,616 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-7
+2025-11-28 20:13:12,616 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Test 3: Concurrent Deletes.
+2025-11-28 20:13:12,616 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:12,616 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-8
+2025-11-28 20:13:12,616 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=10 ramp-up=0 delayedStart=false
+2025-11-28 20:13:12,616 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-9
+2025-11-28 20:13:12,616 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-10
+2025-11-28 20:13:12,619 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-3
+2025-11-28 20:13:12,619 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-1
+2025-11-28 20:13:12,619 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2025-11-28 20:13:12,619 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-2
+2025-11-28 20:13:12,621 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-28 20:13:12,621 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-9
+2025-11-28 20:13:12,621 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-5
+2025-11-28 20:13:12,623 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-6
+2025-11-28 20:13:12,627 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-7
+2025-11-28 20:13:12,628 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-4
+2025-11-28 20:13:12,628 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-10
+2025-11-28 20:13:12,628 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-8
+2025-11-28 20:13:12,639 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-2
+2025-11-28 20:13:12,639 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-2
+2025-11-28 20:13:12,644 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-1
+2025-11-28 20:13:12,644 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-1
+2025-11-28 20:13:12,651 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-3
+2025-11-28 20:13:12,651 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-3
+2025-11-28 20:13:12,662 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-10
+2025-11-28 20:13:12,662 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-10
+2025-11-28 20:13:12,666 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-9
+2025-11-28 20:13:12,667 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-9
+2025-11-28 20:13:12,668 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-1
+2025-11-28 20:13:12,668 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-1
+2025-11-28 20:13:12,672 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-5
+2025-11-28 20:13:12,672 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-5
+2025-11-28 20:13:12,677 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-8
+2025-11-28 20:13:12,677 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-8
+2025-11-28 20:13:12,683 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-6
+2025-11-28 20:13:12,684 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-6
+2025-11-28 20:13:12,687 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-4
+2025-11-28 20:13:12,688 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-4
+2025-11-28 20:13:12,693 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-7
+2025-11-28 20:13:12,693 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-7
+2025-11-28 20:13:12,700 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-4
+2025-11-28 20:13:12,701 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-4
+2025-11-28 20:13:12,705 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-6
+2025-11-28 20:13:12,706 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-6
+2025-11-28 20:13:12,714 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-8
+2025-11-28 20:13:12,714 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-8
+2025-11-28 20:13:12,715 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-5
+2025-11-28 20:13:12,715 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-5
+2025-11-28 20:13:12,722 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-4
+2025-11-28 20:13:12,722 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-10
+2025-11-28 20:13:12,723 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-4
+2025-11-28 20:13:12,723 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-10
+2025-11-28 20:13:12,728 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-7
+2025-11-28 20:13:12,729 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-7
+2025-11-28 20:13:12,739 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-3
+2025-11-28 20:13:12,739 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-3
+2025-11-28 20:13:12,741 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-2
+2025-11-28 20:13:12,741 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-2
+2025-11-28 20:13:12,744 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-9
+2025-11-28 20:13:12,744 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-9
+2025-11-28 20:13:12,749 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-9
+2025-11-28 20:13:12,749 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-9
+2025-11-28 20:13:12,751 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-7
+2025-11-28 20:13:12,751 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-7
+2025-11-28 20:13:12,752 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-5
+2025-11-28 20:13:12,753 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-5
+2025-11-28 20:13:12,754 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-1
+2025-11-28 20:13:12,754 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-1
+2025-11-28 20:13:12,757 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-6
+2025-11-28 20:13:12,757 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-6
+2025-11-28 20:13:12,759 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-10
+2025-11-28 20:13:12,759 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-10
+2025-11-28 20:13:12,762 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-8
+2025-11-28 20:13:12,762 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-8
+2025-11-28 20:13:12,765 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-3
+2025-11-28 20:13:12,765 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-3
+2025-11-28 20:13:12,767 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-2
+2025-11-28 20:13:12,767 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-2
+2025-11-28 20:13:12,767 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-28 20:13:12,768 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-28 20:13:47,289 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-28 20:13:47,289 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 20:13:47,293 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-28 20:13:47,293 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2025-11-28 20:13:47,293 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : Setup - Create Test Cities 
+2025-11-28 20:13:47,293 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Setup - Create Test Cities.
+2025-11-28 20:13:47,293 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:47,293 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-11-28 20:13:47,293 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 20:13:47,293 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2025-11-28 20:13:47,293 INFO o.a.j.t.JMeterThread: Thread started: Setup - Create Test Cities 1-1
+2025-11-28 20:13:47,352 INFO o.a.j.t.JMeterThread: Thread is done: Setup - Create Test Cities 1-1
+2025-11-28 20:13:47,352 INFO o.a.j.t.JMeterThread: Thread finished: Setup - Create Test Cities 1-1
+2025-11-28 20:13:47,352 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2025-11-28 20:13:47,387 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Test 1: Duplicate Coordinates
+2025-11-28 20:13:47,390 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Test 1: Duplicate Coordinates.
+2025-11-28 20:13:47,390 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:47,390 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=0 delayedStart=false
+2025-11-28 20:13:47,392 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-1
+2025-11-28 20:13:47,392 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-2
+2025-11-28 20:13:47,394 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-3
+2025-11-28 20:13:47,395 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-4
+2025-11-28 20:13:47,395 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-5
+2025-11-28 20:13:47,395 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-7
+2025-11-28 20:13:47,395 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-8
+2025-11-28 20:13:47,395 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-6
+2025-11-28 20:13:47,395 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 20:13:47,395 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Test 2: Concurrent Updates
+2025-11-28 20:13:47,398 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Test 2: Concurrent Updates.
+2025-11-28 20:13:47,398 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:47,398 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=10 ramp-up=0 delayedStart=false
+2025-11-28 20:13:47,399 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-10
+2025-11-28 20:13:47,399 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-9
+2025-11-28 20:13:47,400 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-3
+2025-11-28 20:13:47,401 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-4
+2025-11-28 20:13:47,401 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-5
+2025-11-28 20:13:47,402 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-1
+2025-11-28 20:13:47,403 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-2
+2025-11-28 20:13:47,403 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2025-11-28 20:13:47,403 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : Test 3: Concurrent Deletes
+2025-11-28 20:13:47,403 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Test 3: Concurrent Deletes.
+2025-11-28 20:13:47,403 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:47,404 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=10 ramp-up=0 delayedStart=false
+2025-11-28 20:13:47,404 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-6
+2025-11-28 20:13:47,406 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-9
+2025-11-28 20:13:47,406 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-10
+2025-11-28 20:13:47,407 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-8
+2025-11-28 20:13:47,407 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-6
+2025-11-28 20:13:47,407 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-1
+2025-11-28 20:13:47,409 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-2
+2025-11-28 20:13:47,409 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-3
+2025-11-28 20:13:47,411 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2025-11-28 20:13:47,411 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-4
+2025-11-28 20:13:47,411 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-28 20:13:47,412 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-10
+2025-11-28 20:13:47,412 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-5
+2025-11-28 20:13:47,413 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-8
+2025-11-28 20:13:47,412 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-7
+2025-11-28 20:13:47,413 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-9
+2025-11-28 20:13:47,415 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-7
+2025-11-28 20:13:47,449 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-1
+2025-11-28 20:13:47,449 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-1
+2025-11-28 20:13:47,464 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-4
+2025-11-28 20:13:47,464 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-4
+2025-11-28 20:13:47,464 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-2
+2025-11-28 20:13:47,464 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-2
+2025-11-28 20:13:47,464 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-3
+2025-11-28 20:13:47,464 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-3
+2025-11-28 20:13:47,506 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-8
+2025-11-28 20:13:47,506 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-8
+2025-11-28 20:13:47,527 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-6
+2025-11-28 20:13:47,528 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-8
+2025-11-28 20:13:47,528 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-9
+2025-11-28 20:13:47,528 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-6
+2025-11-28 20:13:47,528 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-6
+2025-11-28 20:13:47,528 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-6
+2025-11-28 20:13:47,528 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-9
+2025-11-28 20:13:47,528 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-8
+2025-11-28 20:13:47,528 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-2
+2025-11-28 20:13:47,530 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-2
+2025-11-28 20:13:47,530 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-1
+2025-11-28 20:13:47,530 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-1
+2025-11-28 20:13:47,536 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-7
+2025-11-28 20:13:47,536 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-5
+2025-11-28 20:13:47,536 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-7
+2025-11-28 20:13:47,537 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-5
+2025-11-28 20:13:47,537 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-7
+2025-11-28 20:13:47,537 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-8
+2025-11-28 20:13:47,537 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-3
+2025-11-28 20:13:47,537 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-8
+2025-11-28 20:13:47,537 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-3
+2025-11-28 20:13:47,537 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-10
+2025-11-28 20:13:47,537 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-10
+2025-11-28 20:13:47,537 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-5
+2025-11-28 20:13:47,538 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-7
+2025-11-28 20:13:47,538 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-5
+2025-11-28 20:13:47,541 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-7
+2025-11-28 20:13:47,541 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-7
+2025-11-28 20:13:47,548 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-10
+2025-11-28 20:13:47,548 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-10
+2025-11-28 20:13:47,548 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-3
+2025-11-28 20:13:47,549 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-3
+2025-11-28 20:13:47,554 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-1
+2025-11-28 20:13:47,554 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-1
+2025-11-28 20:13:47,557 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-6
+2025-11-28 20:13:47,557 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-6
+2025-11-28 20:13:47,562 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-4
+2025-11-28 20:13:47,562 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-4
+2025-11-28 20:13:47,567 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-9
+2025-11-28 20:13:47,568 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-9
+2025-11-28 20:13:47,569 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-2
+2025-11-28 20:13:47,569 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-2
+2025-11-28 20:13:47,572 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-4
+2025-11-28 20:13:47,572 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-4
+2025-11-28 20:13:47,576 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-10
+2025-11-28 20:13:47,576 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-10
+2025-11-28 20:13:47,578 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-9
+2025-11-28 20:13:47,579 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-9
+2025-11-28 20:13:47,583 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-5
+2025-11-28 20:13:47,583 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-5
+2025-11-28 20:13:47,584 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-28 20:13:47,584 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-28 20:13:49,433 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-28 20:13:49,433 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 20:13:49,433 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-28 20:13:49,433 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2025-11-28 20:13:49,433 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : Setup - Create Test Cities 
+2025-11-28 20:13:49,433 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Setup - Create Test Cities.
+2025-11-28 20:13:49,433 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:49,433 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-11-28 20:13:49,433 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 20:13:49,433 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2025-11-28 20:13:49,433 INFO o.a.j.t.JMeterThread: Thread started: Setup - Create Test Cities 1-1
+2025-11-28 20:13:49,474 INFO o.a.j.t.JMeterThread: Thread is done: Setup - Create Test Cities 1-1
+2025-11-28 20:13:49,475 INFO o.a.j.t.JMeterThread: Thread finished: Setup - Create Test Cities 1-1
+2025-11-28 20:13:49,475 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2025-11-28 20:13:49,502 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Test 1: Duplicate Coordinates
+2025-11-28 20:13:49,502 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Test 1: Duplicate Coordinates.
+2025-11-28 20:13:49,502 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:49,502 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=0 delayedStart=false
+2025-11-28 20:13:49,505 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-1
+2025-11-28 20:13:49,505 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-2
+2025-11-28 20:13:49,505 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-3
+2025-11-28 20:13:49,505 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-4
+2025-11-28 20:13:49,506 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-5
+2025-11-28 20:13:49,506 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-6
+2025-11-28 20:13:49,508 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-7
+2025-11-28 20:13:49,509 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 20:13:49,509 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Test 2: Concurrent Updates
+2025-11-28 20:13:49,509 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-8
+2025-11-28 20:13:49,509 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Test 2: Concurrent Updates.
+2025-11-28 20:13:49,509 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:49,509 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=10 ramp-up=0 delayedStart=false
+2025-11-28 20:13:49,511 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-9
+2025-11-28 20:13:49,511 INFO o.a.j.t.JMeterThread: Thread started: Test 1: Duplicate Coordinates 1-10
+2025-11-28 20:13:49,512 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-1
+2025-11-28 20:13:49,513 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-2
+2025-11-28 20:13:49,515 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-3
+2025-11-28 20:13:49,515 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-4
+2025-11-28 20:13:49,516 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-5
+2025-11-28 20:13:49,517 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2025-11-28 20:13:49,519 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-6
+2025-11-28 20:13:49,519 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-7
+2025-11-28 20:13:49,519 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : Test 3: Concurrent Deletes
+2025-11-28 20:13:49,520 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Test 3: Concurrent Deletes.
+2025-11-28 20:13:49,520 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 20:13:49,520 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=10 ramp-up=0 delayedStart=false
+2025-11-28 20:13:49,520 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-8
+2025-11-28 20:13:49,520 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-9
+2025-11-28 20:13:49,522 INFO o.a.j.t.JMeterThread: Thread started: Test 2: Concurrent Updates 2-10
+2025-11-28 20:13:49,523 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-2
+2025-11-28 20:13:49,523 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-3
+2025-11-28 20:13:49,528 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-1
+2025-11-28 20:13:49,528 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-4
+2025-11-28 20:13:49,533 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2025-11-28 20:13:49,533 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-28 20:13:49,537 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-8
+2025-11-28 20:13:49,537 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-6
+2025-11-28 20:13:49,539 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-7
+2025-11-28 20:13:49,539 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-5
+2025-11-28 20:13:49,542 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-9
+2025-11-28 20:13:49,546 INFO o.a.j.t.JMeterThread: Thread started: Test 3: Concurrent Deletes 3-10
+2025-11-28 20:13:49,550 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-3
+2025-11-28 20:13:49,550 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-3
+2025-11-28 20:13:49,567 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-2
+2025-11-28 20:13:49,568 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-2
+2025-11-28 20:13:49,574 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-1
+2025-11-28 20:13:49,574 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-1
+2025-11-28 20:13:49,574 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-1
+2025-11-28 20:13:49,574 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-1
+2025-11-28 20:13:49,581 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-3
+2025-11-28 20:13:49,581 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-3
+2025-11-28 20:13:49,586 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-5
+2025-11-28 20:13:49,586 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-5
+2025-11-28 20:13:49,586 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-9
+2025-11-28 20:13:49,586 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-9
+2025-11-28 20:13:49,586 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-4
+2025-11-28 20:13:49,586 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-4
+2025-11-28 20:13:49,589 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-5
+2025-11-28 20:13:49,589 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-5
+2025-11-28 20:13:49,590 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-4
+2025-11-28 20:13:49,590 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-4
+2025-11-28 20:13:49,590 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-6
+2025-11-28 20:13:49,590 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-6
+2025-11-28 20:13:49,590 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-8
+2025-11-28 20:13:49,590 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-8
+2025-11-28 20:13:49,595 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-7
+2025-11-28 20:13:49,595 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-7
+2025-11-28 20:13:49,595 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-2
+2025-11-28 20:13:49,595 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-2
+2025-11-28 20:13:49,597 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-2
+2025-11-28 20:13:49,597 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-2
+2025-11-28 20:13:49,599 INFO o.a.j.t.JMeterThread: Thread is done: Test 2: Concurrent Updates 2-10
+2025-11-28 20:13:49,599 INFO o.a.j.t.JMeterThread: Thread finished: Test 2: Concurrent Updates 2-10
+2025-11-28 20:13:49,603 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-8
+2025-11-28 20:13:49,603 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-8
+2025-11-28 20:13:49,608 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-10
+2025-11-28 20:13:49,609 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-10
+2025-11-28 20:13:49,616 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-7
+2025-11-28 20:13:49,617 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-7
+2025-11-28 20:13:49,622 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-9
+2025-11-28 20:13:49,622 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-9
+2025-11-28 20:13:49,629 INFO o.a.j.t.JMeterThread: Thread is done: Test 1: Duplicate Coordinates 1-6
+2025-11-28 20:13:49,629 INFO o.a.j.t.JMeterThread: Thread finished: Test 1: Duplicate Coordinates 1-6
+2025-11-28 20:13:49,631 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-6
+2025-11-28 20:13:49,631 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-6
+2025-11-28 20:13:49,634 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-5
+2025-11-28 20:13:49,634 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-5
+2025-11-28 20:13:49,637 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-4
+2025-11-28 20:13:49,638 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-4
+2025-11-28 20:13:49,639 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-9
+2025-11-28 20:13:49,639 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-9
+2025-11-28 20:13:49,642 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-10
+2025-11-28 20:13:49,642 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-10
+2025-11-28 20:13:49,645 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-7
+2025-11-28 20:13:49,645 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-7
+2025-11-28 20:13:49,646 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-8
+2025-11-28 20:13:49,647 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-8
+2025-11-28 20:13:49,650 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-1
+2025-11-28 20:13:49,650 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-1
+2025-11-28 20:13:49,653 INFO o.a.j.t.JMeterThread: Thread is done: Test 3: Concurrent Deletes 3-3
+2025-11-28 20:13:49,653 INFO o.a.j.t.JMeterThread: Thread finished: Test 3: Concurrent Deletes 3-3
+2025-11-28 20:13:49,653 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-28 20:13:49,653 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)

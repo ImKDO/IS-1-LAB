@@ -2,7 +2,7 @@
   {
     "name": "NewCity1",
     "coordinates": {
-      "x": 100,
+      "x": 1001,
       "y": 100
     },
     "area": 500,
@@ -15,35 +15,33 @@
     }
   },
   {
-    "name": "DuplicateInFile",
+    "name": "NewCity2",
     "coordinates": {
-      "x": 100,
+      "x": 1020,
       "y": 100
     },
-    "area": 600,
-    "population": 6000000,
-    "capital": true,
-    "climate": "DESERT",
-    "standardOfLiving": "HIGH",
+    "area": 500,
+    "population": 5000000,
+    "capital": false,
+    "climate": "MONSOON",
+    "standardOfLiving": "MEDIUM",
     "governor": {
-      "age": 52
+      "age": 45
     }
   },
   {
-    "name": "DuplicateInDatabase",
+    "name": "NewCity3",
     "coordinates": {
-      "x": -9,
-      "y": -74
+      "x": 1030,
+      "y": 100
     },
-    "area": 1572,
-    "population": 8982000,
-    "capital": true,
-    "metersAboveSeaLevel": 11,
-    "climate": "RAIN_FOREST",
-    "government": "DICTATORSHIP",
-    "standardOfLiving": "NIGHTMARE",
+    "area": 500,
+    "population": 5000000,
+    "capital": false,
+    "climate": "MONSOON",
+    "standardOfLiving": "MEDIUM",
     "governor": {
-      "age": 63
+      "age": 45
     }
   }
 ]

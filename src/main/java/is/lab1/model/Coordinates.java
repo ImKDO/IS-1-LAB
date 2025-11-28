@@ -2,7 +2,7 @@ package is.lab1.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Min;
 
 @Entity
 @Table(name = "coordinates")
@@ -13,12 +13,12 @@ public class Coordinates {
     private Long id;
     
     @NotNull(message = "X coordinate cannot be null")
-    @DecimalMin(value = "-920", inclusive = false, message = "X coordinate must be greater than -920")
+    @Min(value = -919, message = "X coordinate must be greater than -920")
     @Column(name = "x_coordinate", nullable = false)
     private Integer x;
     
     @NotNull(message = "Y coordinate cannot be null")
-    @DecimalMin(value = "-142", inclusive = false, message = "Y coordinate must be greater than -142")
+    @Min(value = -141, message = "Y coordinate must be greater than -142")
     @Column(name = "y_coordinate", nullable = false)
     private Integer y;
     

@@ -3973,3 +3973,734 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1764353103562,12,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-2,text,false,,416,182,2,2,http://localhost:8080/api/cities/0,12,0,2
 1764353103562,12,Setup: Create City for Delete Test,400,,3. Concurrent Delete - Same City 1-1,text,false,,443,434,2,2,http://localhost:8080/api/cities,12,0,2
 1764353104596,5,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-1,text,false,,416,182,1,1,http://localhost:8080/api/cities/0,5,0,1
+1764353295733,67,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-3,text,false,,416,182,5,5,http://localhost:8080/api/cities/1,62,0,42
+1764353295733,67,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-5,text,false,,416,182,5,5,http://localhost:8080/api/cities/1,62,0,42
+1764353295733,67,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-2,text,false,,416,182,5,5,http://localhost:8080/api/cities/1,62,0,42
+1764353295733,67,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-4,text,false,,416,182,5,5,http://localhost:8080/api/cities/1,62,0,42
+1764353295733,67,Setup: Create City for Delete Test,400,,3. Concurrent Delete - Same City 1-1,text,false,,443,434,5,5,http://localhost:8080/api/cities,62,0,42
+1764353297555,7,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-1,text,false,,416,182,1,1,http://localhost:8080/api/cities/0,7,0,2
+1764353301863,18,Create City for Delete Test,200,,Setup for Test 3 1-1,text,true,,599,434,1,1,http://localhost:8080/api/cities,18,0,1
+1764353309153,15,Setup: Create City for Delete Test,400,,3. Concurrent Delete - Same City 1-1,text,false,,443,434,5,5,http://localhost:8080/api/cities,15,0,2
+1764353309153,32,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-5,,true,,210,185,5,5,http://localhost:8080/api/cities/1152,32,0,2
+1764353309153,42,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-2,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1152,42,0,2
+1764353309153,42,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-4,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1152,42,0,2
+1764353309153,43,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-3,text,false,Test failed: code expected to match /200|404/,425,185,2,2,http://localhost:8080/api/cities/1152,42,0,2
+1764353310186,6,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-1,text,false,,416,182,1,1,http://localhost:8080/api/cities/0,6,0,1
+1764353410226,51,Create City for Delete Test,200,,Setup for Test 3 1-1,text,true,,599,434,1,1,http://localhost:8080/api/cities,51,0,2
+1764353415847,31,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-2,,true,,210,185,5,5,http://localhost:8080/api/cities/1153,31,0,5
+1764353415849,32,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-4,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1153,32,0,3
+1764353415847,18,Setup: Create City for Delete Test,400,,3. Concurrent Delete - Same City 1-1,text,false,,443,434,5,5,http://localhost:8080/api/cities,18,0,5
+1764353415848,33,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-3,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1153,33,0,4
+1764353415853,28,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-5,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1153,28,0,0
+1764353416885,8,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-1,text,false,,416,182,1,1,http://localhost:8080/api/cities/0,8,0,2
+1764353549517,68,Create City for Delete Test,200,,Setup for Test 3 1-1,text,true,,599,434,1,1,http://localhost:8080/api/cities,63,0,40
+1764353556728,23,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-3,,true,,210,185,5,5,http://localhost:8080/api/cities/1155,23,0,2
+1764353556728,26,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-2,text,false,Test failed: code expected to match /200|404/,426,185,5,5,http://localhost:8080/api/cities/1155,26,0,3
+1764353556728,26,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-4,text,false,Test failed: code expected to match /200|404/,426,185,5,5,http://localhost:8080/api/cities/1155,26,0,2
+1764353556727,27,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-5,text,false,Test failed: code expected to match /200|404/,426,185,5,5,http://localhost:8080/api/cities/1155,27,0,3
+1764353556728,17,Setup: Create City for Delete Test,400,,3. Concurrent Delete - Same City 1-1,text,false,,443,434,5,5,http://localhost:8080/api/cities,17,0,2
+1764353557781,11,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-1,text,false,,416,182,1,1,http://localhost:8080/api/cities/0,10,0,2
+1764353772405,104,Create City for Delete Test,200,,Setup for Test 3 1-1,text,true,,599,434,1,1,http://localhost:8080/api/cities,95,0,36
+1764353779658,41,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-4,,true,,210,185,5,5,http://localhost:8080/api/cities/1156,41,0,1
+1764353779659,49,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-5,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1156,48,0,1
+1764353779658,57,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-3,text,false,Test failed: code expected to match /200|404/,426,185,3,3,http://localhost:8080/api/cities/1156,56,0,2
+1764353779658,65,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-2,text,false,Test failed: code expected to match /200|404/,426,185,2,2,http://localhost:8080/api/cities/1156,64,0,1
+1764353779658,50,Setup: Create City for Delete Test,400,,3. Concurrent Delete - Same City 1-1,text,false,,443,434,4,4,http://localhost:8080/api/cities,49,0,1
+1764353780731,7,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-1,text,false,,416,182,1,1,http://localhost:8080/api/cities/0,7,0,1
+1764354117650,68,Create City for Delete Test,200,,Setup for Test 3 1-1,text,true,,599,434,1,1,http://localhost:8080/api/cities,68,0,4
+1764354125827,62,Create City,200,,4. Mixed CRUD Operations 1-1,text,true,,607,442,1,1,http://localhost:8080/api/cities,62,0,2
+1764354125890,6,Read City,200,,4. Mixed CRUD Operations 1-1,text,true,,607,163,1,1,http://localhost:8080/api/cities/1158,6,0,0
+1764354125897,25,Update City,200,,4. Mixed CRUD Operations 1-1,text,true,,603,442,1,1,http://localhost:8080/api/cities/1158,25,0,0
+1764354125922,16,Delete City,200,,4. Mixed CRUD Operations 1-1,,true,,210,185,2,2,http://localhost:8080/api/cities/1158,16,0,0
+1764354125926,29,Create City,200,,4. Mixed CRUD Operations 1-2,text,true,,605,440,2,2,http://localhost:8080/api/cities,29,0,2
+1764354125956,3,Read City,200,,4. Mixed CRUD Operations 1-2,text,true,,605,163,2,2,http://localhost:8080/api/cities/1159,3,0,0
+1764354125940,19,Create City,200,,4. Mixed CRUD Operations 1-1,text,true,,607,442,2,2,http://localhost:8080/api/cities,19,0,0
+1764354125960,4,Read City,200,,4. Mixed CRUD Operations 1-1,text,true,,607,163,2,2,http://localhost:8080/api/cities/1160,4,0,0
+1764354125960,13,Update City,200,,4. Mixed CRUD Operations 1-2,text,true,,604,443,2,2,http://localhost:8080/api/cities/1159,13,0,0
+1764354125975,9,Delete City,200,,4. Mixed CRUD Operations 1-2,,true,,210,185,2,2,http://localhost:8080/api/cities/1159,9,0,0
+1764354125965,20,Update City,200,,4. Mixed CRUD Operations 1-1,text,true,,603,442,2,2,http://localhost:8080/api/cities/1160,20,0,0
+1764354125986,8,Delete City,200,,4. Mixed CRUD Operations 1-1,,true,,210,185,2,2,http://localhost:8080/api/cities/1160,8,0,0
+1764354125985,13,Create City,200,,4. Mixed CRUD Operations 1-2,text,true,,606,441,2,2,http://localhost:8080/api/cities,12,0,0
+1764354125998,4,Read City,200,,4. Mixed CRUD Operations 1-2,text,true,,606,163,2,2,http://localhost:8080/api/cities/1161,4,0,0
+1764354125994,17,Create City,200,,4. Mixed CRUD Operations 1-1,text,true,,606,441,2,2,http://localhost:8080/api/cities,17,0,0
+1764354126002,12,Update City,200,,4. Mixed CRUD Operations 1-2,text,true,,604,443,2,2,http://localhost:8080/api/cities/1161,12,0,0
+1764354126012,3,Read City,200,,4. Mixed CRUD Operations 1-1,text,true,,606,163,2,2,http://localhost:8080/api/cities/1162,3,0,0
+1764354126015,9,Delete City,200,,4. Mixed CRUD Operations 1-2,,true,,210,185,2,2,http://localhost:8080/api/cities/1161,9,0,0
+1764354126016,10,Update City,200,,4. Mixed CRUD Operations 1-1,text,true,,603,442,2,2,http://localhost:8080/api/cities/1162,10,0,0
+1764354126027,12,Delete City,200,,4. Mixed CRUD Operations 1-1,,true,,210,185,3,3,http://localhost:8080/api/cities/1162,12,0,0
+1764354126024,15,Create City,200,,4. Mixed CRUD Operations 1-2,text,true,,605,440,3,3,http://localhost:8080/api/cities,15,0,0
+1764354126040,3,Read City,200,,4. Mixed CRUD Operations 1-2,text,true,,605,163,2,2,http://localhost:8080/api/cities/1163,3,0,0
+1764354126028,16,Create City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,442,2,2,http://localhost:8080/api/cities,16,0,1
+1764354126045,3,Read City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,163,2,2,http://localhost:8080/api/cities/1164,3,0,0
+1764354126044,14,Update City,200,,4. Mixed CRUD Operations 1-2,text,true,,603,442,2,2,http://localhost:8080/api/cities/1163,14,0,0
+1764354126049,12,Update City,200,,4. Mixed CRUD Operations 1-3,text,true,,604,443,2,2,http://localhost:8080/api/cities/1164,12,0,0
+1764354126058,10,Delete City,200,,4. Mixed CRUD Operations 1-2,,true,,210,185,2,2,http://localhost:8080/api/cities/1163,10,0,0
+1764354126061,10,Delete City,200,,4. Mixed CRUD Operations 1-3,,true,,210,185,1,1,http://localhost:8080/api/cities/1164,10,0,0
+1764354126071,11,Create City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354126082,4,Read City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,163,1,1,http://localhost:8080/api/cities/1165,4,0,0
+1764354126086,13,Update City,200,,4. Mixed CRUD Operations 1-3,text,true,,604,443,1,1,http://localhost:8080/api/cities/1165,13,0,0
+1764354126099,9,Delete City,200,,4. Mixed CRUD Operations 1-3,,true,,210,185,1,1,http://localhost:8080/api/cities/1165,9,0,0
+1764354126109,10,Create City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354126120,4,Read City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,163,1,1,http://localhost:8080/api/cities/1166,4,0,0
+1764354126124,11,Update City,200,,4. Mixed CRUD Operations 1-3,text,true,,603,442,2,2,http://localhost:8080/api/cities/1166,11,0,0
+1764354126127,10,Create City,200,,4. Mixed CRUD Operations 1-4,text,true,,605,440,2,2,http://localhost:8080/api/cities,10,0,0
+1764354126138,3,Read City,200,,4. Mixed CRUD Operations 1-4,text,true,,605,163,2,2,http://localhost:8080/api/cities/1167,3,0,0
+1764354126136,7,Delete City,200,,4. Mixed CRUD Operations 1-3,,true,,210,185,2,2,http://localhost:8080/api/cities/1166,7,0,0
+1764354126141,12,Update City,200,,4. Mixed CRUD Operations 1-4,text,true,,604,443,1,1,http://localhost:8080/api/cities/1167,12,0,0
+1764354126153,10,Delete City,200,,4. Mixed CRUD Operations 1-4,,true,,210,185,1,1,http://localhost:8080/api/cities/1167,10,0,0
+1764354126163,12,Create City,200,,4. Mixed CRUD Operations 1-4,text,true,,606,441,1,1,http://localhost:8080/api/cities,12,0,0
+1764354126176,3,Read City,200,,4. Mixed CRUD Operations 1-4,text,true,,606,163,1,1,http://localhost:8080/api/cities/1168,3,0,0
+1764354126180,10,Update City,200,,4. Mixed CRUD Operations 1-4,text,true,,602,441,1,1,http://localhost:8080/api/cities/1168,10,0,0
+1764354126191,9,Delete City,200,,4. Mixed CRUD Operations 1-4,,true,,210,185,1,1,http://localhost:8080/api/cities/1168,9,0,0
+1764354126201,12,Create City,200,,4. Mixed CRUD Operations 1-4,text,true,,606,441,1,1,http://localhost:8080/api/cities,12,0,0
+1764354126213,3,Read City,200,,4. Mixed CRUD Operations 1-4,text,true,,606,163,1,1,http://localhost:8080/api/cities/1169,3,0,0
+1764354126217,9,Update City,200,,4. Mixed CRUD Operations 1-4,text,true,,604,443,1,1,http://localhost:8080/api/cities/1169,9,0,0
+1764354126227,10,Delete City,200,,4. Mixed CRUD Operations 1-4,,true,,210,185,2,2,http://localhost:8080/api/cities/1169,10,0,0
+1764354126228,12,Create City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,442,1,1,http://localhost:8080/api/cities,12,0,1
+1764354126241,4,Read City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,163,1,1,http://localhost:8080/api/cities/1170,3,0,0
+1764354126245,12,Update City,200,,4. Mixed CRUD Operations 1-5,text,true,,604,443,1,1,http://localhost:8080/api/cities/1170,12,0,0
+1764354126258,9,Delete City,200,,4. Mixed CRUD Operations 1-5,,true,,210,185,1,1,http://localhost:8080/api/cities/1170,9,0,0
+1764354126267,10,Create City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354126278,3,Read City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,163,1,1,http://localhost:8080/api/cities/1171,3,0,0
+1764354126282,10,Update City,200,,4. Mixed CRUD Operations 1-5,text,true,,603,442,1,1,http://localhost:8080/api/cities/1171,10,0,0
+1764354126293,8,Delete City,200,,4. Mixed CRUD Operations 1-5,,true,,210,185,1,1,http://localhost:8080/api/cities/1171,8,0,0
+1764354126302,10,Create City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354126313,2,Read City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,163,1,1,http://localhost:8080/api/cities/1172,2,0,0
+1764354126316,10,Update City,200,,4. Mixed CRUD Operations 1-5,text,true,,603,442,2,2,http://localhost:8080/api/cities/1172,10,0,0
+1764354126326,18,Delete City,200,,4. Mixed CRUD Operations 1-5,,true,,210,185,2,2,http://localhost:8080/api/cities/1172,18,0,0
+1764354126326,19,Create City,200,,4. Mixed CRUD Operations 1-6,text,true,,605,440,1,1,http://localhost:8080/api/cities,19,0,1
+1764354126345,3,Read City,200,,4. Mixed CRUD Operations 1-6,text,true,,605,163,1,1,http://localhost:8080/api/cities/1173,3,0,0
+1764354126349,12,Update City,200,,4. Mixed CRUD Operations 1-6,text,true,,604,443,1,1,http://localhost:8080/api/cities/1173,12,0,0
+1764354126362,8,Delete City,200,,4. Mixed CRUD Operations 1-6,,true,,210,185,1,1,http://localhost:8080/api/cities/1173,8,0,0
+1764354126371,9,Create City,200,,4. Mixed CRUD Operations 1-6,text,true,,607,442,1,1,http://localhost:8080/api/cities,9,0,0
+1764354126381,3,Read City,200,,4. Mixed CRUD Operations 1-6,text,true,,607,163,1,1,http://localhost:8080/api/cities/1174,3,0,0
+1764354126385,12,Update City,200,,4. Mixed CRUD Operations 1-6,text,true,,603,442,1,1,http://localhost:8080/api/cities/1174,11,0,0
+1764354126397,8,Delete City,200,,4. Mixed CRUD Operations 1-6,,true,,210,185,1,1,http://localhost:8080/api/cities/1174,8,0,0
+1764354126406,10,Create City,200,,4. Mixed CRUD Operations 1-6,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354126417,3,Read City,200,,4. Mixed CRUD Operations 1-6,text,true,,607,163,1,1,http://localhost:8080/api/cities/1175,3,0,0
+1764354126420,13,Update City,200,,4. Mixed CRUD Operations 1-6,text,true,,603,442,2,2,http://localhost:8080/api/cities/1175,13,0,0
+1764354126424,14,Create City,200,,4. Mixed CRUD Operations 1-7,text,true,,606,441,2,2,http://localhost:8080/api/cities,14,0,2
+1764354126440,3,Read City,200,,4. Mixed CRUD Operations 1-7,text,true,,606,163,2,2,http://localhost:8080/api/cities/1176,3,0,0
+1764354126434,9,Delete City,200,,4. Mixed CRUD Operations 1-6,,true,,210,185,2,2,http://localhost:8080/api/cities/1175,9,0,0
+1764354126444,13,Update City,200,,4. Mixed CRUD Operations 1-7,text,true,,604,443,1,1,http://localhost:8080/api/cities/1176,13,0,0
+1764354126458,9,Delete City,200,,4. Mixed CRUD Operations 1-7,,true,,210,185,1,1,http://localhost:8080/api/cities/1176,9,0,0
+1764354126468,9,Create City,200,,4. Mixed CRUD Operations 1-7,text,true,,605,440,1,1,http://localhost:8080/api/cities,9,0,0
+1764354126479,3,Read City,200,,4. Mixed CRUD Operations 1-7,text,true,,605,163,1,1,http://localhost:8080/api/cities/1177,3,0,0
+1764354126483,11,Update City,200,,4. Mixed CRUD Operations 1-7,text,true,,603,442,1,1,http://localhost:8080/api/cities/1177,10,0,0
+1764354126494,10,Delete City,200,,4. Mixed CRUD Operations 1-7,,true,,210,185,1,1,http://localhost:8080/api/cities/1177,10,0,0
+1764354126505,11,Create City,200,,4. Mixed CRUD Operations 1-7,text,true,,606,441,1,1,http://localhost:8080/api/cities,11,0,0
+1764354126516,4,Read City,200,,4. Mixed CRUD Operations 1-7,text,true,,606,163,1,1,http://localhost:8080/api/cities/1178,3,0,0
+1764354126520,14,Update City,200,,4. Mixed CRUD Operations 1-7,text,true,,603,442,2,2,http://localhost:8080/api/cities/1178,14,0,0
+1764354126526,15,Create City,200,,4. Mixed CRUD Operations 1-8,text,true,,606,441,2,2,http://localhost:8080/api/cities,15,0,1
+1764354126542,4,Read City,200,,4. Mixed CRUD Operations 1-8,text,true,,606,163,2,2,http://localhost:8080/api/cities/1179,4,0,0
+1764354126535,11,Delete City,200,,4. Mixed CRUD Operations 1-7,,true,,210,185,2,2,http://localhost:8080/api/cities/1178,11,0,0
+1764354126547,17,Update City,200,,4. Mixed CRUD Operations 1-8,text,true,,603,442,1,1,http://localhost:8080/api/cities/1179,17,0,0
+1764354126565,10,Delete City,200,,4. Mixed CRUD Operations 1-8,,true,,210,185,1,1,http://localhost:8080/api/cities/1179,10,0,0
+1764354126576,12,Create City,200,,4. Mixed CRUD Operations 1-8,text,true,,606,441,1,1,http://localhost:8080/api/cities,12,0,0
+1764354126589,3,Read City,200,,4. Mixed CRUD Operations 1-8,text,true,,606,163,1,1,http://localhost:8080/api/cities/1180,3,0,0
+1764354126593,11,Update City,200,,4. Mixed CRUD Operations 1-8,text,true,,604,443,1,1,http://localhost:8080/api/cities/1180,11,0,0
+1764354126604,8,Delete City,200,,4. Mixed CRUD Operations 1-8,,true,,210,185,1,1,http://localhost:8080/api/cities/1180,8,0,0
+1764354126613,12,Create City,200,,4. Mixed CRUD Operations 1-8,text,true,,606,441,1,1,http://localhost:8080/api/cities,12,0,0
+1764354126625,5,Read City,200,,4. Mixed CRUD Operations 1-8,text,true,,606,163,2,2,http://localhost:8080/api/cities/1181,5,0,0
+1764354126626,14,Create City,200,,4. Mixed CRUD Operations 1-9,text,true,,603,438,2,2,http://localhost:8080/api/cities,14,0,1
+1764354126629,12,Update City,200,,4. Mixed CRUD Operations 1-8,text,true,,604,443,2,2,http://localhost:8080/api/cities/1181,12,0,0
+1764354126640,6,Read City,200,,4. Mixed CRUD Operations 1-9,text,true,,603,163,2,2,http://localhost:8080/api/cities/1182,6,0,0
+1764354126641,10,Delete City,200,,4. Mixed CRUD Operations 1-8,,true,,210,185,2,2,http://localhost:8080/api/cities/1181,10,0,0
+1764354126647,14,Update City,200,,4. Mixed CRUD Operations 1-9,text,true,,604,443,1,1,http://localhost:8080/api/cities/1182,13,0,0
+1764354126661,10,Delete City,200,,4. Mixed CRUD Operations 1-9,,true,,210,185,1,1,http://localhost:8080/api/cities/1182,10,0,0
+1764354126672,12,Create City,200,,4. Mixed CRUD Operations 1-9,text,true,,607,442,1,1,http://localhost:8080/api/cities,12,0,0
+1764354126684,3,Read City,200,,4. Mixed CRUD Operations 1-9,text,true,,607,163,1,1,http://localhost:8080/api/cities/1183,3,0,0
+1764354126688,29,Update City,200,,4. Mixed CRUD Operations 1-9,text,true,,604,443,1,1,http://localhost:8080/api/cities/1183,29,0,0
+1764354126718,13,Delete City,200,,4. Mixed CRUD Operations 1-9,,true,,210,185,2,2,http://localhost:8080/api/cities/1183,13,0,0
+1764354126726,17,Create City,200,,4. Mixed CRUD Operations 1-10,text,true,,608,443,2,2,http://localhost:8080/api/cities,17,0,2
+1764354126731,14,Create City,200,,4. Mixed CRUD Operations 1-9,text,true,,607,442,2,2,http://localhost:8080/api/cities,14,0,0
+1764354126744,2,Read City,200,,4. Mixed CRUD Operations 1-10,text,true,,608,163,2,2,http://localhost:8080/api/cities/1184,2,0,0
+1764354126745,2,Read City,200,,4. Mixed CRUD Operations 1-9,text,true,,607,163,2,2,http://localhost:8080/api/cities/1185,2,0,0
+1764354126748,11,Update City,200,,4. Mixed CRUD Operations 1-9,text,true,,604,443,2,2,http://localhost:8080/api/cities/1185,11,0,0
+1764354126747,14,Update City,200,,4. Mixed CRUD Operations 1-10,text,true,,603,442,2,2,http://localhost:8080/api/cities/1184,14,0,0
+1764354126761,8,Delete City,200,,4. Mixed CRUD Operations 1-10,,true,,210,185,2,2,http://localhost:8080/api/cities/1184,8,0,0
+1764354126760,11,Delete City,200,,4. Mixed CRUD Operations 1-9,,true,,210,185,2,2,http://localhost:8080/api/cities/1185,11,0,0
+1764354126770,13,Create City,200,,4. Mixed CRUD Operations 1-10,text,true,,607,442,1,1,http://localhost:8080/api/cities,13,0,0
+1764354126783,5,Read City,200,,4. Mixed CRUD Operations 1-10,text,true,,607,163,1,1,http://localhost:8080/api/cities/1186,5,0,0
+1764354126788,13,Update City,200,,4. Mixed CRUD Operations 1-10,text,true,,605,444,1,1,http://localhost:8080/api/cities/1186,13,0,0
+1764354126802,11,Delete City,200,,4. Mixed CRUD Operations 1-10,,true,,210,185,1,1,http://localhost:8080/api/cities/1186,11,0,0
+1764354126813,10,Create City,200,,4. Mixed CRUD Operations 1-10,text,true,,608,443,1,1,http://localhost:8080/api/cities,10,0,0
+1764354126824,4,Read City,200,,4. Mixed CRUD Operations 1-10,text,true,,608,163,2,2,http://localhost:8080/api/cities/1187,3,0,0
+1764354126824,12,Create City,200,,4. Mixed CRUD Operations 1-11,text,true,,606,441,2,2,http://localhost:8080/api/cities,12,0,1
+1764354126837,3,Read City,200,,4. Mixed CRUD Operations 1-11,text,true,,606,163,2,2,http://localhost:8080/api/cities/1188,3,0,0
+1764354126828,12,Update City,200,,4. Mixed CRUD Operations 1-10,text,true,,605,444,2,2,http://localhost:8080/api/cities/1187,12,0,0
+1764354126841,7,Delete City,200,,4. Mixed CRUD Operations 1-10,,true,,210,185,2,2,http://localhost:8080/api/cities/1187,7,0,0
+1764354126841,9,Update City,200,,4. Mixed CRUD Operations 1-11,text,true,,604,443,1,1,http://localhost:8080/api/cities/1188,9,0,0
+1764354126851,9,Delete City,200,,4. Mixed CRUD Operations 1-11,,true,,210,185,1,1,http://localhost:8080/api/cities/1188,9,0,0
+1764354126860,12,Create City,200,,4. Mixed CRUD Operations 1-11,text,true,,607,442,1,1,http://localhost:8080/api/cities,12,0,0
+1764354126873,3,Read City,200,,4. Mixed CRUD Operations 1-11,text,true,,607,163,1,1,http://localhost:8080/api/cities/1189,3,0,0
+1764354126876,12,Update City,200,,4. Mixed CRUD Operations 1-11,text,true,,604,443,1,1,http://localhost:8080/api/cities/1189,12,0,0
+1764354126889,10,Delete City,200,,4. Mixed CRUD Operations 1-11,,true,,210,185,1,1,http://localhost:8080/api/cities/1189,10,0,0
+1764354126899,12,Create City,200,,4. Mixed CRUD Operations 1-11,text,true,,606,441,1,1,http://localhost:8080/api/cities,12,0,0
+1764354126912,4,Read City,200,,4. Mixed CRUD Operations 1-11,text,true,,606,163,1,1,http://localhost:8080/api/cities/1190,4,0,0
+1764354126916,14,Update City,200,,4. Mixed CRUD Operations 1-11,text,true,,605,444,2,2,http://localhost:8080/api/cities/1190,13,0,0
+1764354126930,10,Delete City,200,,4. Mixed CRUD Operations 1-11,,true,,210,185,2,2,http://localhost:8080/api/cities/1190,10,0,0
+1764354126925,18,Create City,200,,4. Mixed CRUD Operations 1-12,text,true,,607,442,1,1,http://localhost:8080/api/cities,17,0,2
+1764354126944,3,Read City,200,,4. Mixed CRUD Operations 1-12,text,true,,607,163,1,1,http://localhost:8080/api/cities/1191,3,0,0
+1764354126948,12,Update City,200,,4. Mixed CRUD Operations 1-12,text,true,,605,444,1,1,http://localhost:8080/api/cities/1191,12,0,0
+1764354126961,9,Delete City,200,,4. Mixed CRUD Operations 1-12,,true,,210,185,1,1,http://localhost:8080/api/cities/1191,9,0,0
+1764354126970,11,Create City,200,,4. Mixed CRUD Operations 1-12,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354126981,3,Read City,200,,4. Mixed CRUD Operations 1-12,text,true,,607,163,1,1,http://localhost:8080/api/cities/1192,3,0,0
+1764354126985,10,Update City,200,,4. Mixed CRUD Operations 1-12,text,true,,603,442,1,1,http://localhost:8080/api/cities/1192,10,0,0
+1764354126996,9,Delete City,200,,4. Mixed CRUD Operations 1-12,,true,,210,185,1,1,http://localhost:8080/api/cities/1192,9,0,0
+1764354127005,12,Create City,200,,4. Mixed CRUD Operations 1-12,text,true,,606,441,1,1,http://localhost:8080/api/cities,12,0,0
+1764354127017,3,Read City,200,,4. Mixed CRUD Operations 1-12,text,true,,606,163,1,1,http://localhost:8080/api/cities/1193,3,0,0
+1764354127021,13,Update City,200,,4. Mixed CRUD Operations 1-12,text,true,,605,444,2,2,http://localhost:8080/api/cities/1193,13,0,0
+1764354127025,49,Create City,200,,4. Mixed CRUD Operations 1-13,text,true,,607,442,2,2,http://localhost:8080/api/cities,48,0,1
+1764354127075,11,Read City,200,,4. Mixed CRUD Operations 1-13,text,true,,607,163,2,2,http://localhost:8080/api/cities/1194,11,0,0
+1764354127035,51,Delete City,200,,4. Mixed CRUD Operations 1-12,,true,,210,185,2,2,http://localhost:8080/api/cities/1193,51,0,0
+1764354127086,25,Update City,200,,4. Mixed CRUD Operations 1-13,text,true,,605,444,1,1,http://localhost:8080/api/cities/1194,24,0,0
+1764354127111,8,Delete City,200,,4. Mixed CRUD Operations 1-13,,true,,210,185,1,1,http://localhost:8080/api/cities/1194,8,0,0
+1764354127120,12,Create City,200,,4. Mixed CRUD Operations 1-13,text,true,,608,443,2,2,http://localhost:8080/api/cities,12,0,0
+1764354127133,6,Read City,200,,4. Mixed CRUD Operations 1-13,text,true,,608,163,2,2,http://localhost:8080/api/cities/1195,6,0,0
+1764354127127,14,Create City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,443,2,2,http://localhost:8080/api/cities,14,0,1
+1764354127142,3,Read City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,163,2,2,http://localhost:8080/api/cities/1196,3,0,0
+1764354127140,13,Update City,200,,4. Mixed CRUD Operations 1-13,text,true,,604,443,2,2,http://localhost:8080/api/cities/1195,12,0,0
+1764354127146,12,Update City,200,,4. Mixed CRUD Operations 1-14,text,true,,605,444,2,2,http://localhost:8080/api/cities/1196,11,0,0
+1764354127153,155,Delete City,200,,4. Mixed CRUD Operations 1-13,,true,,210,185,3,3,http://localhost:8080/api/cities/1195,155,0,0
+1764354127158,155,Delete City,200,,4. Mixed CRUD Operations 1-14,,true,,210,185,3,3,http://localhost:8080/api/cities/1196,155,0,0
+1764354127225,91,Create City,200,,4. Mixed CRUD Operations 1-15,text,true,,606,441,3,3,http://localhost:8080/api/cities,91,0,1
+1764354127308,10,Create City,200,,4. Mixed CRUD Operations 1-13,text,true,,608,443,3,3,http://localhost:8080/api/cities,10,0,0
+1764354127317,4,Read City,200,,4. Mixed CRUD Operations 1-15,text,true,,606,163,3,3,http://localhost:8080/api/cities/1197,4,0,0
+1764354127319,3,Read City,200,,4. Mixed CRUD Operations 1-13,text,true,,608,163,3,3,http://localhost:8080/api/cities/1198,3,0,0
+1764354127314,12,Create City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,443,4,4,http://localhost:8080/api/cities,11,0,0
+1764354127326,5,Read City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,163,4,4,http://localhost:8080/api/cities/1199,5,0,0
+1764354127322,14,Update City,200,,4. Mixed CRUD Operations 1-13,text,true,,604,443,4,4,http://localhost:8080/api/cities/1198,14,0,0
+1764354127322,15,Update City,200,,4. Mixed CRUD Operations 1-15,text,true,,604,443,4,4,http://localhost:8080/api/cities/1197,15,0,0
+1764354127325,16,Create City,200,,4. Mixed CRUD Operations 1-16,text,true,,606,441,4,4,http://localhost:8080/api/cities,16,0,2
+1764354127332,14,Update City,200,,4. Mixed CRUD Operations 1-14,text,true,,604,443,4,4,http://localhost:8080/api/cities/1199,14,0,0
+1764354127336,11,Delete City,200,,4. Mixed CRUD Operations 1-13,,true,,210,185,4,4,http://localhost:8080/api/cities/1198,11,0,0
+1764354127342,5,Read City,200,,4. Mixed CRUD Operations 1-16,text,true,,606,163,4,4,http://localhost:8080/api/cities/1200,5,0,0
+1764354127337,12,Delete City,200,,4. Mixed CRUD Operations 1-15,,true,,210,185,3,3,http://localhost:8080/api/cities/1197,12,0,0
+1764354127346,11,Delete City,200,,4. Mixed CRUD Operations 1-14,,true,,210,185,3,3,http://localhost:8080/api/cities/1199,11,0,0
+1764354127347,14,Update City,200,,4. Mixed CRUD Operations 1-16,text,true,,602,441,3,3,http://localhost:8080/api/cities/1200,14,0,0
+1764354127349,14,Create City,200,,4. Mixed CRUD Operations 1-15,text,true,,606,441,3,3,http://localhost:8080/api/cities,14,0,0
+1764354127364,4,Read City,200,,4. Mixed CRUD Operations 1-15,text,true,,606,163,3,3,http://localhost:8080/api/cities/1201,3,0,0
+1764354127358,13,Create City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,443,3,3,http://localhost:8080/api/cities,13,0,0
+1764354127361,10,Delete City,200,,4. Mixed CRUD Operations 1-16,,true,,210,185,3,3,http://localhost:8080/api/cities/1200,10,0,0
+1764354127372,3,Read City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,163,3,3,http://localhost:8080/api/cities/1202,3,0,0
+1764354127368,13,Update City,200,,4. Mixed CRUD Operations 1-15,text,true,,604,443,3,3,http://localhost:8080/api/cities/1201,13,0,0
+1764354127372,11,Create City,200,,4. Mixed CRUD Operations 1-16,text,true,,608,443,3,3,http://localhost:8080/api/cities,11,0,0
+1764354127384,3,Read City,200,,4. Mixed CRUD Operations 1-16,text,true,,608,163,3,3,http://localhost:8080/api/cities/1203,3,0,0
+1764354127376,13,Update City,200,,4. Mixed CRUD Operations 1-14,text,true,,604,443,3,3,http://localhost:8080/api/cities/1202,13,0,0
+1764354127381,9,Delete City,200,,4. Mixed CRUD Operations 1-15,,true,,210,185,3,3,http://localhost:8080/api/cities/1201,9,0,0
+1764354127390,8,Delete City,200,,4. Mixed CRUD Operations 1-14,,true,,210,185,3,3,http://localhost:8080/api/cities/1202,8,0,0
+1764354127388,11,Update City,200,,4. Mixed CRUD Operations 1-16,text,true,,604,443,2,2,http://localhost:8080/api/cities/1203,11,0,0
+1764354127390,11,Create City,200,,4. Mixed CRUD Operations 1-15,text,true,,608,443,2,2,http://localhost:8080/api/cities,11,0,0
+1764354127402,3,Read City,200,,4. Mixed CRUD Operations 1-15,text,true,,608,163,2,2,http://localhost:8080/api/cities/1204,3,0,0
+1764354127400,11,Delete City,200,,4. Mixed CRUD Operations 1-16,,true,,210,185,2,2,http://localhost:8080/api/cities/1203,11,0,0
+1764354127406,13,Update City,200,,4. Mixed CRUD Operations 1-15,text,true,,604,443,2,2,http://localhost:8080/api/cities/1204,13,0,0
+1764354127412,10,Create City,200,,4. Mixed CRUD Operations 1-16,text,true,,608,443,2,2,http://localhost:8080/api/cities,10,0,0
+1764354127423,4,Read City,200,,4. Mixed CRUD Operations 1-16,text,true,,608,163,3,3,http://localhost:8080/api/cities/1205,4,0,0
+1764354127420,8,Delete City,200,,4. Mixed CRUD Operations 1-15,,true,,210,185,3,3,http://localhost:8080/api/cities/1204,8,0,0
+1764354127427,13,Create City,200,,4. Mixed CRUD Operations 1-17,text,true,,607,442,2,2,http://localhost:8080/api/cities,12,0,1
+1764354127427,13,Update City,200,,4. Mixed CRUD Operations 1-16,text,true,,603,442,2,2,http://localhost:8080/api/cities/1205,13,0,0
+1764354127440,4,Read City,200,,4. Mixed CRUD Operations 1-17,text,true,,607,163,2,2,http://localhost:8080/api/cities/1206,4,0,0
+1764354127441,9,Delete City,200,,4. Mixed CRUD Operations 1-16,,true,,210,185,2,2,http://localhost:8080/api/cities/1205,9,0,0
+1764354127445,14,Update City,200,,4. Mixed CRUD Operations 1-17,text,true,,605,444,1,1,http://localhost:8080/api/cities/1206,14,0,0
+1764354127460,10,Delete City,200,,4. Mixed CRUD Operations 1-17,,true,,210,185,1,1,http://localhost:8080/api/cities/1206,10,0,0
+1764354127471,12,Create City,200,,4. Mixed CRUD Operations 1-17,text,true,,607,442,1,1,http://localhost:8080/api/cities,12,0,0
+1764354127489,4,Read City,200,,4. Mixed CRUD Operations 1-17,text,true,,607,163,1,1,http://localhost:8080/api/cities/1207,4,0,0
+1764354127493,11,Update City,200,,4. Mixed CRUD Operations 1-17,text,true,,605,444,1,1,http://localhost:8080/api/cities/1207,11,0,0
+1764354127504,9,Delete City,200,,4. Mixed CRUD Operations 1-17,,true,,210,185,1,1,http://localhost:8080/api/cities/1207,9,0,0
+1764354127513,11,Create City,200,,4. Mixed CRUD Operations 1-17,text,true,,606,441,1,1,http://localhost:8080/api/cities,11,0,0
+1764354127525,5,Read City,200,,4. Mixed CRUD Operations 1-17,text,true,,606,163,2,2,http://localhost:8080/api/cities/1208,5,0,0
+1764354127530,12,Update City,200,,4. Mixed CRUD Operations 1-17,text,true,,603,442,2,2,http://localhost:8080/api/cities/1208,11,0,0
+1764354127527,16,Create City,200,,4. Mixed CRUD Operations 1-18,text,true,,606,441,2,2,http://localhost:8080/api/cities,16,0,1
+1764354127544,3,Read City,200,,4. Mixed CRUD Operations 1-18,text,true,,606,163,2,2,http://localhost:8080/api/cities/1209,3,0,0
+1764354127542,11,Delete City,200,,4. Mixed CRUD Operations 1-17,,true,,210,185,2,2,http://localhost:8080/api/cities/1208,11,0,0
+1764354127548,13,Update City,200,,4. Mixed CRUD Operations 1-18,text,true,,603,442,1,1,http://localhost:8080/api/cities/1209,13,0,0
+1764354127561,13,Delete City,200,,4. Mixed CRUD Operations 1-18,,true,,210,185,1,1,http://localhost:8080/api/cities/1209,13,0,0
+1764354127574,11,Create City,200,,4. Mixed CRUD Operations 1-18,text,true,,607,442,1,1,http://localhost:8080/api/cities,11,0,0
+1764354127586,4,Read City,200,,4. Mixed CRUD Operations 1-18,text,true,,607,163,1,1,http://localhost:8080/api/cities/1210,4,0,0
+1764354127590,10,Update City,200,,4. Mixed CRUD Operations 1-18,text,true,,604,443,1,1,http://localhost:8080/api/cities/1210,10,0,0
+1764354127600,8,Delete City,200,,4. Mixed CRUD Operations 1-18,,true,,210,185,1,1,http://localhost:8080/api/cities/1210,8,0,0
+1764354127609,10,Create City,200,,4. Mixed CRUD Operations 1-18,text,true,,608,443,1,1,http://localhost:8080/api/cities,10,0,0
+1764354127619,3,Read City,200,,4. Mixed CRUD Operations 1-18,text,true,,608,163,1,1,http://localhost:8080/api/cities/1211,3,0,0
+1764354127623,14,Update City,200,,4. Mixed CRUD Operations 1-18,text,true,,605,444,2,2,http://localhost:8080/api/cities/1211,14,0,0
+1764354127626,14,Create City,200,,4. Mixed CRUD Operations 1-19,text,true,,607,442,2,2,http://localhost:8080/api/cities,14,0,2
+1764354127641,4,Read City,200,,4. Mixed CRUD Operations 1-19,text,true,,607,163,2,2,http://localhost:8080/api/cities/1212,4,0,0
+1764354127637,10,Delete City,200,,4. Mixed CRUD Operations 1-18,,true,,210,185,2,2,http://localhost:8080/api/cities/1211,10,0,0
+1764354127646,12,Update City,200,,4. Mixed CRUD Operations 1-19,text,true,,605,444,1,1,http://localhost:8080/api/cities/1212,12,0,0
+1764354127659,8,Delete City,200,,4. Mixed CRUD Operations 1-19,,true,,210,185,1,1,http://localhost:8080/api/cities/1212,8,0,0
+1764354127668,9,Create City,200,,4. Mixed CRUD Operations 1-19,text,true,,606,441,1,1,http://localhost:8080/api/cities,9,0,0
+1764354127678,3,Read City,200,,4. Mixed CRUD Operations 1-19,text,true,,606,163,1,1,http://localhost:8080/api/cities/1213,3,0,0
+1764354127682,11,Update City,200,,4. Mixed CRUD Operations 1-19,text,true,,604,443,1,1,http://localhost:8080/api/cities/1213,11,0,0
+1764354127693,10,Delete City,200,,4. Mixed CRUD Operations 1-19,,true,,210,185,1,1,http://localhost:8080/api/cities/1213,10,0,0
+1764354127703,9,Create City,200,,4. Mixed CRUD Operations 1-19,text,true,,605,440,1,1,http://localhost:8080/api/cities,9,0,0
+1764354127713,3,Read City,200,,4. Mixed CRUD Operations 1-19,text,true,,605,163,1,1,http://localhost:8080/api/cities/1214,3,0,0
+1764354127716,11,Update City,200,,4. Mixed CRUD Operations 1-19,text,true,,605,444,2,2,http://localhost:8080/api/cities/1214,11,0,0
+1764354127727,10,Delete City,200,,4. Mixed CRUD Operations 1-19,,true,,210,185,2,2,http://localhost:8080/api/cities/1214,10,0,0
+1764354127726,16,Create City,200,,4. Mixed CRUD Operations 1-20,text,true,,608,443,1,1,http://localhost:8080/api/cities,16,0,1
+1764354127743,4,Read City,200,,4. Mixed CRUD Operations 1-20,text,true,,608,163,1,1,http://localhost:8080/api/cities/1215,4,0,0
+1764354127747,13,Update City,200,,4. Mixed CRUD Operations 1-20,text,true,,605,444,1,1,http://localhost:8080/api/cities/1215,13,0,0
+1764354127761,8,Delete City,200,,4. Mixed CRUD Operations 1-20,,true,,210,185,1,1,http://localhost:8080/api/cities/1215,8,0,0
+1764354127769,11,Create City,200,,4. Mixed CRUD Operations 1-20,text,true,,608,443,1,1,http://localhost:8080/api/cities,11,0,0
+1764354127781,4,Read City,200,,4. Mixed CRUD Operations 1-20,text,true,,608,163,1,1,http://localhost:8080/api/cities/1216,4,0,0
+1764354127786,11,Update City,200,,4. Mixed CRUD Operations 1-20,text,true,,604,443,1,1,http://localhost:8080/api/cities/1216,11,0,0
+1764354127797,8,Delete City,200,,4. Mixed CRUD Operations 1-20,,true,,210,185,1,1,http://localhost:8080/api/cities/1216,8,0,0
+1764354127805,11,Create City,200,,4. Mixed CRUD Operations 1-20,text,true,,607,442,1,1,http://localhost:8080/api/cities,11,0,0
+1764354127816,3,Read City,200,,4. Mixed CRUD Operations 1-20,text,true,,607,163,1,1,http://localhost:8080/api/cities/1217,3,0,0
+1764354127820,11,Update City,200,,4. Mixed CRUD Operations 1-20,text,true,,605,444,1,1,http://localhost:8080/api/cities/1217,11,0,0
+1764354127832,8,Delete City,200,,4. Mixed CRUD Operations 1-20,,true,,210,185,1,1,http://localhost:8080/api/cities/1217,8,0,0
+1764354138993,58,Create City for Delete Test,400,,Setup for Test 3 1-1,text,false,,445,434,1,1,http://localhost:8080/api/cities,58,0,2
+1764354172668,24,Create City,200,,4. Mixed CRUD Operations 1-1,text,true,,605,440,1,1,http://localhost:8080/api/cities,24,0,3
+1764354172694,5,Read City,200,,4. Mixed CRUD Operations 1-1,text,true,,605,163,1,1,http://localhost:8080/api/cities/1218,5,0,0
+1764354172700,18,Update City,200,,4. Mixed CRUD Operations 1-1,text,true,,604,443,1,1,http://localhost:8080/api/cities/1218,18,0,0
+1764354172719,11,Delete City,200,,4. Mixed CRUD Operations 1-1,,true,,210,185,1,1,http://localhost:8080/api/cities/1218,11,0,0
+1764354172731,12,Create City,200,,4. Mixed CRUD Operations 1-1,text,true,,607,442,1,1,http://localhost:8080/api/cities,12,0,0
+1764354172744,4,Read City,200,,4. Mixed CRUD Operations 1-1,text,true,,607,163,1,1,http://localhost:8080/api/cities/1219,4,0,0
+1764354172749,12,Update City,200,,4. Mixed CRUD Operations 1-1,text,true,,604,443,1,1,http://localhost:8080/api/cities/1219,11,0,0
+1764354172761,12,Delete City,200,,4. Mixed CRUD Operations 1-1,,true,,210,185,2,2,http://localhost:8080/api/cities/1219,12,0,0
+1764354172767,18,Create City,200,,4. Mixed CRUD Operations 1-2,text,true,,606,441,2,2,http://localhost:8080/api/cities,18,0,2
+1764354172774,13,Create City,200,,4. Mixed CRUD Operations 1-1,text,true,,604,439,2,2,http://localhost:8080/api/cities,13,0,0
+1764354172786,5,Read City,200,,4. Mixed CRUD Operations 1-2,text,true,,606,163,2,2,http://localhost:8080/api/cities/1220,5,0,0
+1764354172787,4,Read City,200,,4. Mixed CRUD Operations 1-1,text,true,,604,163,2,2,http://localhost:8080/api/cities/1221,4,0,0
+1764354172792,12,Update City,200,,4. Mixed CRUD Operations 1-1,text,true,,604,443,2,2,http://localhost:8080/api/cities/1221,11,0,0
+1764354172792,12,Update City,200,,4. Mixed CRUD Operations 1-2,text,true,,603,442,2,2,http://localhost:8080/api/cities/1220,12,0,0
+1764354172804,9,Delete City,200,,4. Mixed CRUD Operations 1-1,,true,,210,185,2,2,http://localhost:8080/api/cities/1221,9,0,0
+1764354172804,10,Delete City,200,,4. Mixed CRUD Operations 1-2,,true,,210,185,1,1,http://localhost:8080/api/cities/1220,10,0,0
+1764354172814,13,Create City,200,,4. Mixed CRUD Operations 1-2,text,true,,607,442,1,1,http://localhost:8080/api/cities,13,0,0
+1764354172828,4,Read City,200,,4. Mixed CRUD Operations 1-2,text,true,,607,163,1,1,http://localhost:8080/api/cities/1222,4,0,0
+1764354172832,12,Update City,200,,4. Mixed CRUD Operations 1-2,text,true,,604,443,1,1,http://localhost:8080/api/cities/1222,12,0,0
+1764354172844,8,Delete City,200,,4. Mixed CRUD Operations 1-2,,true,,210,185,1,1,http://localhost:8080/api/cities/1222,8,0,0
+1764354172853,10,Create City,200,,4. Mixed CRUD Operations 1-2,text,true,,605,440,1,1,http://localhost:8080/api/cities,10,0,0
+1764354172864,3,Read City,200,,4. Mixed CRUD Operations 1-2,text,true,,605,163,2,2,http://localhost:8080/api/cities/1223,3,0,0
+1764354172867,11,Create City,200,,4. Mixed CRUD Operations 1-3,text,true,,606,441,2,2,http://localhost:8080/api/cities,11,0,1
+1764354172868,11,Update City,200,,4. Mixed CRUD Operations 1-2,text,true,,604,443,2,2,http://localhost:8080/api/cities/1223,11,0,0
+1764354172879,4,Read City,200,,4. Mixed CRUD Operations 1-3,text,true,,606,163,2,2,http://localhost:8080/api/cities/1224,4,0,0
+1764354172879,9,Delete City,200,,4. Mixed CRUD Operations 1-2,,true,,210,185,2,2,http://localhost:8080/api/cities/1223,9,0,0
+1764354172883,10,Update City,200,,4. Mixed CRUD Operations 1-3,text,true,,604,443,1,1,http://localhost:8080/api/cities/1224,10,0,0
+1764354172894,10,Delete City,200,,4. Mixed CRUD Operations 1-3,,true,,210,185,1,1,http://localhost:8080/api/cities/1224,10,0,0
+1764354172905,10,Create City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354172915,3,Read City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,163,1,1,http://localhost:8080/api/cities/1225,3,0,0
+1764354172919,10,Update City,200,,4. Mixed CRUD Operations 1-3,text,true,,603,442,1,1,http://localhost:8080/api/cities/1225,10,0,0
+1764354172929,8,Delete City,200,,4. Mixed CRUD Operations 1-3,,true,,210,185,1,1,http://localhost:8080/api/cities/1225,8,0,0
+1764354172938,9,Create City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,442,1,1,http://localhost:8080/api/cities,8,0,0
+1764354172947,3,Read City,200,,4. Mixed CRUD Operations 1-3,text,true,,607,163,1,1,http://localhost:8080/api/cities/1226,3,0,0
+1764354172950,8,Update City,200,,4. Mixed CRUD Operations 1-3,text,true,,603,442,1,1,http://localhost:8080/api/cities/1226,8,0,0
+1764354172959,7,Delete City,200,,4. Mixed CRUD Operations 1-3,,true,,210,185,2,2,http://localhost:8080/api/cities/1226,7,0,0
+1764354172966,15,Create City,200,,4. Mixed CRUD Operations 1-4,text,true,,607,442,1,1,http://localhost:8080/api/cities,15,0,2
+1764354172982,3,Read City,200,,4. Mixed CRUD Operations 1-4,text,true,,607,163,1,1,http://localhost:8080/api/cities/1227,3,0,0
+1764354172986,11,Update City,200,,4. Mixed CRUD Operations 1-4,text,true,,604,443,1,1,http://localhost:8080/api/cities/1227,11,0,0
+1764354172997,8,Delete City,200,,4. Mixed CRUD Operations 1-4,,true,,210,185,1,1,http://localhost:8080/api/cities/1227,8,0,0
+1764354173006,8,Create City,200,,4. Mixed CRUD Operations 1-4,text,true,,606,441,1,1,http://localhost:8080/api/cities,8,0,0
+1764354173015,3,Read City,200,,4. Mixed CRUD Operations 1-4,text,true,,606,163,1,1,http://localhost:8080/api/cities/1228,3,0,0
+1764354173018,9,Update City,200,,4. Mixed CRUD Operations 1-4,text,true,,602,441,1,1,http://localhost:8080/api/cities/1228,9,0,0
+1764354173027,8,Delete City,200,,4. Mixed CRUD Operations 1-4,,true,,210,185,1,1,http://localhost:8080/api/cities/1228,8,0,0
+1764354173035,10,Create City,200,,4. Mixed CRUD Operations 1-4,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354173046,3,Read City,200,,4. Mixed CRUD Operations 1-4,text,true,,607,163,1,1,http://localhost:8080/api/cities/1229,3,0,0
+1764354173050,9,Update City,200,,4. Mixed CRUD Operations 1-4,text,true,,603,442,1,1,http://localhost:8080/api/cities/1229,9,0,0
+1764354173060,7,Delete City,200,,4. Mixed CRUD Operations 1-4,,true,,210,185,2,2,http://localhost:8080/api/cities/1229,7,0,0
+1764354173067,13,Create City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,442,1,1,http://localhost:8080/api/cities,13,0,2
+1764354173081,3,Read City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,163,1,1,http://localhost:8080/api/cities/1230,3,0,0
+1764354173085,10,Update City,200,,4. Mixed CRUD Operations 1-5,text,true,,603,442,1,1,http://localhost:8080/api/cities/1230,10,0,0
+1764354173095,8,Delete City,200,,4. Mixed CRUD Operations 1-5,,true,,210,185,1,1,http://localhost:8080/api/cities/1230,8,0,0
+1764354173104,8,Create City,200,,4. Mixed CRUD Operations 1-5,text,true,,606,441,1,1,http://localhost:8080/api/cities,8,0,0
+1764354173113,2,Read City,200,,4. Mixed CRUD Operations 1-5,text,true,,606,163,1,1,http://localhost:8080/api/cities/1231,2,0,0
+1764354173116,8,Update City,200,,4. Mixed CRUD Operations 1-5,text,true,,603,442,1,1,http://localhost:8080/api/cities/1231,8,0,0
+1764354173124,9,Delete City,200,,4. Mixed CRUD Operations 1-5,,true,,210,185,1,1,http://localhost:8080/api/cities/1231,9,0,0
+1764354173134,10,Create City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354173144,4,Read City,200,,4. Mixed CRUD Operations 1-5,text,true,,607,163,1,1,http://localhost:8080/api/cities/1232,4,0,0
+1764354173148,9,Update City,200,,4. Mixed CRUD Operations 1-5,text,true,,603,442,1,1,http://localhost:8080/api/cities/1232,9,0,0
+1764354173157,8,Delete City,200,,4. Mixed CRUD Operations 1-5,,true,,210,185,1,1,http://localhost:8080/api/cities/1232,8,0,0
+1764354173168,16,Create City,200,,4. Mixed CRUD Operations 1-6,text,true,,606,441,1,1,http://localhost:8080/api/cities,16,0,3
+1764354173185,4,Read City,200,,4. Mixed CRUD Operations 1-6,text,true,,606,163,1,1,http://localhost:8080/api/cities/1233,3,0,0
+1764354173189,11,Update City,200,,4. Mixed CRUD Operations 1-6,text,true,,604,443,1,1,http://localhost:8080/api/cities/1233,11,0,0
+1764354173201,7,Delete City,200,,4. Mixed CRUD Operations 1-6,,true,,210,185,1,1,http://localhost:8080/api/cities/1233,7,0,0
+1764354173209,8,Create City,200,,4. Mixed CRUD Operations 1-6,text,true,,604,439,1,1,http://localhost:8080/api/cities,8,0,0
+1764354173218,2,Read City,200,,4. Mixed CRUD Operations 1-6,text,true,,604,163,1,1,http://localhost:8080/api/cities/1234,2,0,0
+1764354173221,8,Update City,200,,4. Mixed CRUD Operations 1-6,text,true,,603,442,1,1,http://localhost:8080/api/cities/1234,8,0,0
+1764354173229,8,Delete City,200,,4. Mixed CRUD Operations 1-6,,true,,210,185,1,1,http://localhost:8080/api/cities/1234,8,0,0
+1764354173238,9,Create City,200,,4. Mixed CRUD Operations 1-6,text,true,,607,442,1,1,http://localhost:8080/api/cities,9,0,0
+1764354173248,2,Read City,200,,4. Mixed CRUD Operations 1-6,text,true,,607,163,1,1,http://localhost:8080/api/cities/1235,2,0,0
+1764354173250,9,Update City,200,,4. Mixed CRUD Operations 1-6,text,true,,604,443,1,1,http://localhost:8080/api/cities/1235,9,0,0
+1764354173260,7,Delete City,200,,4. Mixed CRUD Operations 1-6,,true,,210,185,2,2,http://localhost:8080/api/cities/1235,7,0,0
+1764354173267,12,Create City,200,,4. Mixed CRUD Operations 1-7,text,true,,607,442,1,1,http://localhost:8080/api/cities,12,0,0
+1764354173280,3,Read City,200,,4. Mixed CRUD Operations 1-7,text,true,,607,163,1,1,http://localhost:8080/api/cities/1236,3,0,0
+1764354173284,15,Update City,200,,4. Mixed CRUD Operations 1-7,text,true,,604,443,1,1,http://localhost:8080/api/cities/1236,15,0,0
+1764354173300,8,Delete City,200,,4. Mixed CRUD Operations 1-7,,true,,210,185,1,1,http://localhost:8080/api/cities/1236,8,0,0
+1764354173309,9,Create City,200,,4. Mixed CRUD Operations 1-7,text,true,,607,442,1,1,http://localhost:8080/api/cities,9,0,0
+1764354173319,3,Read City,200,,4. Mixed CRUD Operations 1-7,text,true,,607,163,1,1,http://localhost:8080/api/cities/1237,3,0,0
+1764354173322,9,Update City,200,,4. Mixed CRUD Operations 1-7,text,true,,604,443,1,1,http://localhost:8080/api/cities/1237,9,0,0
+1764354173331,9,Delete City,200,,4. Mixed CRUD Operations 1-7,,true,,210,185,1,1,http://localhost:8080/api/cities/1237,9,0,0
+1764354173340,10,Create City,200,,4. Mixed CRUD Operations 1-7,text,true,,606,441,1,1,http://localhost:8080/api/cities,10,0,0
+1764354173350,3,Read City,200,,4. Mixed CRUD Operations 1-7,text,true,,606,163,1,1,http://localhost:8080/api/cities/1238,3,0,0
+1764354173353,11,Update City,200,,4. Mixed CRUD Operations 1-7,text,true,,603,442,1,1,http://localhost:8080/api/cities/1238,11,0,0
+1764354173364,10,Delete City,200,,4. Mixed CRUD Operations 1-7,,true,,210,185,2,2,http://localhost:8080/api/cities/1238,10,0,0
+1764354173370,14,Create City,200,,4. Mixed CRUD Operations 1-8,text,true,,606,441,1,1,http://localhost:8080/api/cities,14,0,1
+1764354173388,4,Read City,200,,4. Mixed CRUD Operations 1-8,text,true,,606,163,1,1,http://localhost:8080/api/cities/1239,4,0,0
+1764354173392,12,Update City,200,,4. Mixed CRUD Operations 1-8,text,true,,603,442,1,1,http://localhost:8080/api/cities/1239,12,0,0
+1764354173404,10,Delete City,200,,4. Mixed CRUD Operations 1-8,,true,,210,185,1,1,http://localhost:8080/api/cities/1239,10,0,0
+1764354173414,12,Create City,200,,4. Mixed CRUD Operations 1-8,text,true,,607,442,1,1,http://localhost:8080/api/cities,12,0,0
+1764354173426,3,Read City,200,,4. Mixed CRUD Operations 1-8,text,true,,607,163,1,1,http://localhost:8080/api/cities/1240,3,0,0
+1764354173429,12,Update City,200,,4. Mixed CRUD Operations 1-8,text,true,,604,443,1,1,http://localhost:8080/api/cities/1240,12,0,0
+1764354173441,10,Delete City,200,,4. Mixed CRUD Operations 1-8,,true,,210,185,1,1,http://localhost:8080/api/cities/1240,10,0,0
+1764354173451,7,Create City,400,,4. Mixed CRUD Operations 1-8,text,false,,606,442,1,1,http://localhost:8080/api/cities,7,0,0
+1764354173459,6,Read City,404,,4. Mixed CRUD Operations 1-8,,false,,210,160,1,1,http://localhost:8080/api/cities/0,6,0,1
+1764354173465,5,Update City,404,,4. Mixed CRUD Operations 1-8,,false,,210,440,2,2,http://localhost:8080/api/cities/0,5,0,0
+1764354173471,5,Delete City,404,,4. Mixed CRUD Operations 1-8,text,false,,416,182,2,2,http://localhost:8080/api/cities/0,5,0,0
+1764354173467,14,Create City,200,,4. Mixed CRUD Operations 1-9,text,true,,606,441,1,1,http://localhost:8080/api/cities,14,0,1
+1764354173482,3,Read City,200,,4. Mixed CRUD Operations 1-9,text,true,,606,163,1,1,http://localhost:8080/api/cities/1242,3,0,0
+1764354173486,16,Update City,200,,4. Mixed CRUD Operations 1-9,text,true,,603,442,1,1,http://localhost:8080/api/cities/1242,16,0,0
+1764354173502,9,Delete City,200,,4. Mixed CRUD Operations 1-9,,true,,210,185,1,1,http://localhost:8080/api/cities/1242,9,0,0
+1764354173511,11,Create City,200,,4. Mixed CRUD Operations 1-9,text,true,,607,442,1,1,http://localhost:8080/api/cities,11,0,0
+1764354173523,3,Read City,200,,4. Mixed CRUD Operations 1-9,text,true,,607,163,1,1,http://localhost:8080/api/cities/1243,3,0,0
+1764354173526,9,Update City,200,,4. Mixed CRUD Operations 1-9,text,true,,604,443,1,1,http://localhost:8080/api/cities/1243,9,0,0
+1764354173536,9,Delete City,200,,4. Mixed CRUD Operations 1-9,,true,,210,185,1,1,http://localhost:8080/api/cities/1243,9,0,0
+1764354173546,10,Create City,200,,4. Mixed CRUD Operations 1-9,text,true,,606,441,1,1,http://localhost:8080/api/cities,10,0,0
+1764354173556,3,Read City,200,,4. Mixed CRUD Operations 1-9,text,true,,606,163,1,1,http://localhost:8080/api/cities/1244,3,0,0
+1764354173559,9,Update City,200,,4. Mixed CRUD Operations 1-9,text,true,,604,443,1,1,http://localhost:8080/api/cities/1244,9,0,0
+1764354173569,10,Delete City,200,,4. Mixed CRUD Operations 1-9,,true,,210,185,2,2,http://localhost:8080/api/cities/1244,10,0,0
+1764354173569,18,Create City,200,,4. Mixed CRUD Operations 1-10,text,true,,606,441,1,1,http://localhost:8080/api/cities,18,0,1
+1764354173588,5,Read City,200,,4. Mixed CRUD Operations 1-10,text,true,,606,163,1,1,http://localhost:8080/api/cities/1245,4,0,0
+1764354173593,11,Update City,200,,4. Mixed CRUD Operations 1-10,text,true,,605,444,1,1,http://localhost:8080/api/cities/1245,11,0,0
+1764354173605,8,Delete City,200,,4. Mixed CRUD Operations 1-10,,true,,210,185,1,1,http://localhost:8080/api/cities/1245,8,0,0
+1764354173614,12,Create City,200,,4. Mixed CRUD Operations 1-10,text,true,,608,443,1,1,http://localhost:8080/api/cities,12,0,0
+1764354173627,4,Read City,200,,4. Mixed CRUD Operations 1-10,text,true,,608,163,1,1,http://localhost:8080/api/cities/1246,3,0,0
+1764354173631,9,Update City,200,,4. Mixed CRUD Operations 1-10,text,true,,604,443,1,1,http://localhost:8080/api/cities/1246,9,0,0
+1764354173641,7,Delete City,200,,4. Mixed CRUD Operations 1-10,,true,,210,185,1,1,http://localhost:8080/api/cities/1246,7,0,0
+1764354173649,9,Create City,200,,4. Mixed CRUD Operations 1-10,text,true,,608,443,1,1,http://localhost:8080/api/cities,9,0,0
+1764354173659,3,Read City,200,,4. Mixed CRUD Operations 1-10,text,true,,608,163,1,1,http://localhost:8080/api/cities/1247,3,0,0
+1764354173662,10,Update City,200,,4. Mixed CRUD Operations 1-10,text,true,,605,444,2,2,http://localhost:8080/api/cities/1247,10,0,0
+1764354173669,12,Create City,200,,4. Mixed CRUD Operations 1-11,text,true,,606,441,2,2,http://localhost:8080/api/cities,11,0,1
+1764354173672,9,Delete City,200,,4. Mixed CRUD Operations 1-10,,true,,210,185,2,2,http://localhost:8080/api/cities/1247,9,0,0
+1764354173681,4,Read City,200,,4. Mixed CRUD Operations 1-11,text,true,,606,163,1,1,http://localhost:8080/api/cities/1248,4,0,0
+1764354173685,10,Update City,200,,4. Mixed CRUD Operations 1-11,text,true,,602,441,1,1,http://localhost:8080/api/cities/1248,10,0,0
+1764354173695,8,Delete City,200,,4. Mixed CRUD Operations 1-11,,true,,210,185,1,1,http://localhost:8080/api/cities/1248,8,0,0
+1764354173703,10,Create City,200,,4. Mixed CRUD Operations 1-11,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354173714,3,Read City,200,,4. Mixed CRUD Operations 1-11,text,true,,607,163,1,1,http://localhost:8080/api/cities/1249,3,0,0
+1764354173717,10,Update City,200,,4. Mixed CRUD Operations 1-11,text,true,,602,441,1,1,http://localhost:8080/api/cities/1249,10,0,0
+1764354173727,8,Delete City,200,,4. Mixed CRUD Operations 1-11,,true,,210,185,1,1,http://localhost:8080/api/cities/1249,8,0,0
+1764354173736,9,Create City,200,,4. Mixed CRUD Operations 1-11,text,true,,608,443,1,1,http://localhost:8080/api/cities,9,0,0
+1764354173746,3,Read City,200,,4. Mixed CRUD Operations 1-11,text,true,,608,163,1,1,http://localhost:8080/api/cities/1250,3,0,0
+1764354173749,10,Update City,200,,4. Mixed CRUD Operations 1-11,text,true,,603,442,1,1,http://localhost:8080/api/cities/1250,10,0,0
+1764354173760,7,Delete City,200,,4. Mixed CRUD Operations 1-11,,true,,210,185,1,1,http://localhost:8080/api/cities/1250,7,0,0
+1764354173769,16,Create City,200,,4. Mixed CRUD Operations 1-12,text,true,,608,443,1,1,http://localhost:8080/api/cities,16,0,1
+1764354173786,5,Read City,200,,4. Mixed CRUD Operations 1-12,text,true,,608,163,1,1,http://localhost:8080/api/cities/1251,5,0,0
+1764354173792,13,Update City,200,,4. Mixed CRUD Operations 1-12,text,true,,604,443,1,1,http://localhost:8080/api/cities/1251,13,0,0
+1764354173807,11,Delete City,200,,4. Mixed CRUD Operations 1-12,,true,,210,185,1,1,http://localhost:8080/api/cities/1251,11,0,0
+1764354173819,16,Create City,200,,4. Mixed CRUD Operations 1-12,text,true,,607,442,1,1,http://localhost:8080/api/cities,16,0,0
+1764354173836,5,Read City,200,,4. Mixed CRUD Operations 1-12,text,true,,607,163,1,1,http://localhost:8080/api/cities/1252,5,0,0
+1764354173842,14,Update City,200,,4. Mixed CRUD Operations 1-12,text,true,,604,443,1,1,http://localhost:8080/api/cities/1252,14,0,0
+1764354173857,10,Delete City,200,,4. Mixed CRUD Operations 1-12,,true,,210,185,2,2,http://localhost:8080/api/cities/1252,10,0,0
+1764354173866,13,Create City,200,,4. Mixed CRUD Operations 1-13,text,true,,607,442,2,2,http://localhost:8080/api/cities,13,0,1
+1764354173868,12,Create City,200,,4. Mixed CRUD Operations 1-12,text,true,,607,442,2,2,http://localhost:8080/api/cities,12,0,0
+1764354173880,4,Read City,200,,4. Mixed CRUD Operations 1-13,text,true,,607,163,2,2,http://localhost:8080/api/cities/1254,4,0,0
+1764354173880,4,Read City,200,,4. Mixed CRUD Operations 1-12,text,true,,607,163,2,2,http://localhost:8080/api/cities/1253,4,0,0
+1764354173887,13,Update City,200,,4. Mixed CRUD Operations 1-13,text,true,,604,443,2,2,http://localhost:8080/api/cities/1254,13,0,0
+1764354173887,15,Update City,200,,4. Mixed CRUD Operations 1-12,text,true,,605,444,2,2,http://localhost:8080/api/cities/1253,15,0,0
+1764354173901,10,Delete City,200,,4. Mixed CRUD Operations 1-13,,true,,210,185,2,2,http://localhost:8080/api/cities/1254,10,0,0
+1764354173902,10,Delete City,200,,4. Mixed CRUD Operations 1-12,,true,,210,185,2,2,http://localhost:8080/api/cities/1253,10,0,0
+1764354173911,13,Create City,200,,4. Mixed CRUD Operations 1-13,text,true,,608,443,1,1,http://localhost:8080/api/cities,13,0,0
+1764354173925,3,Read City,200,,4. Mixed CRUD Operations 1-13,text,true,,608,163,1,1,http://localhost:8080/api/cities/1255,3,0,0
+1764354173929,13,Update City,200,,4. Mixed CRUD Operations 1-13,text,true,,604,443,1,1,http://localhost:8080/api/cities/1255,13,0,0
+1764354173943,8,Delete City,200,,4. Mixed CRUD Operations 1-13,,true,,210,185,1,1,http://localhost:8080/api/cities/1255,8,0,0
+1764354173951,10,Create City,200,,4. Mixed CRUD Operations 1-13,text,true,,608,443,1,1,http://localhost:8080/api/cities,10,0,0
+1764354173962,3,Read City,200,,4. Mixed CRUD Operations 1-13,text,true,,608,163,1,1,http://localhost:8080/api/cities/1256,3,0,0
+1764354173965,22,Update City,200,,4. Mixed CRUD Operations 1-13,text,true,,604,443,2,2,http://localhost:8080/api/cities/1256,22,0,0
+1764354173968,20,Create City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,443,2,2,http://localhost:8080/api/cities,20,0,1
+1764354173988,4,Read City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,163,2,2,http://localhost:8080/api/cities/1257,4,0,0
+1764354173987,10,Delete City,200,,4. Mixed CRUD Operations 1-13,,true,,210,185,2,2,http://localhost:8080/api/cities/1256,10,0,0
+1764354173992,12,Update City,200,,4. Mixed CRUD Operations 1-14,text,true,,605,444,1,1,http://localhost:8080/api/cities/1257,12,0,0
+1764354174004,8,Delete City,200,,4. Mixed CRUD Operations 1-14,,true,,210,185,1,1,http://localhost:8080/api/cities/1257,8,0,0
+1764354174013,11,Create City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,443,1,1,http://localhost:8080/api/cities,11,0,0
+1764354174024,4,Read City,200,,4. Mixed CRUD Operations 1-14,text,true,,608,163,1,1,http://localhost:8080/api/cities/1258,4,0,0
+1764354174029,14,Update City,200,,4. Mixed CRUD Operations 1-14,text,true,,605,444,1,1,http://localhost:8080/api/cities/1258,14,0,0
+1764354174043,10,Delete City,200,,4. Mixed CRUD Operations 1-14,,true,,210,185,1,1,http://localhost:8080/api/cities/1258,10,0,0
+1764354174054,10,Create City,200,,4. Mixed CRUD Operations 1-14,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354174065,3,Read City,200,,4. Mixed CRUD Operations 1-14,text,true,,607,163,2,2,http://localhost:8080/api/cities/1259,3,0,0
+1764354174067,13,Create City,200,,4. Mixed CRUD Operations 1-15,text,true,,608,443,2,2,http://localhost:8080/api/cities,13,0,1
+1764354174068,15,Update City,200,,4. Mixed CRUD Operations 1-14,text,true,,603,442,2,2,http://localhost:8080/api/cities/1259,15,0,0
+1764354174081,3,Read City,200,,4. Mixed CRUD Operations 1-15,text,true,,608,163,2,2,http://localhost:8080/api/cities/1260,3,0,0
+1764354174083,9,Delete City,200,,4. Mixed CRUD Operations 1-14,,true,,210,185,2,2,http://localhost:8080/api/cities/1259,9,0,0
+1764354174084,10,Update City,200,,4. Mixed CRUD Operations 1-15,text,true,,604,443,1,1,http://localhost:8080/api/cities/1260,10,0,0
+1764354174095,11,Delete City,200,,4. Mixed CRUD Operations 1-15,,true,,210,185,1,1,http://localhost:8080/api/cities/1260,11,0,0
+1764354174107,12,Create City,200,,4. Mixed CRUD Operations 1-15,text,true,,606,441,1,1,http://localhost:8080/api/cities,11,0,0
+1764354174119,3,Read City,200,,4. Mixed CRUD Operations 1-15,text,true,,606,163,1,1,http://localhost:8080/api/cities/1261,3,0,0
+1764354174123,12,Update City,200,,4. Mixed CRUD Operations 1-15,text,true,,605,444,1,1,http://localhost:8080/api/cities/1261,12,0,0
+1764354174135,9,Delete City,200,,4. Mixed CRUD Operations 1-15,,true,,210,185,1,1,http://localhost:8080/api/cities/1261,9,0,0
+1764354174145,10,Create City,200,,4. Mixed CRUD Operations 1-15,text,true,,607,442,1,1,http://localhost:8080/api/cities,10,0,0
+1764354174155,4,Read City,200,,4. Mixed CRUD Operations 1-15,text,true,,607,163,1,1,http://localhost:8080/api/cities/1262,4,0,0
+1764354174159,13,Update City,200,,4. Mixed CRUD Operations 1-15,text,true,,604,443,2,2,http://localhost:8080/api/cities/1262,13,0,0
+1764354174172,13,Delete City,200,,4. Mixed CRUD Operations 1-15,,true,,210,185,2,2,http://localhost:8080/api/cities/1262,13,0,0
+1764354174168,21,Create City,200,,4. Mixed CRUD Operations 1-16,text,true,,608,443,1,1,http://localhost:8080/api/cities,21,0,1
+1764354174190,4,Read City,200,,4. Mixed CRUD Operations 1-16,text,true,,608,163,1,1,http://localhost:8080/api/cities/1263,4,0,0
+1764354174194,18,Update City,200,,4. Mixed CRUD Operations 1-16,text,true,,604,443,1,1,http://localhost:8080/api/cities/1263,18,0,0
+1764354174212,14,Delete City,200,,4. Mixed CRUD Operations 1-16,,true,,210,185,1,1,http://localhost:8080/api/cities/1263,14,0,0
+1764354174226,8,Create City,400,,4. Mixed CRUD Operations 1-16,text,false,,606,442,1,1,http://localhost:8080/api/cities,7,0,0
+1764354174234,5,Read City,404,,4. Mixed CRUD Operations 1-16,,false,,210,160,1,1,http://localhost:8080/api/cities/0,5,0,1
+1764354174240,3,Update City,404,,4. Mixed CRUD Operations 1-16,,false,,210,441,1,1,http://localhost:8080/api/cities/0,3,0,0
+1764354174244,4,Delete City,404,,4. Mixed CRUD Operations 1-16,text,false,,416,182,1,1,http://localhost:8080/api/cities/0,4,0,0
+1764354174249,9,Create City,200,,4. Mixed CRUD Operations 1-16,text,true,,608,443,1,1,http://localhost:8080/api/cities,9,0,0
+1764354174258,3,Read City,200,,4. Mixed CRUD Operations 1-16,text,true,,608,163,1,1,http://localhost:8080/api/cities/1265,3,0,0
+1764354174261,13,Update City,200,,4. Mixed CRUD Operations 1-16,text,true,,605,444,2,2,http://localhost:8080/api/cities/1265,13,0,0
+1764354174266,13,Create City,200,,4. Mixed CRUD Operations 1-17,text,true,,608,443,2,2,http://localhost:8080/api/cities,13,0,1
+1764354174280,4,Read City,200,,4. Mixed CRUD Operations 1-17,text,true,,608,163,2,2,http://localhost:8080/api/cities/1266,4,0,0
+1764354174275,10,Delete City,200,,4. Mixed CRUD Operations 1-16,,true,,210,185,2,2,http://localhost:8080/api/cities/1265,10,0,0
+1764354174284,12,Update City,200,,4. Mixed CRUD Operations 1-17,text,true,,604,443,1,1,http://localhost:8080/api/cities/1266,12,0,0
+1764354174296,8,Delete City,200,,4. Mixed CRUD Operations 1-17,,true,,210,185,1,1,http://localhost:8080/api/cities/1266,8,0,0
+1764354174305,9,Create City,200,,4. Mixed CRUD Operations 1-17,text,true,,608,443,1,1,http://localhost:8080/api/cities,9,0,0
+1764354174315,2,Read City,200,,4. Mixed CRUD Operations 1-17,text,true,,608,163,1,1,http://localhost:8080/api/cities/1267,2,0,0
+1764354174317,10,Update City,200,,4. Mixed CRUD Operations 1-17,text,true,,603,442,1,1,http://localhost:8080/api/cities/1267,10,0,0
+1764354174327,11,Delete City,200,,4. Mixed CRUD Operations 1-17,,true,,210,185,1,1,http://localhost:8080/api/cities/1267,11,0,0
+1764354174338,9,Create City,200,,4. Mixed CRUD Operations 1-17,text,true,,605,440,1,1,http://localhost:8080/api/cities,9,0,0
+1764354174347,3,Read City,200,,4. Mixed CRUD Operations 1-17,text,true,,605,163,1,1,http://localhost:8080/api/cities/1268,3,0,0
+1764354174351,9,Update City,200,,4. Mixed CRUD Operations 1-17,text,true,,604,443,1,1,http://localhost:8080/api/cities/1268,9,0,0
+1764354174360,8,Delete City,200,,4. Mixed CRUD Operations 1-17,,true,,210,185,2,2,http://localhost:8080/api/cities/1268,8,0,0
+1764354174369,14,Create City,200,,4. Mixed CRUD Operations 1-18,text,true,,608,443,1,1,http://localhost:8080/api/cities,14,0,1
+1764354174390,4,Read City,200,,4. Mixed CRUD Operations 1-18,text,true,,608,163,1,1,http://localhost:8080/api/cities/1269,4,0,0
+1764354174394,13,Update City,200,,4. Mixed CRUD Operations 1-18,text,true,,605,444,1,1,http://localhost:8080/api/cities/1269,13,0,0
+1764354174407,9,Delete City,200,,4. Mixed CRUD Operations 1-18,,true,,210,185,1,1,http://localhost:8080/api/cities/1269,9,0,0
+1764354174416,10,Create City,200,,4. Mixed CRUD Operations 1-18,text,true,,608,443,1,1,http://localhost:8080/api/cities,10,0,0
+1764354174426,4,Read City,200,,4. Mixed CRUD Operations 1-18,text,true,,608,163,1,1,http://localhost:8080/api/cities/1270,4,0,0
+1764354174430,12,Update City,200,,4. Mixed CRUD Operations 1-18,text,true,,604,443,1,1,http://localhost:8080/api/cities/1270,12,0,0
+1764354174442,9,Delete City,200,,4. Mixed CRUD Operations 1-18,,true,,210,185,1,1,http://localhost:8080/api/cities/1270,9,0,0
+1764354174451,11,Create City,200,,4. Mixed CRUD Operations 1-18,text,true,,607,442,1,1,http://localhost:8080/api/cities,11,0,0
+1764354174463,3,Read City,200,,4. Mixed CRUD Operations 1-18,text,true,,607,163,1,1,http://localhost:8080/api/cities/1271,3,0,0
+1764354174466,11,Update City,200,,4. Mixed CRUD Operations 1-18,text,true,,603,442,2,2,http://localhost:8080/api/cities/1271,11,0,0
+1764354174468,14,Create City,200,,4. Mixed CRUD Operations 1-19,text,true,,606,441,2,2,http://localhost:8080/api/cities,14,0,1
+1764354174482,3,Read City,200,,4. Mixed CRUD Operations 1-19,text,true,,606,163,2,2,http://localhost:8080/api/cities/1272,3,0,0
+1764354174477,8,Delete City,200,,4. Mixed CRUD Operations 1-18,,true,,210,185,2,2,http://localhost:8080/api/cities/1271,8,0,0
+1764354174485,11,Update City,200,,4. Mixed CRUD Operations 1-19,text,true,,605,444,1,1,http://localhost:8080/api/cities/1272,11,0,0
+1764354174496,10,Delete City,200,,4. Mixed CRUD Operations 1-19,,true,,210,185,1,1,http://localhost:8080/api/cities/1272,10,0,0
+1764354174507,10,Create City,200,,4. Mixed CRUD Operations 1-19,text,true,,608,443,1,1,http://localhost:8080/api/cities,10,0,0
+1764354174517,3,Read City,200,,4. Mixed CRUD Operations 1-19,text,true,,608,163,1,1,http://localhost:8080/api/cities/1273,3,0,0
+1764354174520,10,Update City,200,,4. Mixed CRUD Operations 1-19,text,true,,605,444,1,1,http://localhost:8080/api/cities/1273,10,0,0
+1764354174530,9,Delete City,200,,4. Mixed CRUD Operations 1-19,,true,,210,185,1,1,http://localhost:8080/api/cities/1273,9,0,0
+1764354174539,9,Create City,200,,4. Mixed CRUD Operations 1-19,text,true,,606,441,1,1,http://localhost:8080/api/cities,9,0,0
+1764354174549,2,Read City,200,,4. Mixed CRUD Operations 1-19,text,true,,606,163,1,1,http://localhost:8080/api/cities/1274,2,0,0
+1764354174551,10,Update City,200,,4. Mixed CRUD Operations 1-19,text,true,,604,443,1,1,http://localhost:8080/api/cities/1274,10,0,0
+1764354174561,10,Delete City,200,,4. Mixed CRUD Operations 1-19,,true,,210,185,2,2,http://localhost:8080/api/cities/1274,10,0,0
+1764354174567,14,Create City,200,,4. Mixed CRUD Operations 1-20,text,true,,608,443,1,1,http://localhost:8080/api/cities,13,0,2
+1764354174582,3,Read City,200,,4. Mixed CRUD Operations 1-20,text,true,,608,163,1,1,http://localhost:8080/api/cities/1275,3,0,0
+1764354174585,13,Update City,200,,4. Mixed CRUD Operations 1-20,text,true,,605,444,1,1,http://localhost:8080/api/cities/1275,12,0,0
+1764354174598,9,Delete City,200,,4. Mixed CRUD Operations 1-20,,true,,210,185,1,1,http://localhost:8080/api/cities/1275,9,0,0
+1764354174608,9,Create City,200,,4. Mixed CRUD Operations 1-20,text,true,,607,442,1,1,http://localhost:8080/api/cities,9,0,0
+1764354174617,3,Read City,200,,4. Mixed CRUD Operations 1-20,text,true,,607,163,1,1,http://localhost:8080/api/cities/1276,3,0,0
+1764354174620,11,Update City,200,,4. Mixed CRUD Operations 1-20,text,true,,603,442,1,1,http://localhost:8080/api/cities/1276,11,0,0
+1764354174631,8,Delete City,200,,4. Mixed CRUD Operations 1-20,,true,,210,185,1,1,http://localhost:8080/api/cities/1276,8,0,0
+1764354174640,7,Create City,200,,4. Mixed CRUD Operations 1-20,text,true,,606,441,1,1,http://localhost:8080/api/cities,7,0,0
+1764354174648,2,Read City,200,,4. Mixed CRUD Operations 1-20,text,true,,606,163,1,1,http://localhost:8080/api/cities/1277,2,0,0
+1764354174651,9,Update City,200,,4. Mixed CRUD Operations 1-20,text,true,,605,444,1,1,http://localhost:8080/api/cities/1277,9,0,0
+1764354174661,7,Delete City,200,,4. Mixed CRUD Operations 1-20,,true,,210,185,1,1,http://localhost:8080/api/cities/1277,7,0,0
+1764354182313,8,Create City for Delete Test,400,,Setup for Test 3 1-1,text,false,,445,434,1,1,http://localhost:8080/api/cities,8,0,1
+1764354226948,41,Create City for Delete Test,200,,Setup for Test 3 1-1,text,true,,599,434,1,1,http://localhost:8080/api/cities,41,0,3
+1764354237388,19,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-4,,true,,210,185,5,5,http://localhost:8080/api/cities/1278,19,0,2
+1764354237388,20,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-3,text,false,Test failed: code expected to match /200|404/,426,185,5,5,http://localhost:8080/api/cities/1278,20,0,2
+1764354237402,14,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-2,text,false,,421,185,3,3,http://localhost:8080/api/cities/1278,14,0,1
+1764354237403,14,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-5,text,false,,422,185,2,2,http://localhost:8080/api/cities/1278,14,0,1
+1764354237388,20,Setup: Create City for Delete Test,400,,3. Concurrent Delete - Same City 1-1,text,false,,443,434,5,5,http://localhost:8080/api/cities,19,0,2
+1764354238430,10,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-1,text,false,,416,182,1,1,http://localhost:8080/api/cities/0,9,0,2
+1764354591044,622,Create City for Delete Test,200,,Setup for Test 3 1-1,text,true,,601,436,1,1,http://localhost:8080/api/cities,616,0,44
+1764354598795,58,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-5,,true,,210,185,5,5,http://localhost:8080/api/cities/1280,58,0,1
+1764354598795,58,Setup: Create City for Delete Test,400,,3. Concurrent Delete - Same City 1-1,text,false,,443,434,5,5,http://localhost:8080/api/cities,58,0,1
+1764354598795,81,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-4,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1280,81,0,1
+1764354598795,81,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-3,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1280,81,0,1
+1764354598795,81,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-2,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1280,81,0,2
+1764354599881,54,Delete City (Concurrent),404,,3. Concurrent Delete - Same City 1-1,text,false,,416,182,1,1,http://localhost:8080/api/cities/0,54,0,1
+1764354674402,62,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-1,text,true,,600,435,54,54,http://localhost:8080/api/cities,61,0,2
+1764354674402,80,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-3,text,true,,600,435,71,71,http://localhost:8080/api/cities,79,0,1
+1764354674403,80,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-8,text,true,,600,435,73,73,http://localhost:8080/api/cities,78,0,1
+1764354674402,82,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-9,text,true,,599,434,73,73,http://localhost:8080/api/cities,82,0,2
+1764354674403,81,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-5,text,true,,600,435,73,73,http://localhost:8080/api/cities,81,0,1
+1764354674402,94,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-6,text,true,,599,434,95,95,http://localhost:8080/api/cities,94,0,1
+1764354674402,101,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-7,text,true,,600,435,96,96,http://localhost:8080/api/cities,101,0,1
+1764354674407,97,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-19,text,true,,600,435,96,96,http://localhost:8080/api/cities,97,0,2
+1764354674408,100,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-15,text,true,,601,436,100,100,http://localhost:8080/api/cities,100,0,1
+1764354674408,110,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-16,text,true,,601,436,100,100,http://localhost:8080/api/cities,110,0,1
+1764354674407,111,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-20,text,true,,601,436,100,100,http://localhost:8080/api/cities,111,0,1
+1764354674402,121,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-2,text,true,,600,435,100,100,http://localhost:8080/api/cities,121,0,2
+1764354674403,122,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-4,text,true,,600,435,100,100,http://localhost:8080/api/cities,122,0,1
+1764354674402,131,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-10,text,true,,601,436,100,100,http://localhost:8080/api/cities,131,0,2
+1764354674407,126,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-17,text,true,,601,436,100,100,http://localhost:8080/api/cities,126,0,1
+1764354674445,89,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-31,text,true,,601,436,100,100,http://localhost:8080/api/cities,89,0,2
+1764354674428,121,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-21,text,true,,600,435,100,100,http://localhost:8080/api/cities,121,0,3
+1764354674445,106,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-54,text,true,,601,436,100,100,http://localhost:8080/api/cities,104,0,4
+1764354674450,103,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-35,text,true,,601,436,100,100,http://localhost:8080/api/cities,103,0,1
+1764354674458,100,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-44,text,true,,601,436,100,100,http://localhost:8080/api/cities,100,0,2
+1764354674453,105,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-37,text,true,,602,437,100,100,http://localhost:8080/api/cities,105,0,2
+1764354674431,134,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-27,text,true,,600,435,100,100,http://localhost:8080/api/cities,134,0,1
+1764354674486,81,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-77,text,true,,601,436,100,100,http://localhost:8080/api/cities,81,0,2
+1764354674427,142,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-29,text,true,,601,436,100,100,http://localhost:8080/api/cities,141,0,2
+1764354674431,138,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-24,text,true,,601,436,100,100,http://localhost:8080/api/cities,138,0,1
+1764354674488,92,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-72,text,true,,601,436,100,100,http://localhost:8080/api/cities,92,0,2
+1764354674431,149,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-28,text,true,,601,436,100,100,http://localhost:8080/api/cities,149,0,1
+1764354674499,86,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-89,text,true,,601,436,100,100,http://localhost:8080/api/cities,85,0,1
+1764354674499,88,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-71,text,true,,601,436,100,100,http://localhost:8080/api/cities,88,0,1
+1764354674490,98,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-73,text,true,,601,436,100,100,http://localhost:8080/api/cities,98,0,1
+1764354674428,166,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-33,text,true,,601,436,100,100,http://localhost:8080/api/cities,166,0,0
+1764354674427,167,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-22,text,true,,601,436,100,100,http://localhost:8080/api/cities,167,0,2
+1764354674499,95,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-88,text,true,,601,436,100,100,http://localhost:8080/api/cities,95,0,0
+1764354674431,169,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-26,text,true,,601,436,100,100,http://localhost:8080/api/cities,169,0,1
+1764354674489,114,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-70,text,true,,601,436,100,100,http://localhost:8080/api/cities,112,0,1
+1764354674408,204,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-14,text,true,,600,435,100,100,http://localhost:8080/api/cities,204,0,1
+1764354674427,186,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-23,text,true,,601,436,100,100,http://localhost:8080/api/cities,185,0,2
+1764354674407,215,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-18,text,true,,599,434,100,100,http://localhost:8080/api/cities,213,0,1
+1764354674409,223,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-12,text,true,,601,436,100,100,http://localhost:8080/api/cities,223,0,1
+1764354674500,132,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-39,text,true,,601,436,100,100,http://localhost:8080/api/cities,132,0,1
+1764354674408,225,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-11,text,true,,601,436,100,100,http://localhost:8080/api/cities,224,0,1
+1764354674409,232,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-13,text,true,,601,436,100,100,http://localhost:8080/api/cities,232,0,1
+1764354674461,180,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-63,text,true,,601,436,100,100,http://localhost:8080/api/cities,180,0,1
+1764354674472,175,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-57,text,true,,600,435,100,100,http://localhost:8080/api/cities,175,0,1
+1764354674474,174,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-66,text,true,,601,436,100,100,http://localhost:8080/api/cities,173,0,1
+1764354674498,153,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-42,text,true,,601,436,100,100,http://localhost:8080/api/cities,153,0,2
+1764354674500,151,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-94,text,true,,601,436,100,100,http://localhost:8080/api/cities,151,0,1
+1764354674469,184,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-60,text,true,,601,436,100,100,http://localhost:8080/api/cities,184,0,1
+1764354674470,183,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-84,text,true,,600,435,100,100,http://localhost:8080/api/cities,183,0,2
+1764354674458,201,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-55,text,true,,600,435,100,100,http://localhost:8080/api/cities,201,0,2
+1764354674493,169,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-80,text,true,,601,436,100,100,http://localhost:8080/api/cities,168,0,6
+1764354674560,104,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-54,text,true,,606,442,100,100,http://localhost:8080/api/cities/1300,104,0,0
+1764354674495,169,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-59,text,true,,601,436,100,100,http://localhost:8080/api/cities,169,0,1
+1764354674590,84,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-29,text,true,,606,442,99,99,http://localhost:8080/api/cities/1306,84,0,0
+1764354674495,179,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-51,text,true,,601,436,99,99,http://localhost:8080/api/cities,179,0,4
+1764354674590,88,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-72,text,true,,605,441,98,98,http://localhost:8080/api/cities/1308,88,0,0
+1764354674469,219,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-79,text,true,,601,436,97,97,http://localhost:8080/api/cities,218,0,1
+1764354674477,210,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-68,text,true,,601,436,97,97,http://localhost:8080/api/cities,210,0,2
+1764354674461,228,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-47,text,true,,601,436,97,97,http://localhost:8080/api/cities,227,0,1
+1764354674471,219,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-87,text,true,,600,435,97,97,http://localhost:8080/api/cities,219,0,1
+1764354674470,221,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-81,text,true,,600,435,97,97,http://localhost:8080/api/cities,221,0,1
+1764354674459,233,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-45,text,true,,601,436,97,97,http://localhost:8080/api/cities,233,0,2
+1764354674477,215,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-67,text,true,,601,436,97,97,http://localhost:8080/api/cities,215,0,2
+1764354674495,204,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-78,text,true,,601,436,97,97,http://localhost:8080/api/cities,204,0,1
+1764354674490,212,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-74,text,true,,600,435,97,97,http://localhost:8080/api/cities,212,0,1
+1764354674477,226,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-69,text,true,,601,436,97,97,http://localhost:8080/api/cities,226,0,2
+1764354674473,231,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-40,text,true,,601,436,97,97,http://localhost:8080/api/cities,231,0,1
+1764354674473,238,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-56,text,true,,601,436,97,97,http://localhost:8080/api/cities,238,0,0
+1764354674461,259,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-49,text,true,,601,436,97,97,http://localhost:8080/api/cities,259,0,1
+1764354674495,225,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-93,text,true,,601,436,97,97,http://localhost:8080/api/cities,225,0,4
+1764354674473,252,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-64,text,true,,600,435,97,97,http://localhost:8080/api/cities,252,0,1
+1764354674461,264,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-48,text,true,,600,435,97,97,http://localhost:8080/api/cities,264,0,1
+1764354674474,254,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-65,text,true,,601,436,97,97,http://localhost:8080/api/cities,254,0,1
+1764354674470,262,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-82,text,true,,601,436,97,97,http://localhost:8080/api/cities,262,0,1
+1764354674473,259,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-61,text,true,,601,436,97,97,http://localhost:8080/api/cities,259,0,1
+1764354674461,271,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-43,text,true,,601,436,97,97,http://localhost:8080/api/cities,271,0,0
+1764354674495,251,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-83,text,true,,601,436,97,97,http://localhost:8080/api/cities,237,0,1
+1764354674490,256,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-76,text,true,,601,436,97,97,http://localhost:8080/api/cities,246,0,1
+1764354674499,248,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-90,text,true,,601,436,97,97,http://localhost:8080/api/cities,247,0,2
+1764354674493,259,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-5,text,true,,605,440,97,97,http://localhost:8080/api/cities/1285,259,0,0
+1764354674477,282,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-62,text,true,,600,435,96,96,http://localhost:8080/api/cities,281,0,2
+1764354674494,266,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-85,text,true,,601,436,96,96,http://localhost:8080/api/cities,265,0,1
+1764354674490,271,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-99,text,true,,601,436,96,96,http://localhost:8080/api/cities,271,0,1
+1764354674488,278,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-3,text,true,,605,440,96,96,http://localhost:8080/api/cities/1283,278,0,0
+1764354674458,311,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-50,text,true,,599,434,95,95,http://localhost:8080/api/cities,311,0,2
+1764354674470,299,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-53,text,true,,601,436,95,95,http://localhost:8080/api/cities,299,0,1
+1764354674730,44,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-93,text,true,,606,441,95,95,http://localhost:8080/api/cities/1346,44,0,0
+1764354674490,287,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-9,text,true,,604,440,94,94,http://localhost:8080/api/cities/1286,286,0,0
+1764354674730,52,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-65,text,true,,605,441,93,93,http://localhost:8080/api/cities/1348,52,0,0
+1764354674490,291,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-8,text,true,,605,440,93,93,http://localhost:8080/api/cities/1284,291,0,0
+1764354674469,312,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-52,text,true,,601,436,93,93,http://localhost:8080/api/cities,312,0,1
+1764354674451,339,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-36,text,true,,601,436,91,91,http://localhost:8080/api/cities,339,0,2
+1764354674450,340,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-30,text,true,,601,436,91,91,http://localhost:8080/api/cities,340,0,1
+1764354674450,344,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-41,text,true,,601,436,91,91,http://localhost:8080/api/cities,344,0,1
+1764354674450,345,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-38,text,true,,600,435,91,91,http://localhost:8080/api/cities,344,0,1
+1764354674431,364,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-25,text,true,,601,436,91,91,http://localhost:8080/api/cities,364,0,1
+1764354674472,324,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-1,text,true,,605,440,91,91,http://localhost:8080/api/cities/1282,324,0,0
+1764354674450,349,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-32,text,true,,601,436,90,90,http://localhost:8080/api/cities,340,0,3
+1764354674459,342,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-58,text,true,,601,436,90,90,http://localhost:8080/api/cities,341,0,1
+1764354674730,79,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-69,text,true,,606,441,90,90,http://localhost:8080/api/cities/1343,79,0,0
+1764354674445,364,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-34,text,true,,601,436,90,90,http://localhost:8080/api/cities,364,0,2
+1764354674730,87,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-64,text,true,,606,442,89,89,http://localhost:8080/api/cities/1349,86,0,0
+1764354674730,87,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-40,text,true,,607,442,89,89,http://localhost:8080/api/cities/1342,86,0,0
+1764354674730,90,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-56,text,true,,606,441,88,88,http://localhost:8080/api/cities/1345,90,0,0
+1764354674773,48,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-83,text,true,,607,442,86,86,http://localhost:8080/api/cities/1353,48,0,0
+1764354674730,91,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-78,text,true,,606,441,86,86,http://localhost:8080/api/cities/1340,91,0,0
+1764354674730,101,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-48,text,true,,607,442,84,84,http://localhost:8080/api/cities/1352,98,0,0
+1764354674730,101,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-49,text,true,,605,441,84,84,http://localhost:8080/api/cities/1347,100,0,0
+1764354674693,141,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-80,text,true,,605,441,82,82,http://localhost:8080/api/cities/1331,141,0,0
+1764354674730,104,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-74,text,true,,606,442,82,82,http://localhost:8080/api/cities/1344,104,0,0
+1764354674772,62,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-43,text,true,,607,442,82,82,http://localhost:8080/api/cities/1351,62,0,0
+1764354674693,146,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-87,text,true,,607,442,79,79,http://localhost:8080/api/cities/1339,146,0,0
+1764354674693,149,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-68,text,true,,606,441,78,78,http://localhost:8080/api/cities/1338,148,0,0
+1764354674812,30,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-32,text,true,,606,441,78,78,http://localhost:8080/api/cities/1366,30,0,0
+1764354674693,149,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-81,text,true,,605,441,78,78,http://localhost:8080/api/cities/1334,149,0,0
+1764354674812,41,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-25,text,true,,606,442,75,75,http://localhost:8080/api/cities/1370,40,0,0
+1764354674693,160,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-45,text,true,,606,442,75,75,http://localhost:8080/api/cities/1341,160,0,0
+1764354674693,170,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-79,text,true,,607,442,73,73,http://localhost:8080/api/cities/1335,170,0,0
+1764354674811,54,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-52,text,true,,607,442,72,72,http://localhost:8080/api/cities/1360,49,0,0
+1764354674693,174,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-59,text,true,,606,441,72,72,http://localhost:8080/api/cities/1330,174,0,0
+1764354674693,174,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-51,text,true,,607,442,72,72,http://localhost:8080/api/cities/1333,174,0,0
+1764354674695,173,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-67,text,true,,607,442,70,70,http://localhost:8080/api/cities/1336,172,0,0
+1764354674661,207,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-66,text,true,,607,442,68,68,http://localhost:8080/api/cities/1324,207,0,0
+1764354674694,177,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-47,text,true,,607,442,67,67,http://localhost:8080/api/cities/1337,174,0,0
+1764354674661,218,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-55,text,true,,606,441,66,66,http://localhost:8080/api/cities/1332,218,0,0
+1764354674661,223,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-57,text,true,,607,442,65,65,http://localhost:8080/api/cities/1322,221,0,0
+1764354674661,224,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-11,text,true,,606,442,65,65,http://localhost:8080/api/cities/1318,221,0,0
+1764354674661,235,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-94,text,true,,607,442,63,63,http://localhost:8080/api/cities/1323,235,0,0
+1764354674661,238,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-13,text,true,,605,441,62,62,http://localhost:8080/api/cities/1326,237,0,0
+1764354674661,238,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-63,text,true,,607,442,62,62,http://localhost:8080/api/cities/1325,238,0,0
+1764354674661,238,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-84,text,true,,605,441,62,62,http://localhost:8080/api/cities/1329,238,0,0
+1764354674661,239,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-60,text,true,,606,441,59,59,http://localhost:8080/api/cities/1327,238,0,0
+1764354674661,239,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-42,text,true,,606,441,59,59,http://localhost:8080/api/cities/1328,237,0,0
+1764354674634,268,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-70,text,true,,606,442,57,57,http://localhost:8080/api/cities/1311,267,0,0
+1764354674633,274,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-33,text,true,,606,441,56,56,http://localhost:8080/api/cities/1313,273,0,0
+1764354674590,317,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-28,text,true,,605,441,56,56,http://localhost:8080/api/cities/1309,317,0,0
+1764354674634,277,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-23,text,true,,605,441,54,54,http://localhost:8080/api/cities/1316,277,0,0
+1764354674634,283,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-14,text,true,,607,442,53,53,http://localhost:8080/api/cities/1317,283,0,0
+1764354674633,284,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-88,text,true,,605,441,53,53,http://localhost:8080/api/cities/1312,284,0,0
+1764354674633,284,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-39,text,true,,606,441,53,53,http://localhost:8080/api/cities/1320,284,0,0
+1764354674634,293,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-22,text,true,,607,442,50,50,http://localhost:8080/api/cities/1315,293,0,0
+1764354674590,337,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-27,text,true,,606,441,50,50,http://localhost:8080/api/cities/1305,337,0,0
+1764354674634,293,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-18,text,true,,606,442,50,50,http://localhost:8080/api/cities/1321,292,0,0
+1764354674591,336,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-89,text,true,,606,441,50,50,http://localhost:8080/api/cities/1303,336,0,0
+1764354674633,300,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-26,text,true,,605,441,46,46,http://localhost:8080/api/cities/1314,293,0,0
+1764354674634,299,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-12,text,true,,605,441,46,46,http://localhost:8080/api/cities/1319,299,0,0
+1764354674590,348,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-73,text,true,,606,441,44,44,http://localhost:8080/api/cities/1307,348,0,0
+1764354674590,348,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-77,text,true,,607,442,44,44,http://localhost:8080/api/cities/1304,348,0,0
+1764354674590,351,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-37,text,true,,606,441,42,42,http://localhost:8080/api/cities/1302,351,0,0
+1764354674559,384,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-17,text,true,,606,441,41,41,http://localhost:8080/api/cities/1291,384,0,0
+1764354674591,355,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-71,text,true,,606,442,40,40,http://localhost:8080/api/cities/1310,355,0,0
+1764354674559,392,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-44,text,true,,606,441,39,39,http://localhost:8080/api/cities/1298,392,0,0
+1764354674590,362,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-24,text,true,,607,442,39,39,http://localhost:8080/api/cities/1301,362,0,0
+1764354674559,393,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-2,text,true,,604,440,39,39,http://localhost:8080/api/cities/1293,393,0,0
+1764354674560,398,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-21,text,true,,606,441,36,36,http://localhost:8080/api/cities/1299,397,0,0
+1764354674501,457,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-92,text,true,,601,436,36,36,http://localhost:8080/api/cities,457,0,1
+1764354674499,460,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-46,text,true,,600,435,36,36,http://localhost:8080/api/cities,460,0,2
+1764354674521,445,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-97,text,true,,601,436,35,35,http://localhost:8080/api/cities,445,0,2
+1764354674523,444,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-75,text,true,,601,436,35,35,http://localhost:8080/api/cities,444,0,0
+1764354674522,452,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-15,text,true,,607,442,35,35,http://localhost:8080/api/cities/1287,451,0,0
+1764354674520,460,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-7,text,true,,605,441,34,34,http://localhost:8080/api/cities/1288,460,0,0
+1764354674559,421,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-16,text,true,,606,442,34,34,http://localhost:8080/api/cities/1295,421,0,0
+1764354674520,463,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-6,text,true,,604,440,32,32,http://localhost:8080/api/cities/1281,463,0,0
+1764354674810,201,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-34,text,true,,606,441,31,31,http://localhost:8080/api/cities/1369,201,0,0
+1764354674501,513,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-95,text,true,,601,436,31,31,http://localhost:8080/api/cities,513,0,1
+1764354674523,491,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-100,text,true,,602,437,31,31,http://localhost:8080/api/cities,491,0,1
+1764354674519,489,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-20,text,true,,607,442,31,31,http://localhost:8080/api/cities/1290,489,0,0
+1764354674559,446,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-10,text,true,,606,441,31,31,http://localhost:8080/api/cities/1292,446,0,0
+1764354674560,445,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-31,text,true,,607,442,31,31,http://localhost:8080/api/cities/1296,444,0,0
+1764354674812,202,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-58,text,true,,606,441,31,31,http://localhost:8080/api/cities/1365,202,0,0
+1764354674500,500,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-86,text,true,,601,436,31,31,http://localhost:8080/api/cities,499,0,1
+1764354674500,500,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-91,text,true,,601,436,31,31,http://localhost:8080/api/cities,499,0,2
+1764354674521,473,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-98,text,true,,601,436,31,31,http://localhost:8080/api/cities,472,0,2
+1764354674521,470,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-19,text,true,,606,442,31,31,http://localhost:8080/api/cities/1289,470,0,0
+1764354674559,432,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-4,text,true,,605,440,31,31,http://localhost:8080/api/cities/1294,432,0,0
+1764354674561,426,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-35,text,true,,606,442,31,31,http://localhost:8080/api/cities/1297,426,0,0
+1764354674811,207,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-30,text,true,,605,441,23,23,http://localhost:8080/api/cities/1367,207,0,0
+1764354674810,214,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-53,text,true,,607,442,22,22,http://localhost:8080/api/cities/1361,214,0,0
+1764354674812,212,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-41,text,true,,606,441,22,22,http://localhost:8080/api/cities/1363,212,0,0
+1764354674521,503,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-96,text,true,,601,436,22,22,http://localhost:8080/api/cities,503,0,1
+1764354674812,217,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-38,text,true,,606,441,20,20,http://localhost:8080/api/cities/1368,217,0,0
+1764354674811,218,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-36,text,true,,607,442,20,20,http://localhost:8080/api/cities/1364,218,0,0
+1764354674773,271,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-82,text,true,,605,441,18,18,http://localhost:8080/api/cities/1355,271,0,0
+1764354674773,271,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-50,text,true,,606,442,18,18,http://localhost:8080/api/cities/1362,268,0,0
+1764354674773,271,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-61,text,true,,607,442,18,18,http://localhost:8080/api/cities/1350,268,0,0
+1764354674773,272,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-76,text,true,,607,442,18,18,http://localhost:8080/api/cities/1354,268,0,0
+1764354674773,273,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-62,text,true,,607,442,14,14,http://localhost:8080/api/cities/1357,273,0,0
+1764354674773,273,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-85,text,true,,605,441,14,14,http://localhost:8080/api/cities/1358,271,0,0
+1764354674773,275,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-90,text,true,,606,442,12,12,http://localhost:8080/api/cities/1356,274,0,0
+1764354674773,282,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-99,text,true,,606,441,11,11,http://localhost:8080/api/cities/1359,282,0,0
+1764354675025,35,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-96,text,true,,606,442,10,10,http://localhost:8080/api/cities/1379,34,0,0
+1764354675028,37,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-95,text,true,,607,442,9,9,http://localhost:8080/api/cities/1378,37,0,0
+1764354675028,47,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-100,text,true,,608,443,8,8,http://localhost:8080/api/cities/1380,47,0,0
+1764354675028,47,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-98,text,true,,607,442,8,8,http://localhost:8080/api/cities/1376,47,0,0
+1764354675028,48,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-75,text,true,,606,441,8,8,http://localhost:8080/api/cities/1373,47,0,0
+1764354675028,51,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-86,text,true,,606,441,5,5,http://localhost:8080/api/cities/1377,51,0,0
+1764354675028,52,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-91,text,true,,607,442,5,5,http://localhost:8080/api/cities/1375,52,0,0
+1764354675027,61,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-92,text,true,,606,441,3,3,http://localhost:8080/api/cities/1374,61,0,0
+1764354675027,61,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-97,text,true,,606,442,3,3,http://localhost:8080/api/cities/1371,61,0,0
+1764354675027,62,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-46,text,true,,606,442,3,3,http://localhost:8080/api/cities/1372,61,0,0

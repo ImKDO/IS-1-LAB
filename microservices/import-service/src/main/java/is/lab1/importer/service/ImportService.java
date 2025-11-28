@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.annotation.Isolation;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -20,7 +21,11 @@ public class ImportService {
     private final CityRepository cityRepository;
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-    @Transactional(rollbackFor = Exception.class)
+    // SERIALIZABLE isolation for import to prevent any concurrent interference:
+    // Prevents phantom reads when checking coordinates existence across batch import
+    // Ensures no other transaction can insert cities with duplicate coordinates during import
+    // Critical for maintaining data integrity during batch operations
+    @Transactional(isolation = Isolation.SERIALIZABLE, rollbackFor = Exception.class)
     public void importCities(TransformResultMessage message) {
         log.info("Starting import from Kafka: correlationId={}, validCities={}",
             message.getCorrelationId(), message.getValidCities().size());
