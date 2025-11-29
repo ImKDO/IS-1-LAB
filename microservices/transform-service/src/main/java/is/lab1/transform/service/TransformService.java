@@ -53,12 +53,10 @@ public class TransformService {
 
             ValidatedCity validated = normalizeCity(raw);
 
-            // CLEANING - check duplicates
-            String coordKey = String.format("%d,%d", 
+            String coordKey = String.format("%d,%d",
                 validated.getCoordinates().getX(), 
                 validated.getCoordinates().getY());
             
-            // Check if coordinates exist in current file
             if (coordinatesMap.containsKey(coordKey)) {
                 duplicatesInFile++;
                 errors.add(new ValidationError(
@@ -70,7 +68,6 @@ public class TransformService {
                 continue;
             }
 
-            // Check if coordinates exist in database
             if (existingCoordinates.contains(coordKey)) {
                 duplicatesInDatabase++;
                 errors.add(new ValidationError(
@@ -103,12 +100,10 @@ public class TransformService {
     private List<ValidationError> validateCity(RawCity city, int index) {
         List<ValidationError> errors = new ArrayList<>();
 
-        // Name validation
         if (city.getName() == null || city.getName().trim().isEmpty()) {
             errors.add(new ValidationError(index, "name", "Name is required", "ERROR"));
         }
 
-        // Coordinates validation
         if (city.getCoordinates() == null) {
             errors.add(new ValidationError(index, "coordinates", "Coordinates are required", "ERROR"));
         } else {
@@ -181,7 +176,7 @@ public class TransformService {
             }
         }
 
-        // Government validation (optional)
+        // Government validation
         if (city.getGovernment() != null && !city.getGovernment().trim().isEmpty()) {
             String government = normalizeEnum(city.getGovernment());
             if (!VALID_GOVERNMENTS.contains(government)) {

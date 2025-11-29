@@ -2,7 +2,7 @@
   {
     "name": "NewCity1",
     "coordinates": {
-      "x": 1001,
+      "x": "1001",
       "y": 100
     },
     "area": 500,

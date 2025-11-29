@@ -20,3 +20,833 @@
 2025-11-28 21:28:40,776 INFO o.a.j.JMeter: IP: 172.28.29.26 Name: DESKTOP-MKUCJSB FullName: DESKTOP-MKUCJSB
 2025-11-28 21:28:40,791 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
 2025-11-28 21:28:41,015 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2025-11-28 21:29:45,069 INFO o.a.j.s.FileServer: Default base='C:\Users\KDO\IS-1-LAB\jmeter'
+2025-11-28 21:29:45,073 INFO o.a.j.g.a.Load: Loading file: C:\Users\KDO\IS-1-LAB\jmeter\transaction-isolation-test.jmx
+2025-11-28 21:29:45,074 INFO o.a.j.s.FileServer: Set new base='C:\Users\KDO\IS-1-LAB\jmeter'
+2025-11-28 21:29:45,328 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-11-28 21:29:45,366 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-11-28 21:29:45,369 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-11-28 21:29:45,371 INFO o.a.j.s.SaveService: Loading file: C:\Users\KDO\IS-1-LAB\jmeter\transaction-isolation-test.jmx
+2025-11-28 21:29:45,408 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-28 21:29:45,408 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-28 21:29:45,408 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-28 21:29:45,408 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-28 21:29:45,408 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-11-28 21:29:45,408 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-11-28 21:29:46,193 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-11-28 21:29:46,193 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-11-28 21:29:46,193 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-11-28 21:29:46,194 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-11-28 21:29:46,407 INFO o.a.j.s.FileServer: Set new base='C:\Users\KDO\IS-1-LAB\jmeter'
+2025-11-28 21:29:50,886 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-28 21:29:50,888 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 21:29:50,888 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 21:29:50,889 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-11-28 21:29:50,889 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-11-28 21:29:50,924 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-28 21:29:50,926 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2025-11-28 21:29:50,926 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : Setup for Test 3 
+2025-11-28 21:29:50,926 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Setup for Test 3.
+2025-11-28 21:29:50,926 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 21:29:50,926 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2025-11-28 21:29:50,929 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 21:29:50,929 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2025-11-28 21:29:50,930 INFO o.a.j.t.JMeterThread: Thread started: Setup for Test 3 1-1
+2025-11-28 21:29:50,950 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-MKUCJSB
+2025-11-28 21:29:50,960 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-11-28 21:29:52,532 INFO o.a.j.t.JMeterThread: Thread is done: Setup for Test 3 1-1
+2025-11-28 21:29:52,532 INFO o.a.j.t.JMeterThread: Thread finished: Setup for Test 3 1-1
+2025-11-28 21:29:52,535 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2025-11-28 21:29:52,575 INFO o.a.j.e.StandardJMeterEngine: No enabled thread groups found
+2025-11-28 21:29:52,576 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-28 21:29:52,582 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-28 21:29:57,636 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-28 21:29:57,637 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 21:29:57,639 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-28 21:29:57,674 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 3. Concurrent Delete - Same City
+2025-11-28 21:29:57,674 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group 3. Concurrent Delete - Same City.
+2025-11-28 21:29:57,675 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 21:29:57,675 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=0 delayedStart=false
+2025-11-28 21:29:57,676 INFO o.a.j.t.JMeterThread: Thread started: 3. Concurrent Delete - Same City 1-1
+2025-11-28 21:29:57,677 INFO o.a.j.t.JMeterThread: Thread started: 3. Concurrent Delete - Same City 1-2
+2025-11-28 21:29:57,677 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 21:29:57,677 INFO o.a.j.t.JMeterThread: Thread started: 3. Concurrent Delete - Same City 1-3
+2025-11-28 21:29:57,677 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-28 21:29:57,677 INFO o.a.j.t.JMeterThread: Thread started: 3. Concurrent Delete - Same City 1-4
+2025-11-28 21:29:57,677 INFO o.a.j.t.JMeterThread: Thread started: 3. Concurrent Delete - Same City 1-5
+2025-11-28 21:29:58,854 INFO o.a.j.t.JMeterThread: Thread is done: 3. Concurrent Delete - Same City 1-5
+2025-11-28 21:29:58,855 INFO o.a.j.t.JMeterThread: Thread finished: 3. Concurrent Delete - Same City 1-5
+2025-11-28 21:29:58,876 INFO o.a.j.t.JMeterThread: Thread is done: 3. Concurrent Delete - Same City 1-4
+2025-11-28 21:29:58,876 INFO o.a.j.t.JMeterThread: Thread is done: 3. Concurrent Delete - Same City 1-3
+2025-11-28 21:29:58,877 INFO o.a.j.t.JMeterThread: Thread is done: 3. Concurrent Delete - Same City 1-2
+2025-11-28 21:29:58,877 INFO o.a.j.t.JMeterThread: Thread finished: 3. Concurrent Delete - Same City 1-2
+2025-11-28 21:29:58,877 INFO o.a.j.t.JMeterThread: Thread finished: 3. Concurrent Delete - Same City 1-4
+2025-11-28 21:29:58,877 INFO o.a.j.t.JMeterThread: Thread finished: 3. Concurrent Delete - Same City 1-3
+2025-11-28 21:29:59,935 INFO o.a.j.t.JMeterThread: Thread is done: 3. Concurrent Delete - Same City 1-1
+2025-11-28 21:29:59,935 INFO o.a.j.t.JMeterThread: Thread finished: 3. Concurrent Delete - Same City 1-1
+2025-11-28 21:29:59,936 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-28 21:29:59,936 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-28 21:31:14,355 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-28 21:31:14,355 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 21:31:14,361 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-28 21:31:14,397 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 2. Concurrent Update - Same City
+2025-11-28 21:31:14,397 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group 2. Concurrent Update - Same City.
+2025-11-28 21:31:14,397 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 21:31:14,397 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=100 ramp-up=0 delayedStart=false
+2025-11-28 21:31:14,398 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-1
+2025-11-28 21:31:14,398 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-2
+2025-11-28 21:31:14,398 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-3
+2025-11-28 21:31:14,398 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-4
+2025-11-28 21:31:14,398 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-5
+2025-11-28 21:31:14,400 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-6
+2025-11-28 21:31:14,400 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-7
+2025-11-28 21:31:14,400 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-8
+2025-11-28 21:31:14,400 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-9
+2025-11-28 21:31:14,400 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-10
+2025-11-28 21:31:14,400 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-11
+2025-11-28 21:31:14,400 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-12
+2025-11-28 21:31:14,401 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-13
+2025-11-28 21:31:14,401 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-14
+2025-11-28 21:31:14,402 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-15
+2025-11-28 21:31:14,403 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-16
+2025-11-28 21:31:14,403 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-17
+2025-11-28 21:31:14,404 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-18
+2025-11-28 21:31:14,404 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-19
+2025-11-28 21:31:14,404 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-20
+2025-11-28 21:31:14,406 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-21
+2025-11-28 21:31:14,408 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-22
+2025-11-28 21:31:14,410 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-23
+2025-11-28 21:31:14,412 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-24
+2025-11-28 21:31:14,416 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-25
+2025-11-28 21:31:14,416 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-26
+2025-11-28 21:31:14,417 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-27
+2025-11-28 21:31:14,421 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-28
+2025-11-28 21:31:14,424 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-29
+2025-11-28 21:31:14,425 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-33
+2025-11-28 21:31:14,427 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-31
+2025-11-28 21:31:14,433 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-34
+2025-11-28 21:31:14,433 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-30
+2025-11-28 21:31:14,433 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-32
+2025-11-28 21:31:14,435 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-35
+2025-11-28 21:31:14,438 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-36
+2025-11-28 21:31:14,439 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-37
+2025-11-28 21:31:14,442 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-38
+2025-11-28 21:31:14,442 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-54
+2025-11-28 21:31:14,444 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-41
+2025-11-28 21:31:14,447 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-44
+2025-11-28 21:31:14,447 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-58
+2025-11-28 21:31:14,444 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-55
+2025-11-28 21:31:14,449 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-45
+2025-11-28 21:31:14,449 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-43
+2025-11-28 21:31:14,452 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-63
+2025-11-28 21:31:14,452 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-48
+2025-11-28 21:31:14,452 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-47
+2025-11-28 21:31:14,453 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-49
+2025-11-28 21:31:14,454 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-50
+2025-11-28 21:31:14,455 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-79
+2025-11-28 21:31:14,457 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-52
+2025-11-28 21:31:14,458 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-81
+2025-11-28 21:31:14,459 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-56
+2025-11-28 21:31:14,467 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-53
+2025-11-28 21:31:14,467 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-40
+2025-11-28 21:31:14,467 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-82
+2025-11-28 21:31:14,467 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-84
+2025-11-28 21:31:14,467 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-57
+2025-11-28 21:31:14,467 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-60
+2025-11-28 21:31:14,467 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-61
+2025-11-28 21:31:14,467 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-64
+2025-11-28 21:31:14,468 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-66
+2025-11-28 21:31:14,468 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-68
+2025-11-28 21:31:14,468 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-65
+2025-11-28 21:31:14,468 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-67
+2025-11-28 21:31:14,469 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-62
+2025-11-28 21:31:14,469 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-69
+2025-11-28 21:31:14,469 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-87
+2025-11-28 21:31:14,475 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-70
+2025-11-28 21:31:14,478 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-72
+2025-11-28 21:31:14,481 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-73
+2025-11-28 21:31:14,482 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-76
+2025-11-28 21:31:14,484 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-74
+2025-11-28 21:31:14,484 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 21:31:14,484 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-28 21:31:14,484 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-99
+2025-11-28 21:31:14,485 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-77
+2025-11-28 21:31:14,486 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-51
+2025-11-28 21:31:14,486 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-80
+2025-11-28 21:31:14,486 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-78
+2025-11-28 21:31:14,487 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-39
+2025-11-28 21:31:14,487 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-83
+2025-11-28 21:31:14,487 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-59
+2025-11-28 21:31:14,488 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-42
+2025-11-28 21:31:14,491 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-86
+2025-11-28 21:31:14,491 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-85
+2025-11-28 21:31:14,491 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-71
+2025-11-28 21:31:14,491 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-88
+2025-11-28 21:31:14,491 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-89
+2025-11-28 21:31:14,491 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-46
+2025-11-28 21:31:14,492 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-90
+2025-11-28 21:31:14,492 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-91
+2025-11-28 21:31:14,492 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-92
+2025-11-28 21:31:14,492 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-94
+2025-11-28 21:31:14,493 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-95
+2025-11-28 21:31:14,493 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-93
+2025-11-28 21:31:14,500 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-96
+2025-11-28 21:31:14,504 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-97
+2025-11-28 21:31:14,505 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-98
+2025-11-28 21:31:14,505 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-75
+2025-11-28 21:31:14,505 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-100
+2025-11-28 21:31:14,664 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-54
+2025-11-28 21:31:14,664 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-54
+2025-11-28 21:31:14,675 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-29
+2025-11-28 21:31:14,675 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-29
+2025-11-28 21:31:14,678 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-72
+2025-11-28 21:31:14,678 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-72
+2025-11-28 21:31:14,753 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-5
+2025-11-28 21:31:14,754 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-5
+2025-11-28 21:31:14,767 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-3
+2025-11-28 21:31:14,767 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-3
+2025-11-28 21:31:14,774 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-93
+2025-11-28 21:31:14,774 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-93
+2025-11-28 21:31:14,777 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-9
+2025-11-28 21:31:14,777 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-9
+2025-11-28 21:31:14,782 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-8
+2025-11-28 21:31:14,782 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-8
+2025-11-28 21:31:14,782 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-65
+2025-11-28 21:31:14,782 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-65
+2025-11-28 21:31:14,796 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-1
+2025-11-28 21:31:14,797 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-1
+2025-11-28 21:31:14,810 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-69
+2025-11-28 21:31:14,810 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-69
+2025-11-28 21:31:14,817 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-64
+2025-11-28 21:31:14,817 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-64
+2025-11-28 21:31:14,819 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-40
+2025-11-28 21:31:14,820 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-40
+2025-11-28 21:31:14,820 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-56
+2025-11-28 21:31:14,821 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-56
+2025-11-28 21:31:14,821 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-83
+2025-11-28 21:31:14,821 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-78
+2025-11-28 21:31:14,821 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-83
+2025-11-28 21:31:14,821 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-78
+2025-11-28 21:31:14,831 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-49
+2025-11-28 21:31:14,831 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-48
+2025-11-28 21:31:14,831 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-49
+2025-11-28 21:31:14,831 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-48
+2025-11-28 21:31:14,834 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-80
+2025-11-28 21:31:14,834 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-43
+2025-11-28 21:31:14,834 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-74
+2025-11-28 21:31:14,834 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-43
+2025-11-28 21:31:14,834 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-80
+2025-11-28 21:31:14,834 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-74
+2025-11-28 21:31:14,839 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-87
+2025-11-28 21:31:14,839 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-87
+2025-11-28 21:31:14,842 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-68
+2025-11-28 21:31:14,842 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-68
+2025-11-28 21:31:14,842 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-32
+2025-11-28 21:31:14,842 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-81
+2025-11-28 21:31:14,842 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-32
+2025-11-28 21:31:14,842 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-81
+2025-11-28 21:31:14,853 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-25
+2025-11-28 21:31:14,854 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-25
+2025-11-28 21:31:14,853 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-45
+2025-11-28 21:31:14,854 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-45
+2025-11-28 21:31:14,864 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-79
+2025-11-28 21:31:14,864 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-79
+2025-11-28 21:31:14,866 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-52
+2025-11-28 21:31:14,866 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-52
+2025-11-28 21:31:14,866 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-59
+2025-11-28 21:31:14,866 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-59
+2025-11-28 21:31:14,867 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-51
+2025-11-28 21:31:14,867 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-51
+2025-11-28 21:31:14,868 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-67
+2025-11-28 21:31:14,868 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-67
+2025-11-28 21:31:14,869 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-66
+2025-11-28 21:31:14,869 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-66
+2025-11-28 21:31:14,872 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-47
+2025-11-28 21:31:14,872 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-47
+2025-11-28 21:31:14,879 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-55
+2025-11-28 21:31:14,880 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-55
+2025-11-28 21:31:14,885 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-57
+2025-11-28 21:31:14,885 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-57
+2025-11-28 21:31:14,885 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-11
+2025-11-28 21:31:14,885 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-11
+2025-11-28 21:31:14,897 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-94
+2025-11-28 21:31:14,897 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-94
+2025-11-28 21:31:14,899 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-13
+2025-11-28 21:31:14,899 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-84
+2025-11-28 21:31:14,899 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-84
+2025-11-28 21:31:14,899 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-63
+2025-11-28 21:31:14,899 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-13
+2025-11-28 21:31:14,899 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-63
+2025-11-28 21:31:14,900 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-60
+2025-11-28 21:31:14,900 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-42
+2025-11-28 21:31:14,900 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-42
+2025-11-28 21:31:14,900 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-60
+2025-11-28 21:31:14,902 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-70
+2025-11-28 21:31:14,902 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-70
+2025-11-28 21:31:14,907 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-28
+2025-11-28 21:31:14,907 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-33
+2025-11-28 21:31:14,907 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-33
+2025-11-28 21:31:14,908 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-28
+2025-11-28 21:31:14,911 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-23
+2025-11-28 21:31:14,911 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-23
+2025-11-28 21:31:14,917 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-14
+2025-11-28 21:31:14,917 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-88
+2025-11-28 21:31:14,917 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-88
+2025-11-28 21:31:14,917 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-39
+2025-11-28 21:31:14,917 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-39
+2025-11-28 21:31:14,917 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-14
+2025-11-28 21:31:14,927 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-27
+2025-11-28 21:31:14,927 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-18
+2025-11-28 21:31:14,927 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-27
+2025-11-28 21:31:14,927 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-18
+2025-11-28 21:31:14,927 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-89
+2025-11-28 21:31:14,928 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-89
+2025-11-28 21:31:14,928 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-22
+2025-11-28 21:31:14,929 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-22
+2025-11-28 21:31:14,933 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-26
+2025-11-28 21:31:14,933 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-26
+2025-11-28 21:31:14,935 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-12
+2025-11-28 21:31:14,937 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-12
+2025-11-28 21:31:14,938 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-73
+2025-11-28 21:31:14,939 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-73
+2025-11-28 21:31:14,939 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-77
+2025-11-28 21:31:14,939 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-77
+2025-11-28 21:31:14,941 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-37
+2025-11-28 21:31:14,941 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-37
+2025-11-28 21:31:14,943 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-17
+2025-11-28 21:31:14,943 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-17
+2025-11-28 21:31:14,947 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-71
+2025-11-28 21:31:14,947 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-71
+2025-11-28 21:31:14,952 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-24
+2025-11-28 21:31:14,952 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-44
+2025-11-28 21:31:14,952 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-24
+2025-11-28 21:31:14,952 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-44
+2025-11-28 21:31:14,952 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-2
+2025-11-28 21:31:14,952 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-2
+2025-11-28 21:31:14,959 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-21
+2025-11-28 21:31:14,959 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-21
+2025-11-28 21:31:14,974 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-15
+2025-11-28 21:31:14,974 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-15
+2025-11-28 21:31:14,980 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-7
+2025-11-28 21:31:14,980 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-16
+2025-11-28 21:31:14,980 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-7
+2025-11-28 21:31:14,980 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-16
+2025-11-28 21:31:14,983 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-6
+2025-11-28 21:31:14,983 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-6
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-34
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-34
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-20
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-31
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-31
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-20
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-58
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-19
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-19
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-58
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-10
+2025-11-28 21:31:15,015 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-10
+2025-11-28 21:31:15,016 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-4
+2025-11-28 21:31:15,016 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-4
+2025-11-28 21:31:15,016 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-35
+2025-11-28 21:31:15,016 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-35
+2025-11-28 21:31:15,018 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-30
+2025-11-28 21:31:15,019 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-30
+2025-11-28 21:31:15,024 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-41
+2025-11-28 21:31:15,024 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-53
+2025-11-28 21:31:15,024 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-53
+2025-11-28 21:31:15,024 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-41
+2025-11-28 21:31:15,029 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-36
+2025-11-28 21:31:15,029 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-38
+2025-11-28 21:31:15,029 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-36
+2025-11-28 21:31:15,029 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-38
+2025-11-28 21:31:15,043 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-61
+2025-11-28 21:31:15,043 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-50
+2025-11-28 21:31:15,043 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-61
+2025-11-28 21:31:15,043 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-50
+2025-11-28 21:31:15,043 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-82
+2025-11-28 21:31:15,043 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-82
+2025-11-28 21:31:15,045 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-76
+2025-11-28 21:31:15,046 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-76
+2025-11-28 21:31:15,046 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-85
+2025-11-28 21:31:15,046 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-62
+2025-11-28 21:31:15,046 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-85
+2025-11-28 21:31:15,046 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-62
+2025-11-28 21:31:15,048 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-90
+2025-11-28 21:31:15,048 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-90
+2025-11-28 21:31:15,055 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-99
+2025-11-28 21:31:15,055 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-99
+2025-11-28 21:31:15,060 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-96
+2025-11-28 21:31:15,061 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-96
+2025-11-28 21:31:15,065 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-95
+2025-11-28 21:31:15,065 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-95
+2025-11-28 21:31:15,075 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-98
+2025-11-28 21:31:15,075 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-75
+2025-11-28 21:31:15,075 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-100
+2025-11-28 21:31:15,075 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-100
+2025-11-28 21:31:15,075 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-98
+2025-11-28 21:31:15,077 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-75
+2025-11-28 21:31:15,079 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-86
+2025-11-28 21:31:15,080 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-86
+2025-11-28 21:31:15,080 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-91
+2025-11-28 21:31:15,081 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-91
+2025-11-28 21:31:15,088 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-92
+2025-11-28 21:31:15,088 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-97
+2025-11-28 21:31:15,088 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-92
+2025-11-28 21:31:15,089 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-46
+2025-11-28 21:31:15,089 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-46
+2025-11-28 21:31:15,089 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-97
+2025-11-28 21:31:15,090 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-28 21:31:15,090 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-28 21:40:16,747 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-28 21:40:16,749 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 21:40:16,752 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-28 21:40:16,814 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 4. Mixed CRUD Operations
+2025-11-28 21:40:16,814 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group 4. Mixed CRUD Operations.
+2025-11-28 21:40:16,814 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 21:40:16,815 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=2 delayedStart=false
+2025-11-28 21:40:16,816 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-1
+2025-11-28 21:40:16,820 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 21:40:16,820 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-28 21:40:16,919 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-2
+2025-11-28 21:40:17,016 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-3
+2025-11-28 21:40:17,083 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-1
+2025-11-28 21:40:17,083 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-1
+2025-11-28 21:40:17,116 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-4
+2025-11-28 21:40:17,180 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-2
+2025-11-28 21:40:17,180 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-2
+2025-11-28 21:40:17,209 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-3
+2025-11-28 21:40:17,209 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-3
+2025-11-28 21:40:17,216 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-5
+2025-11-28 21:40:17,294 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-4
+2025-11-28 21:40:17,294 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-4
+2025-11-28 21:40:17,316 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-6
+2025-11-28 21:40:17,366 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-5
+2025-11-28 21:40:17,366 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-5
+2025-11-28 21:40:17,417 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-7
+2025-11-28 21:40:17,462 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-6
+2025-11-28 21:40:17,462 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-6
+2025-11-28 21:40:17,529 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-8
+2025-11-28 21:40:17,582 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-7
+2025-11-28 21:40:17,582 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-7
+2025-11-28 21:40:17,628 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-9
+2025-11-28 21:40:17,686 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-8
+2025-11-28 21:40:17,686 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-8
+2025-11-28 21:40:17,726 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-10
+2025-11-28 21:40:17,771 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-9
+2025-11-28 21:40:17,771 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-9
+2025-11-28 21:40:17,833 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-11
+2025-11-28 21:40:17,886 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-10
+2025-11-28 21:40:17,886 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-10
+2025-11-28 21:40:17,926 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-12
+2025-11-28 21:40:17,954 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-11
+2025-11-28 21:40:17,954 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-11
+2025-11-28 21:40:18,018 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-13
+2025-11-28 21:40:18,029 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-12
+2025-11-28 21:40:18,029 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-12
+2025-11-28 21:40:18,118 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-13
+2025-11-28 21:40:18,118 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-13
+2025-11-28 21:40:18,125 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-14
+2025-11-28 21:40:18,218 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-15
+2025-11-28 21:40:18,236 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-14
+2025-11-28 21:40:18,236 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-14
+2025-11-28 21:40:18,323 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-16
+2025-11-28 21:40:18,339 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-15
+2025-11-28 21:40:18,339 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-15
+2025-11-28 21:40:18,431 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-17
+2025-11-28 21:40:18,442 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-16
+2025-11-28 21:40:18,442 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-16
+2025-11-28 21:40:18,528 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-18
+2025-11-28 21:40:18,531 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-17
+2025-11-28 21:40:18,531 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-17
+2025-11-28 21:40:18,620 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-19
+2025-11-28 21:40:18,626 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-18
+2025-11-28 21:40:18,626 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-18
+2025-11-28 21:40:18,721 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-19
+2025-11-28 21:40:18,721 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-19
+2025-11-28 21:40:18,728 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-20
+2025-11-28 21:40:18,862 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-20
+2025-11-28 21:40:18,862 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-20
+2025-11-28 21:40:18,866 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-28 21:40:18,867 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-28 21:41:44,695 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-28 21:41:44,696 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 21:41:44,699 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-28 21:41:44,759 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 4. Mixed CRUD Operations
+2025-11-28 21:41:44,760 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group 4. Mixed CRUD Operations.
+2025-11-28 21:41:44,760 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 21:41:44,760 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=2 delayedStart=false
+2025-11-28 21:41:44,763 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-1
+2025-11-28 21:41:44,765 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 21:41:44,765 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-28 21:41:44,876 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-2
+2025-11-28 21:41:44,968 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-3
+2025-11-28 21:41:44,972 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-1
+2025-11-28 21:41:44,973 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-1
+2025-11-28 21:41:45,045 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-2
+2025-11-28 21:41:45,047 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-2
+2025-11-28 21:41:45,075 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-4
+2025-11-28 21:41:45,133 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-3
+2025-11-28 21:41:45,134 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-3
+2025-11-28 21:41:45,167 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-5
+2025-11-28 21:41:45,239 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-4
+2025-11-28 21:41:45,239 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-4
+2025-11-28 21:41:45,275 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-6
+2025-11-28 21:41:45,323 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-5
+2025-11-28 21:41:45,323 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-5
+2025-11-28 21:41:45,361 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-7
+2025-11-28 21:41:45,431 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-6
+2025-11-28 21:41:45,431 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-6
+2025-11-28 21:41:45,461 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-8
+2025-11-28 21:41:45,541 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-7
+2025-11-28 21:41:45,541 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-7
+2025-11-28 21:41:45,561 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-9
+2025-11-28 21:41:45,633 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-8
+2025-11-28 21:41:45,634 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-8
+2025-11-28 21:41:45,661 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-10
+2025-11-28 21:41:45,732 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-9
+2025-11-28 21:41:45,732 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-9
+2025-11-28 21:41:45,762 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-11
+2025-11-28 21:41:45,844 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-10
+2025-11-28 21:41:45,844 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-10
+2025-11-28 21:41:45,861 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-12
+2025-11-28 21:41:45,924 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-11
+2025-11-28 21:41:45,924 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-11
+2025-11-28 21:41:45,961 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-13
+2025-11-28 21:41:46,020 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-12
+2025-11-28 21:41:46,020 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-12
+2025-11-28 21:41:46,061 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-14
+2025-11-28 21:41:46,131 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-13
+2025-11-28 21:41:46,132 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-13
+2025-11-28 21:41:46,161 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-15
+2025-11-28 21:41:46,229 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-14
+2025-11-28 21:41:46,229 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-14
+2025-11-28 21:41:46,261 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-16
+2025-11-28 21:41:46,321 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-15
+2025-11-28 21:41:46,321 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-15
+2025-11-28 21:41:46,360 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-17
+2025-11-28 21:41:46,432 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-16
+2025-11-28 21:41:46,432 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-16
+2025-11-28 21:41:46,460 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-18
+2025-11-28 21:41:46,518 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-17
+2025-11-28 21:41:46,519 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-17
+2025-11-28 21:41:46,560 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-19
+2025-11-28 21:41:46,624 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-18
+2025-11-28 21:41:46,624 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-18
+2025-11-28 21:41:46,660 INFO o.a.j.t.JMeterThread: Thread started: 4. Mixed CRUD Operations 1-20
+2025-11-28 21:41:46,709 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-19
+2025-11-28 21:41:46,709 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-19
+2025-11-28 21:41:46,813 INFO o.a.j.t.JMeterThread: Thread is done: 4. Mixed CRUD Operations 1-20
+2025-11-28 21:41:46,813 INFO o.a.j.t.JMeterThread: Thread finished: 4. Mixed CRUD Operations 1-20
+2025-11-28 21:41:46,813 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-28 21:41:46,814 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-28 21:43:25,073 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-28 21:43:25,073 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-28 21:43:25,075 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-28 21:43:25,109 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 2. Concurrent Update - Same City
+2025-11-28 21:43:25,109 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group 2. Concurrent Update - Same City.
+2025-11-28 21:43:25,109 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-28 21:43:25,109 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=100 ramp-up=0 delayedStart=false
+2025-11-28 21:43:25,109 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-5
+2025-11-28 21:43:25,109 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-7
+2025-11-28 21:43:25,109 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-2
+2025-11-28 21:43:25,109 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-4
+2025-11-28 21:43:25,109 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-1
+2025-11-28 21:43:25,113 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-6
+2025-11-28 21:43:25,109 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-3
+2025-11-28 21:43:25,113 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-8
+2025-11-28 21:43:25,113 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-9
+2025-11-28 21:43:25,113 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-10
+2025-11-28 21:43:25,113 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-11
+2025-11-28 21:43:25,113 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-12
+2025-11-28 21:43:25,113 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-13
+2025-11-28 21:43:25,113 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-14
+2025-11-28 21:43:25,115 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-15
+2025-11-28 21:43:25,115 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-16
+2025-11-28 21:43:25,116 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-18
+2025-11-28 21:43:25,116 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-19
+2025-11-28 21:43:25,116 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-17
+2025-11-28 21:43:25,116 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-22
+2025-11-28 21:43:25,116 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-24
+2025-11-28 21:43:25,117 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-23
+2025-11-28 21:43:25,117 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-25
+2025-11-28 21:43:25,118 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-37
+2025-11-28 21:43:25,118 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-20
+2025-11-28 21:43:25,119 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-26
+2025-11-28 21:43:25,119 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-28
+2025-11-28 21:43:25,119 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-27
+2025-11-28 21:43:25,119 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-30
+2025-11-28 21:43:25,119 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-29
+2025-11-28 21:43:25,120 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-32
+2025-11-28 21:43:25,120 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-33
+2025-11-28 21:43:25,120 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-43
+2025-11-28 21:43:25,120 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-34
+2025-11-28 21:43:25,120 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-47
+2025-11-28 21:43:25,121 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-48
+2025-11-28 21:43:25,121 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-50
+2025-11-28 21:43:25,121 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-38
+2025-11-28 21:43:25,122 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-39
+2025-11-28 21:43:25,122 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-40
+2025-11-28 21:43:25,122 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-42
+2025-11-28 21:43:25,122 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-41
+2025-11-28 21:43:25,124 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-61
+2025-11-28 21:43:25,124 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-65
+2025-11-28 21:43:25,126 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-68
+2025-11-28 21:43:25,127 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-21
+2025-11-28 21:43:25,128 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-35
+2025-11-28 21:43:25,129 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-89
+2025-11-28 21:43:25,129 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-86
+2025-11-28 21:43:25,129 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-36
+2025-11-28 21:43:25,130 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-51
+2025-11-28 21:43:25,130 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-94
+2025-11-28 21:43:25,130 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-96
+2025-11-28 21:43:25,130 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-28 21:43:25,131 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-28 21:43:25,133 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-54
+2025-11-28 21:43:25,133 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-53
+2025-11-28 21:43:25,133 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-56
+2025-11-28 21:43:25,134 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-57
+2025-11-28 21:43:25,135 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-58
+2025-11-28 21:43:25,136 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-59
+2025-11-28 21:43:25,137 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-60
+2025-11-28 21:43:25,138 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-31
+2025-11-28 21:43:25,138 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-64
+2025-11-28 21:43:25,139 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-62
+2025-11-28 21:43:25,139 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-44
+2025-11-28 21:43:25,139 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-45
+2025-11-28 21:43:25,141 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-69
+2025-11-28 21:43:25,141 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-66
+2025-11-28 21:43:25,142 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-67
+2025-11-28 21:43:25,145 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-63
+2025-11-28 21:43:25,145 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-70
+2025-11-28 21:43:25,145 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-71
+2025-11-28 21:43:25,145 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-73
+2025-11-28 21:43:25,146 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-72
+2025-11-28 21:43:25,147 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-74
+2025-11-28 21:43:25,148 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-75
+2025-11-28 21:43:25,148 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-76
+2025-11-28 21:43:25,150 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-77
+2025-11-28 21:43:25,150 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-78
+2025-11-28 21:43:25,151 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-81
+2025-11-28 21:43:25,152 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-79
+2025-11-28 21:43:25,154 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-80
+2025-11-28 21:43:25,154 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-82
+2025-11-28 21:43:25,155 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-85
+2025-11-28 21:43:25,155 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-83
+2025-11-28 21:43:25,156 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-84
+2025-11-28 21:43:25,156 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-46
+2025-11-28 21:43:25,157 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-87
+2025-11-28 21:43:25,157 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-88
+2025-11-28 21:43:25,157 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-49
+2025-11-28 21:43:25,158 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-90
+2025-11-28 21:43:25,159 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-91
+2025-11-28 21:43:25,161 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-92
+2025-11-28 21:43:25,161 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-95
+2025-11-28 21:43:25,161 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-97
+2025-11-28 21:43:25,161 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-93
+2025-11-28 21:43:25,161 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-98
+2025-11-28 21:43:25,161 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-52
+2025-11-28 21:43:25,162 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-99
+2025-11-28 21:43:25,162 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-100
+2025-11-28 21:43:25,162 INFO o.a.j.t.JMeterThread: Thread started: 2. Concurrent Update - Same City 1-55
+2025-11-28 21:43:25,237 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-92
+2025-11-28 21:43:25,237 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-92
+2025-11-28 21:43:25,246 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-29
+2025-11-28 21:43:25,246 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-29
+2025-11-28 21:43:25,252 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-89
+2025-11-28 21:43:25,252 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-89
+2025-11-28 21:43:25,258 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-3
+2025-11-28 21:43:25,258 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-3
+2025-11-28 21:43:25,278 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-4
+2025-11-28 21:43:25,278 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-64
+2025-11-28 21:43:25,278 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-4
+2025-11-28 21:43:25,278 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-64
+2025-11-28 21:43:25,279 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-83
+2025-11-28 21:43:25,279 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-83
+2025-11-28 21:43:25,281 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-9
+2025-11-28 21:43:25,282 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-9
+2025-11-28 21:43:25,287 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-78
+2025-11-28 21:43:25,287 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-78
+2025-11-28 21:43:25,315 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-35
+2025-11-28 21:43:25,316 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-35
+2025-11-28 21:43:25,330 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-38
+2025-11-28 21:43:25,330 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-38
+2025-11-28 21:43:25,333 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-65
+2025-11-28 21:43:25,334 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-65
+2025-11-28 21:43:25,334 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-68
+2025-11-28 21:43:25,334 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-68
+2025-11-28 21:43:25,335 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-57
+2025-11-28 21:43:25,335 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-57
+2025-11-28 21:43:25,338 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-41
+2025-11-28 21:43:25,338 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-41
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-61
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-61
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-42
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-21
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-42
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-21
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-53
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-53
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-40
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-40
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-90
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-90
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-58
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-56
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-86
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-58
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-56
+2025-11-28 21:43:25,342 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-86
+2025-11-28 21:43:25,347 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-36
+2025-11-28 21:43:25,347 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-36
+2025-11-28 21:43:25,349 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-47
+2025-11-28 21:43:25,349 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-96
+2025-11-28 21:43:25,350 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-47
+2025-11-28 21:43:25,350 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-96
+2025-11-28 21:43:25,354 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-99
+2025-11-28 21:43:25,354 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-99
+2025-11-28 21:43:25,355 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-84
+2025-11-28 21:43:25,355 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-45
+2025-11-28 21:43:25,355 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-50
+2025-11-28 21:43:25,355 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-84
+2025-11-28 21:43:25,355 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-50
+2025-11-28 21:43:25,355 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-45
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-49
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-74
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-77
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-93
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-98
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-74
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-49
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-98
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-93
+2025-11-28 21:43:25,358 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-77
+2025-11-28 21:43:25,361 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-66
+2025-11-28 21:43:25,361 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-66
+2025-11-28 21:43:25,364 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-71
+2025-11-28 21:43:25,364 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-71
+2025-11-28 21:43:25,366 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-82
+2025-11-28 21:43:25,366 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-82
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-55
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-52
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-69
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-69
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-44
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-44
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-31
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-52
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-31
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-76
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-76
+2025-11-28 21:43:25,370 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-75
+2025-11-28 21:43:25,370 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-13
+2025-11-28 21:43:25,370 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-13
+2025-11-28 21:43:25,369 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-55
+2025-11-28 21:43:25,370 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-75
+2025-11-28 21:43:25,375 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-16
+2025-11-28 21:43:25,375 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-16
+2025-11-28 21:43:25,378 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-5
+2025-11-28 21:43:25,378 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-5
+2025-11-28 21:43:25,380 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-59
+2025-11-28 21:43:25,380 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-59
+2025-11-28 21:43:25,380 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-11
+2025-11-28 21:43:25,380 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-22
+2025-11-28 21:43:25,381 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-11
+2025-11-28 21:43:25,380 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-87
+2025-11-28 21:43:25,381 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-87
+2025-11-28 21:43:25,381 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-22
+2025-11-28 21:43:25,382 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-19
+2025-11-28 21:43:25,382 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-46
+2025-11-28 21:43:25,383 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-46
+2025-11-28 21:43:25,383 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-19
+2025-11-28 21:43:25,386 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-81
+2025-11-28 21:43:25,386 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-81
+2025-11-28 21:43:25,387 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-17
+2025-11-28 21:43:25,387 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-67
+2025-11-28 21:43:25,387 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-17
+2025-11-28 21:43:25,387 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-67
+2025-11-28 21:43:25,387 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-88
+2025-11-28 21:43:25,387 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-88
+2025-11-28 21:43:25,391 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-14
+2025-11-28 21:43:25,391 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-8
+2025-11-28 21:43:25,391 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-18
+2025-11-28 21:43:25,391 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-14
+2025-11-28 21:43:25,391 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-18
+2025-11-28 21:43:25,391 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-8
+2025-11-28 21:43:25,393 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-15
+2025-11-28 21:43:25,393 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-15
+2025-11-28 21:43:25,396 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-94
+2025-11-28 21:43:25,396 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-94
+2025-11-28 21:43:25,399 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-51
+2025-11-28 21:43:25,399 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-51
+2025-11-28 21:43:25,400 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-7
+2025-11-28 21:43:25,400 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-10
+2025-11-28 21:43:25,400 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-7
+2025-11-28 21:43:25,400 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-6
+2025-11-28 21:43:25,400 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-10
+2025-11-28 21:43:25,400 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-6
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-30
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-32
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-2
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-30
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-2
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-32
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-1
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-34
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-12
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-34
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-1
+2025-11-28 21:43:25,403 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-12
+2025-11-28 21:43:25,416 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-54
+2025-11-28 21:43:25,417 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-54
+2025-11-28 21:43:25,420 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-43
+2025-11-28 21:43:25,420 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-43
+2025-11-28 21:43:25,422 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-24
+2025-11-28 21:43:25,422 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-24
+2025-11-28 21:43:25,423 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-39
+2025-11-28 21:43:25,423 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-39
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-33
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-33
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-23
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-23
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-60
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-100
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-60
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-27
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-27
+2025-11-28 21:43:25,428 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-100
+2025-11-28 21:43:25,429 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-25
+2025-11-28 21:43:25,429 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-26
+2025-11-28 21:43:25,429 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-26
+2025-11-28 21:43:25,429 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-25
+2025-11-28 21:43:25,431 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-79
+2025-11-28 21:43:25,431 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-79
+2025-11-28 21:43:25,436 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-20
+2025-11-28 21:43:25,436 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-48
+2025-11-28 21:43:25,436 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-20
+2025-11-28 21:43:25,436 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-28
+2025-11-28 21:43:25,436 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-48
+2025-11-28 21:43:25,436 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-28
+2025-11-28 21:43:25,438 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-73
+2025-11-28 21:43:25,438 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-73
+2025-11-28 21:43:25,439 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-37
+2025-11-28 21:43:25,439 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-37
+2025-11-28 21:43:25,442 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-97
+2025-11-28 21:43:25,442 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-70
+2025-11-28 21:43:25,443 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-62
+2025-11-28 21:43:25,443 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-70
+2025-11-28 21:43:25,443 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-97
+2025-11-28 21:43:25,443 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-62
+2025-11-28 21:43:25,444 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-95
+2025-11-28 21:43:25,444 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-95
+2025-11-28 21:43:25,446 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-72
+2025-11-28 21:43:25,446 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-91
+2025-11-28 21:43:25,446 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-72
+2025-11-28 21:43:25,446 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-91
+2025-11-28 21:43:25,447 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-80
+2025-11-28 21:43:25,447 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-80
+2025-11-28 21:43:25,448 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-63
+2025-11-28 21:43:25,448 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-63
+2025-11-28 21:43:25,448 INFO o.a.j.t.JMeterThread: Thread is done: 2. Concurrent Update - Same City 1-85
+2025-11-28 21:43:25,448 INFO o.a.j.t.JMeterThread: Thread finished: 2. Concurrent Update - Same City 1-85
+2025-11-28 21:43:25,448 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-28 21:43:25,449 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)

@@ -1,6 +1,5 @@
 package is.lab1.transform.event;
 
-import is.lab1.transform.dto.TransformResponse;
 import is.lab1.transform.dto.ValidationError;
 import is.lab1.transform.dto.ValidatedCity;
 import lombok.AllArgsConstructor;
@@ -17,6 +16,16 @@ public class TransformResultMessage {
     private String correlationId;
     private List<ValidatedCity> validCities;
     private List<ValidationError> errors;
-    private TransformResponse.TransformStats stats;
+    private TransformStats stats;
     private Instant producedAt;
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class TransformStats {
+        private int totalRecords;
+        private int validRecords;
+        private int invalidRecords;
+        private int duplicatesInFile;
+    }
 }

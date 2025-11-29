@@ -1,0 +1,215 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1764408766650,291,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-92,text,true,,597,436,100,100,http://localhost:8080/api/cities,290,0,83
+1764408766645,337,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-31,text,true,,596,435,100,100,http://localhost:8080/api/cities,336,0,92
+1764408766649,285,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-64,text,true,,597,436,100,100,http://localhost:8080/api/cities,273,0,84
+1764408766647,349,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-47,text,true,,597,436,100,100,http://localhost:8080/api/cities,349,0,90
+1764408766649,334,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-9,text,true,,596,435,100,100,http://localhost:8080/api/cities,333,0,88
+1764408766654,333,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-97,text,true,,597,436,100,100,http://localhost:8080/api/cities,333,0,79
+1764408766654,280,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-14,text,true,,596,435,100,100,http://localhost:8080/api/cities,276,0,80
+1764408766649,285,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-54,text,true,,597,436,100,100,http://localhost:8080/api/cities,273,0,83
+1764408766654,328,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-95,text,true,,597,436,100,100,http://localhost:8080/api/cities,327,0,80
+1764408766653,281,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-22,text,true,,596,435,100,100,http://localhost:8080/api/cities,269,0,80
+1764408766645,319,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-65,text,true,,597,436,100,100,http://localhost:8080/api/cities,319,0,89
+1764408766654,280,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-67,text,true,,597,436,100,100,http://localhost:8080/api/cities,268,0,79
+1764408766651,331,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-16,text,true,,597,436,100,100,http://localhost:8080/api/cities,330,0,82
+1764408766647,287,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-98,text,true,,597,436,100,100,http://localhost:8080/api/cities,275,0,86
+1764408766649,306,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-17,text,true,,597,436,100,100,http://localhost:8080/api/cities,302,0,88
+1764408766651,283,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-44,text,true,,597,436,100,100,http://localhost:8080/api/cities,279,0,81
+1764408766650,356,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-2,text,true,,596,435,100,100,http://localhost:8080/api/cities,356,0,87
+1764408766649,389,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-69,text,true,,597,436,100,100,http://localhost:8080/api/cities,388,0,83
+1764408766651,406,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-29,text,true,,597,436,100,100,http://localhost:8080/api/cities,406,0,86
+1764408766649,409,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-38,text,true,,597,436,100,100,http://localhost:8080/api/cities,408,0,87
+1764408766649,409,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-61,text,true,,597,436,100,100,http://localhost:8080/api/cities,408,0,88
+1764408766649,427,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-70,text,true,,597,436,100,100,http://localhost:8080/api/cities,423,0,87
+1764408766647,430,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-42,text,true,,596,435,100,100,http://localhost:8080/api/cities,430,0,89
+1764408766654,429,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-46,text,true,,597,436,100,100,http://localhost:8080/api/cities,429,0,81
+1764408766653,430,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-18,text,true,,597,436,100,100,http://localhost:8080/api/cities,430,0,82
+1764408766649,434,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-87,text,true,,597,436,100,100,http://localhost:8080/api/cities,434,0,87
+1764408766649,442,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-93,text,true,,597,436,100,100,http://localhost:8080/api/cities,440,0,87
+1764408766653,440,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-10,text,true,,597,436,100,100,http://localhost:8080/api/cities,439,0,85
+1764408766653,448,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-43,text,true,,597,436,100,100,http://localhost:8080/api/cities,448,0,81
+1764408766654,455,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-78,text,true,,597,436,100,100,http://localhost:8080/api/cities,448,0,83
+1764408766654,489,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-83,text,true,,597,436,100,100,http://localhost:8080/api/cities,489,0,81
+1764408766654,492,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-30,text,true,,597,436,100,100,http://localhost:8080/api/cities,490,0,84
+1764408766645,522,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-94,text,true,,597,436,100,100,http://localhost:8080/api/cities,518,0,88
+1764408766645,522,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-45,text,true,,597,436,100,100,http://localhost:8080/api/cities,522,0,92
+1764408766654,513,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-80,text,true,,597,436,100,100,http://localhost:8080/api/cities,513,0,80
+1764408766650,542,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-28,text,true,,595,434,100,100,http://localhost:8080/api/cities,542,0,84
+1764408766645,559,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-4,text,true,,596,435,100,100,http://localhost:8080/api/cities,558,0,90
+1764408767059,162,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-17,text,true,,602,441,100,100,http://localhost:8080/api/cities/1624,162,0,0
+1764408767060,167,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-44,text,true,,601,441,99,99,http://localhost:8080/api/cities/1617,167,0,0
+1764408766649,578,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-27,text,true,,597,436,99,99,http://localhost:8080/api/cities,578,0,85
+1764408766654,576,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-56,text,true,,596,435,98,98,http://localhost:8080/api/cities,575,0,80
+1764408766649,588,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-1,text,true,,596,435,98,98,http://localhost:8080/api/cities,578,0,86
+1764408766653,596,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-76,text,true,,597,436,98,98,http://localhost:8080/api/cities,595,0,82
+1764408766654,607,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-15,text,true,,597,436,98,98,http://localhost:8080/api/cities,583,0,80
+1764408766651,626,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-59,text,true,,596,435,98,98,http://localhost:8080/api/cities,625,0,83
+1764408766650,631,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-75,text,true,,597,436,98,98,http://localhost:8080/api/cities,631,0,85
+1764408766647,642,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-36,text,true,,596,435,98,98,http://localhost:8080/api/cities,640,0,86
+1764408766649,638,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-96,text,true,,595,434,98,98,http://localhost:8080/api/cities,638,0,84
+1764408766645,653,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-32,text,true,,597,436,98,98,http://localhost:8080/api/cities,653,0,89
+1764408766647,653,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-73,text,true,,597,436,98,98,http://localhost:8080/api/cities,651,0,86
+1764408766649,653,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-6,text,true,,596,435,98,98,http://localhost:8080/api/cities,649,0,85
+1764408766654,668,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-91,text,true,,597,436,98,98,http://localhost:8080/api/cities,668,0,79
+1764408766649,681,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-86,text,true,,594,433,98,98,http://localhost:8080/api/cities,681,0,85
+1764408766649,697,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-57,text,true,,597,436,98,98,http://localhost:8080/api/cities,696,0,86
+1764408766654,692,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-82,text,true,,597,436,98,98,http://localhost:8080/api/cities,691,0,80
+1764408766645,701,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-12,text,true,,597,436,98,98,http://localhost:8080/api/cities,701,0,90
+1764408766654,707,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-25,text,true,,597,436,98,98,http://localhost:8080/api/cities,707,0,80
+1764408766654,711,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-48,text,true,,597,436,98,98,http://localhost:8080/api/cities,711,0,81
+1764408766649,726,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-52,text,true,,597,436,98,98,http://localhost:8080/api/cities,726,0,84
+1764408766651,722,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-63,text,true,,596,435,98,98,http://localhost:8080/api/cities,722,0,84
+1764408767059,318,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-16,text,true,,601,441,98,98,http://localhost:8080/api/cities/1623,316,0,0
+1764408766650,731,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-37,text,true,,596,435,97,97,http://localhost:8080/api/cities,730,0,83
+1764408767238,144,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-45,text,true,,603,442,97,97,http://localhost:8080/api/cities/1650,144,0,0
+1764408766654,732,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-19,text,true,,597,436,96,96,http://localhost:8080/api/cities,728,0,80
+1764408766647,807,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-34,text,true,,597,436,96,96,http://localhost:8080/api/cities,807,0,86
+1764408766649,807,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-24,text,true,,596,435,96,96,http://localhost:8080/api/cities,803,0,88
+1764408766654,809,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-26,text,true,,597,436,96,96,http://localhost:8080/api/cities,809,0,81
+1764408766654,810,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-88,text,true,,596,435,96,96,http://localhost:8080/api/cities,810,0,79
+1764408766649,818,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-99,text,true,,597,436,96,96,http://localhost:8080/api/cities,815,0,84
+1764408766654,813,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-90,text,true,,596,435,96,96,http://localhost:8080/api/cities,813,0,80
+1764408766645,830,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-7,text,true,,596,435,96,96,http://localhost:8080/api/cities,830,0,88
+1764408766650,825,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-3,text,true,,595,434,96,96,http://localhost:8080/api/cities,825,0,82
+1764408766649,836,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-81,text,true,,596,435,96,96,http://localhost:8080/api/cities,834,0,85
+1764408766645,842,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-66,text,true,,597,436,96,96,http://localhost:8080/api/cities,842,0,88
+1764408766649,838,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-100,text,true,,598,437,96,96,http://localhost:8080/api/cities,838,0,84
+1764408766651,849,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-8,text,true,,596,435,96,96,http://localhost:8080/api/cities,840,0,83
+1764408766645,855,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-55,text,true,,597,436,96,96,http://localhost:8080/api/cities,855,0,89
+1764408766654,848,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-20,text,true,,597,436,96,96,http://localhost:8080/api/cities,847,0,79
+1764408766645,872,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-58,text,true,,597,436,96,96,http://localhost:8080/api/cities,871,0,88
+1764408766645,874,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-21,text,true,,597,436,96,96,http://localhost:8080/api/cities,874,0,88
+1764408766654,867,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-35,text,true,,597,436,96,96,http://localhost:8080/api/cities,867,0,80
+1764408766649,874,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-60,text,true,,597,436,96,96,http://localhost:8080/api/cities,874,0,83
+1764408766651,876,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-89,text,true,,597,436,96,96,http://localhost:8080/api/cities,875,0,82
+1764408766649,881,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-53,text,true,,597,436,96,96,http://localhost:8080/api/cities,874,0,85
+1764408766645,885,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-74,text,true,,597,436,96,96,http://localhost:8080/api/cities,885,0,88
+1764408766645,900,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-41,text,true,,597,436,96,96,http://localhost:8080/api/cities,900,0,88
+1764408766645,907,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-71,text,true,,596,435,96,96,http://localhost:8080/api/cities,906,0,89
+1764408767391,167,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-52,text,true,,604,442,96,96,http://localhost:8080/api/cities/1670,167,0,0
+1764408767391,168,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-48,text,true,,604,441,96,96,http://localhost:8080/api/cities/1665,168,0,0
+1764408767390,170,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-25,text,true,,603,442,95,95,http://localhost:8080/api/cities/1663,170,0,0
+1764408767388,173,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-19,text,true,,605,442,95,95,http://localhost:8080/api/cities/1672,173,0,0
+1764408767489,74,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-100,text,true,,603,443,92,92,http://localhost:8080/api/cities/1683,71,0,0
+1764408767389,181,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-57,text,true,,603,441,91,91,http://localhost:8080/api/cities/1668,180,0,0
+1764408767390,181,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-12,text,true,,603,441,90,90,http://localhost:8080/api/cities/1667,181,0,0
+1764408767391,183,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-37,text,true,,605,442,89,89,http://localhost:8080/api/cities/1671,181,0,0
+1764408767325,256,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-6,text,true,,603,440,88,88,http://localhost:8080/api/cities/1657,255,0,0
+1764408767388,196,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-86,text,true,,605,442,87,87,http://localhost:8080/api/cities/1664,196,0,0
+1764408767388,196,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-82,text,true,,604,442,87,87,http://localhost:8080/api/cities/1666,196,0,0
+1764408767324,265,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-36,text,true,,603,441,85,85,http://localhost:8080/api/cities/1656,264,0,0
+1764408767391,201,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-63,text,true,,605,442,84,84,http://localhost:8080/api/cities/1669,198,0,0
+1764408767532,71,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-66,text,true,,603,441,83,83,http://localhost:8080/api/cities/1681,71,0,0
+1764408767533,78,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-58,text,true,,604,441,82,82,http://localhost:8080/api/cities/1688,74,0,0
+1764408767324,287,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-73,text,true,,604,442,82,82,http://localhost:8080/api/cities/1658,287,0,0
+1764408767323,288,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-75,text,true,,605,442,82,82,http://localhost:8080/api/cities/1654,288,0,0
+1764408767323,288,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-59,text,true,,605,442,82,82,http://localhost:8080/api/cities/1659,288,0,0
+1764408767323,304,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-76,text,true,,604,441,78,78,http://localhost:8080/api/cities/1655,303,0,0
+1764408767324,306,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-32,text,true,,605,442,77,77,http://localhost:8080/api/cities/1660,298,0,0
+1764408767323,308,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-15,text,true,,603,441,77,77,http://localhost:8080/api/cities/1647,304,0,0
+1764408767324,307,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-96,text,true,,605,442,77,77,http://localhost:8080/api/cities/1662,307,0,0
+1764408767241,393,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-4,text,true,,602,440,75,75,http://localhost:8080/api/cities/1648,390,0,0
+1764408767238,399,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-1,text,true,,602,440,73,73,http://localhost:8080/api/cities/1652,399,0,0
+1764408767323,320,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-91,text,true,,604,441,72,72,http://localhost:8080/api/cities/1661,312,0,0
+1764408767238,406,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-30,text,true,,603,441,72,72,http://localhost:8080/api/cities/1645,406,0,0
+1764408767238,410,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-94,text,true,,604,442,71,71,http://localhost:8080/api/cities/1646,409,0,0
+1764408767242,410,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-27,text,true,,604,442,69,69,http://localhost:8080/api/cities/1653,410,0,0
+1764408767241,414,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-28,text,true,,604,442,68,68,http://localhost:8080/api/cities/1649,414,0,0
+1764408767241,417,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-80,text,true,,604,441,67,67,http://localhost:8080/api/cities/1644,417,0,0
+1764408767113,553,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-31,text,true,,605,442,66,66,http://localhost:8080/api/cities/1626,553,0,0
+1764408767115,559,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-10,text,true,,604,442,65,65,http://localhost:8080/api/cities/1639,558,0,0
+1764408767242,438,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-56,text,true,,604,442,64,64,http://localhost:8080/api/cities/1651,438,0,0
+1764408767114,576,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-18,text,true,,603,441,63,63,http://localhost:8080/api/cities/1638,576,0,0
+1764408767238,452,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-83,text,true,,605,442,63,63,http://localhost:8080/api/cities/1643,452,0,0
+1764408767113,577,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-42,text,true,,604,441,63,63,http://localhost:8080/api/cities/1636,577,0,0
+1764408767115,575,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-43,text,true,,604,442,63,63,http://localhost:8080/api/cities/1642,575,0,0
+1764408767115,575,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-87,text,true,,604,442,63,63,http://localhost:8080/api/cities/1631,575,0,0
+1764408767113,584,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-78,text,true,,603,441,58,58,http://localhost:8080/api/cities/1640,584,0,0
+1764408767115,582,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-93,text,true,,603,441,58,58,http://localhost:8080/api/cities/1641,582,0,0
+1764408767113,588,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-70,text,true,,604,441,56,56,http://localhost:8080/api/cities/1635,588,0,0
+1764408767113,588,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-46,text,true,,603,441,56,56,http://localhost:8080/api/cities/1637,588,0,0
+1764408767059,660,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-97,text,true,,604,442,54,54,http://localhost:8080/api/cities/1621,660,0,0
+1764408767060,659,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-14,text,true,,604,442,54,54,http://localhost:8080/api/cities/1620,659,0,0
+1764408767060,659,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-29,text,true,,605,442,54,54,http://localhost:8080/api/cities/1634,659,0,0
+1764408767061,658,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-64,text,true,,605,442,54,54,http://localhost:8080/api/cities/1615,658,0,0
+1764408767061,666,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-61,text,true,,604,441,50,50,http://localhost:8080/api/cities/1632,666,0,0
+1764408767059,674,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-9,text,true,,602,440,49,49,http://localhost:8080/api/cities/1629,674,0,0
+1764408767061,684,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-22,text,true,,604,442,48,48,http://localhost:8080/api/cities/1618,682,0,0
+1764408767060,685,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-69,text,true,,603,441,48,48,http://localhost:8080/api/cities/1628,685,0,0
+1764408767060,686,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-2,text,true,,603,440,48,48,http://localhost:8080/api/cities/1630,685,0,0
+1764408767059,696,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-54,text,true,,604,442,45,45,http://localhost:8080/api/cities/1619,693,0,0
+1764408767061,701,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-65,text,true,,604,442,44,44,http://localhost:8080/api/cities/1622,700,0,0
+1764408767059,707,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-98,text,true,,604,441,43,43,http://localhost:8080/api/cities/1614,707,0,0
+1764408767060,709,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-38,text,true,,604,441,42,42,http://localhost:8080/api/cities/1633,709,0,0
+1764408767061,713,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-67,text,true,,603,441,41,41,http://localhost:8080/api/cities/1613,713,0,0
+1764408767059,721,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-92,text,true,,605,442,40,40,http://localhost:8080/api/cities/1616,721,0,0
+1764408766648,1133,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-5,text,true,,598,435,40,40,http://localhost:8080/api/cities,1133,0,89
+1764408766649,1136,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-23,text,true,,599,436,39,39,http://localhost:8080/api/cities,1136,0,87
+1764408766651,1134,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-39,text,true,,599,436,39,39,http://localhost:8080/api/cities,1131,0,84
+1764408767060,731,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-47,text,true,,604,441,39,39,http://localhost:8080/api/cities/1627,731,0,0
+1764408766654,1137,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-50,text,true,,599,436,39,39,http://localhost:8080/api/cities,1137,0,83
+1764408766649,1151,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-11,text,true,,599,436,38,38,http://localhost:8080/api/cities,1151,0,87
+1764408767061,742,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-95,text,true,,603,441,38,38,http://localhost:8080/api/cities/1625,742,0,0
+1764408766649,1153,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-40,text,true,,599,436,38,38,http://localhost:8080/api/cities,1153,0,87
+1764408766653,1150,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-79,text,true,,599,436,38,38,http://localhost:8080/api/cities,1150,0,84
+1764408766645,1157,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-33,text,true,,599,436,38,38,http://localhost:8080/api/cities,1157,0,91
+1764408766650,1174,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-77,text,true,,599,436,37,37,http://localhost:8080/api/cities,1174,0,86
+1764408766649,1182,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-84,text,true,,599,436,37,37,http://localhost:8080/api/cities,1182,0,87
+1764408766651,1180,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-85,text,true,,599,436,37,37,http://localhost:8080/api/cities,1180,0,87
+1764408766645,1194,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-72,text,true,,599,436,37,37,http://localhost:8080/api/cities,1191,0,92
+1764408766653,1187,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-51,text,true,,599,436,37,37,http://localhost:8080/api/cities,1187,0,84
+1764408766649,1191,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-68,text,true,,598,435,37,37,http://localhost:8080/api/cities,1191,0,86
+1764408766648,1191,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-13,text,true,,599,436,37,37,http://localhost:8080/api/cities,1187,0,88
+1764408766645,1195,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-62,text,true,,599,436,37,37,http://localhost:8080/api/cities,1195,0,90
+1764408767533,318,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-60,text,true,,604,442,37,37,http://localhost:8080/api/cities/1695,318,0,0
+1764408766649,1202,Setup: Create City for Update Test,200,,2. Concurrent Update - Same City 1-49,text,true,,598,435,37,37,http://localhost:8080/api/cities,1202,0,87
+1764408767533,331,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-20,text,true,,604,442,36,36,http://localhost:8080/api/cities/1687,329,0,0
+1764408767533,332,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-8,text,true,,603,441,36,36,http://localhost:8080/api/cities/1682,331,0,0
+1764408767534,331,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-89,text,true,,605,442,36,36,http://localhost:8080/api/cities/1694,330,0,0
+1764408767531,347,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-74,text,true,,604,441,33,33,http://localhost:8080/api/cities/1693,345,0,0
+1764408767534,345,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-21,text,true,,604,441,33,33,http://localhost:8080/api/cities/1685,342,0,0
+1764408767533,349,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-35,text,true,,605,442,31,31,http://localhost:8080/api/cities/1692,349,0,0
+1764408767532,353,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-55,text,true,,604,441,30,30,http://localhost:8080/api/cities/1686,346,0,0
+1764408767493,399,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-99,text,true,,605,442,29,29,http://localhost:8080/api/cities/1680,398,0,0
+1764408767493,402,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-3,text,true,,602,440,28,28,http://localhost:8080/api/cities/1679,402,0,0
+1764408767856,77,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-68,text,true,,604,442,27,27,http://localhost:8080/api/cities/1712,76,0,0
+1764408767853,79,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-49,text,true,,605,442,27,27,http://localhost:8080/api/cities/1709,79,0,0
+1764408767857,75,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-13,text,true,,604,441,27,27,http://localhost:8080/api/cities/1708,75,0,0
+1764408767804,127,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-53,text,true,,604,442,27,27,http://localhost:8080/api/cities/1690,127,0,0
+1764408767855,74,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-84,text,true,,605,442,27,27,http://localhost:8080/api/cities/1707,74,0,0
+1764408767805,126,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-11,text,true,,604,442,27,27,http://localhost:8080/api/cities/1703,126,0,0
+1764408767856,68,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-51,text,true,,605,442,27,27,http://localhost:8080/api/cities/1710,68,0,0
+1764408767856,57,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-85,text,true,,604,441,27,27,http://localhost:8080/api/cities/1704,57,0,0
+1764408767856,57,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-62,text,true,,605,442,27,27,http://localhost:8080/api/cities/1711,57,0,0
+1764408767493,416,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-26,text,true,,604,442,27,27,http://localhost:8080/api/cities/1676,416,0,0
+1764408767491,421,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-34,text,true,,604,442,27,27,http://localhost:8080/api/cities/1673,417,0,0
+1764408767857,51,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-72,text,true,,604,442,27,27,http://localhost:8080/api/cities/1706,51,0,0
+1764408767493,415,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-88,text,true,,604,442,27,27,http://localhost:8080/api/cities/1675,415,0,0
+1764408767493,415,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-7,text,true,,603,440,27,27,http://localhost:8080/api/cities/1677,415,0,0
+1764408767489,418,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-24,text,true,,603,441,27,27,http://localhost:8080/api/cities/1674,418,0,0
+1764408767493,413,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-90,text,true,,604,442,27,27,http://localhost:8080/api/cities/1678,410,0,0
+1764408767493,412,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-81,text,true,,603,441,27,27,http://localhost:8080/api/cities/1684,411,0,0
+1764408767805,141,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-50,text,true,,604,442,13,13,http://localhost:8080/api/cities/1699,141,0,0
+1764408767805,142,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-40,text,true,,604,442,11,11,http://localhost:8080/api/cities/1701,142,0,0
+1764408767804,146,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-79,text,true,,605,442,8,8,http://localhost:8080/api/cities/1700,146,0,0
+1764408767804,156,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-41,text,true,,604,441,7,7,http://localhost:8080/api/cities/1689,156,0,0
+1764408767804,159,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-23,text,true,,605,442,6,6,http://localhost:8080/api/cities/1698,159,0,0
+1764408767805,162,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-39,text,true,,605,442,5,5,http://localhost:8080/api/cities/1696,162,0,0
+1764408767804,163,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-71,text,true,,603,441,5,5,http://localhost:8080/api/cities/1691,163,0,0
+1764408767856,112,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-77,text,true,,605,442,4,4,http://localhost:8080/api/cities/1705,112,0,0
+1764408767804,166,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-5,text,true,,602,440,2,2,http://localhost:8080/api/cities/1697,166,0,0
+1764408767853,117,Update City (Concurrent),200,,2. Concurrent Update - Same City 1-33,text,true,,604,442,2,2,http://localhost:8080/api/cities/1702,115,0,0
+1764408922906,89,Create City for Delete Test,200,,Setup for Test 3 1-1,text,true,,598,435,1,1,http://localhost:8080/api/cities,89,0,3
+1764408952374,48,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-4,,true,,210,185,5,5,http://localhost:8080/api/cities/1713,48,0,2
+1764408952374,48,Setup: Create City for Delete Test,200,,3. Concurrent Delete - Same City 1-1,text,true,,597,434,5,5,http://localhost:8080/api/cities,48,0,2
+1764408952374,136,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-2,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1713,136,0,7
+1764408952374,136,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-5,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1713,136,0,2
+1764408952380,130,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-3,text,false,Test failed: code expected to match /200|404/,426,185,4,4,http://localhost:8080/api/cities/1713,130,0,1
+1764408953459,44,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-1,,true,,210,185,1,1,http://localhost:8080/api/cities/1714,44,0,0
+1764409109315,67,Create City for Delete Test,200,,Setup for Test 3 1-1,text,true,,599,436,1,1,http://localhost:8080/api/cities,67,0,4
+1764409116798,40,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-4,,true,,210,185,5,5,http://localhost:8080/api/cities/1715,40,0,3
+1764409116801,39,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-5,text,false,Test failed: code expected to match /200|404/,426,185,5,5,http://localhost:8080/api/cities/1715,38,0,0
+1764409116799,41,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-2,text,false,Test failed: code expected to match /200|404/,426,185,5,5,http://localhost:8080/api/cities/1715,40,0,3
+1764409116799,41,Delete City (Concurrent),500,,3. Concurrent Delete - Same City 1-3,text,false,Test failed: code expected to match /200|404/,426,185,5,5,http://localhost:8080/api/cities/1715,40,0,2
+1764409116801,60,Setup: Create City for Delete Test,200,,3. Concurrent Delete - Same City 1-1,text,true,,597,434,1,1,http://localhost:8080/api/cities,59,0,1
+1764409117894,19,Delete City (Concurrent),200,,3. Concurrent Delete - Same City 1-1,,true,,210,185,1,1,http://localhost:8080/api/cities/1716,19,0,0

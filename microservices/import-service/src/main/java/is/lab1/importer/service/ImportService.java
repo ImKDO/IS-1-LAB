@@ -21,10 +21,6 @@ public class ImportService {
     private final CityRepository cityRepository;
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-    // SERIALIZABLE isolation for import to prevent any concurrent interference:
-    // Prevents phantom reads when checking coordinates existence across batch import
-    // Ensures no other transaction can insert cities with duplicate coordinates during import
-    // Critical for maintaining data integrity during batch operations
     @Transactional(isolation = Isolation.SERIALIZABLE, rollbackFor = Exception.class)
     public void importCities(TransformResultMessage message) {
         log.info("Starting import from Kafka: correlationId={}, validCities={}",
@@ -102,14 +98,11 @@ public class ImportService {
             city.setStandardOfLiving(StandardOfLiving.valueOf(validatedCity.getStandardOfLiving()));
         }
         
-        // Convert governor
         if (validatedCity.getGovernor() != null && validatedCity.getGovernor().getAge() != null) {
             Human governor = new Human(validatedCity.getGovernor().getAge());
             city.setGovernor(governor);
         }
-        
-        // Convert establishment date - skip for now if not needed
-        
+
         return city;
     }
 }

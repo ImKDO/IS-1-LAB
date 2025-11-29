@@ -7,7 +7,7 @@ import java.util.Date;
 public class RawCity {
     private String name;
     private Coordinates coordinates;
-    private Object area;  // Can be String or Number
+    private Object area;
     private Object population;
     private Boolean capital;
     private Object metersAboveSeaLevel;

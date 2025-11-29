@@ -66,9 +66,11 @@ services:
     environment:
       SERVER_PORT: 8081
       CITY_SERVICE_URL: http://city-service:8080
-      QUEUE_SERVICE_URL: http://queue-service:8082
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      TRANSFORM_KAFKA_TOPIC: city.queue.ready
     depends_on:
-      - queue-service
+      kafka:
+        condition: service_healthy
 
   # Queue Service (Microservice 2)
   queue-service:

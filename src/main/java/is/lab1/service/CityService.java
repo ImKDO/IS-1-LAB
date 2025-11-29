@@ -85,15 +85,8 @@ public class CityService {
         return savedCity;
     }
     
-    // SERIALIZABLE isolation for delete to prevent any concurrent modifications:
-    // Provides strongest isolation - locks the row for reading and deletion
-    // If multiple threads try to delete same city simultaneously:
-    // - First thread acquires lock, reads city, and deletes it successfully (200 OK)
-    // - Other threads wait for lock, then get ResourceNotFoundException (404) because city is gone
-    // This ensures only one thread can successfully delete the city
     @Transactional(isolation = Isolation.SERIALIZABLE)
     public void deleteCity(Integer id) {
-        // Use findById to get the entity - this creates a lock on the row
         City city = cityRepository.findById(id)
             .orElseThrow(() -> new ResourceNotFoundException("City with id=" + id + " not found"));
         
@@ -125,18 +118,12 @@ public class CityService {
     }
 
     
-    // REPEATABLE_READ isolation ensures consistency when relocating population:
-    // Prevents phantom reads - ensures cityRepository.relocateToMinFn sees consistent min population city
-    // Prevents scenario where min population city changes between relocateToMinFn and clearPopulation calls
     @Transactional(isolation = Isolation.REPEATABLE_READ)
     public void relocatePopulationToMinPopulationCity(Integer fromCityId) {
         cityRepository.relocateToMinFn(fromCityId);
         cityRepository.clearPopulation(fromCityId);
     }
 
-    // REPEATABLE_READ isolation ensures consistency when relocating population:
-    // Prevents phantom reads - ensures both relocateFn and clearPopulation see consistent city state
-    // Prevents scenario where fromCity or toCity population changes during transaction
     @Transactional(isolation = Isolation.REPEATABLE_READ)
     public void relocatePopulation(Integer fromCityId, Integer toCityId) {
         if (fromCityId.equals(toCityId)) {

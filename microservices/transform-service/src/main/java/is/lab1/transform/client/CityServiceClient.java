@@ -44,7 +44,6 @@ public class CityServiceClient {
                         @SuppressWarnings("unchecked")
                         Map<String, Object> coords = (Map<String, Object>) city.get("coordinates");
                         
-                        // Handle both x/y and x_coordinate/y_coordinate naming
                         Object xObj = coords.getOrDefault("x", coords.get("xCoordinate"));
                         Object yObj = coords.getOrDefault("y", coords.get("yCoordinate"));
                         

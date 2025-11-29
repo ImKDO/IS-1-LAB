@@ -32,7 +32,6 @@ public class TransformResultListener {
         } catch (Exception e) {
             log.error("Failed to import cities from transform result: correlationId={}",
                 message.getCorrelationId(), e);
-            // В production здесь можно отправить в DLQ (Dead Letter Queue)
         }
     }
 }
